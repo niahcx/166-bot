@@ -91,7 +91,17 @@ export class InteractionRouter {
     private readonly logger: Logger
   ) { this.views = new Views(db, emojis, products, tickets); }
 
-  start() { this.client.on(Events.InteractionCreate, (interaction) => void this.route(interaction).catch((error) => this.fail(interaction as never, error))); }
+  start() {
+    this.client.on(Events.InteractionCreate, (interaction) => void this.route(interaction).catch((error) => this.fail(interaction as never, error)));
+    this.client.on("setupticket:image", (data: { guildId: string; imageUrl: string; userId: string }) => {
+      const panels = this.tickets.listPanels(data.guildId);
+      const latest = panels[panels.length - 1];
+      if (latest) {
+        this.tickets.updatePanel(latest.id, { imageUrl: data.imageUrl }, data.userId);
+        this.logger.debug(`Imagem do painel de ticket ${latest.id} salva via setupticket.`);
+      }
+    });
+  }
 
   async refreshPublishedMessages(): Promise<number> {
     let updated = 0;
@@ -1770,19 +1780,14 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
       const channel = await this.client.channels.fetch(channelId);
       if (!(channel instanceof TextChannel)) throw new Error("Canal inválido.");
       let message;
-      if (panel.channelId === channelId && panel.messageId) {
-        const current = await channel.messages.fetch(panel.messageId).catch(() => undefined);
-        message = current ? await current.edit(this.views.publicTicketPanelEdit(gid, panel)) : await channel.send(this.views.publicTicketPanel(gid, panel));
-      } else {
-        if (panel.channelId && panel.messageId) {
-          const oldChannel = await this.client.channels.fetch(panel.channelId).catch(() => undefined);
-          if (oldChannel instanceof TextChannel) {
-            const oldMessage = await oldChannel.messages.fetch(panel.messageId).catch(() => undefined);
-            await oldMessage?.delete().catch(() => undefined);
-          }
+      if (panel.channelId && panel.messageId) {
+        const oldChannel = await this.client.channels.fetch(panel.channelId).catch(() => undefined);
+        if (oldChannel instanceof TextChannel) {
+          const oldMessage = await oldChannel.messages.fetch(panel.messageId).catch(() => undefined);
+          await oldMessage?.delete().catch(() => undefined);
         }
-        message = await channel.send(this.views.publicTicketPanel(gid, panel));
       }
+      message = await channel.send(this.views.publicTicketPanel(gid, panel));
       const updated = this.tickets.updatePanel(panel.id, { channelId, messageId: message.id }, i.user.id);
       await i.update(this.views.ticketPanelDetail(gid, updated) as never);
       await i.followUp({ content: `Painel publicado ou atualizado em <#${channelId}>.`, flags: MessageFlags.Ephemeral });
