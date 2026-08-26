@@ -47,6 +47,7 @@ import type { RestockAnnouncementService } from "../services/restock-announcemen
 import { applyEmailPreset, bankProfile } from "../services/imap-profiles.js";
 import { Views } from "./views.js";
 import { checkedDiscordPayload } from "./payload-validator.js";
+import { saveImage } from "../core/image-store.js";
 
 function input(id: string, label: string, value = "", style = TextInputStyle.Short, required = true, max = 1000, placeholder = "") {
   const safeMax = Math.max(1, Math.min(4000, Math.trunc(max) || 1000));
@@ -3887,14 +3888,17 @@ Agora use **/painel** para personalizar produtos, pagamentos, mensagens, imagens
   }
   private async collectImage(i: ButtonInteraction, label: string, apply: (url: string) => void | Promise<void>) {
     if (!(i.channel instanceof TextChannel)) throw new Error("Use em um canal de texto.");
-    await i.reply({ content: `Envie agora a **${label}** em PNG, JPG, WEBP ou GIF. A mensagem será apagada após a URL segura do anexo ser salva. Tempo: 2 minutos.`, flags: MessageFlags.Ephemeral });
+    await i.reply({ content: `Envie agora a **${label}** em PNG, JPG, WEBP ou GIF. A imagem será salva permanentemente. Tempo: 2 minutos.`, flags: MessageFlags.Ephemeral });
     const collected = await i.channel.awaitMessages({ filter: (m) => m.author.id === i.user.id && m.attachments.size > 0, max: 1, time: 120000 });
     const message = collected.first(); if (!message) throw new Error("Tempo esgotado.");
     const attachment = message.attachments.first()!;
     const imageByName = /\.(png|jpe?g|webp|gif)$/i.test(attachment.name ?? "");
     if (!attachment.contentType?.startsWith("image/") && !imageByName) throw new Error("O arquivo precisa ser uma imagem PNG, JPG, WEBP ou GIF.");
     if (attachment.size > 8 * 1024 * 1024) throw new Error("Imagem maior que 8 MB.");
-    await apply(attachment.url);
+    const buffer = Buffer.from(await (await fetch(attachment.url)).arrayBuffer());
+    const ext = (attachment.name?.split(".").pop() || "png").replace(/[^a-z0-9]/gi, "").toLowerCase() || "png";
+    const localFilename = saveImage(buffer, ext);
+    await apply(localFilename);
     await message.delete().catch(() => undefined);
     await i.followUp({ content: `✅ ${label.charAt(0).toUpperCase()}${label.slice(1)} salva com sucesso.`, flags: MessageFlags.Ephemeral });
   }

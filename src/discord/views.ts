@@ -1,5 +1,6 @@
 import {
   ActionRowBuilder,
+  AttachmentBuilder,
   ButtonBuilder,
   ButtonStyle,
   ChannelSelectMenuBuilder,
@@ -26,6 +27,7 @@ import type { ProductService } from "../services/products.js";
 import type { TicketService } from "../services/tickets.js";
 import { bankProfile, IMAP_EMAIL_PRESETS } from "../services/imap-profiles.js";
 import { checkedDiscordPayload } from "./payload-validator.js";
+import { isLocalImage, localImagePath, localToAttachmentUrl } from "../core/image-store.js";
 
 const bstyle = (name: Product["buttonStyle"]) => ({ PRIMARY: ButtonStyle.Primary, SECONDARY: ButtonStyle.Secondary, SUCCESS: ButtonStyle.Success, DANGER: ButtonStyle.Danger }[name]);
 
@@ -1198,7 +1200,13 @@ Os campos aparecem na mensagem pública do painel e também podem usar **{user}*
     }
     // A galeria pertence ao Container V2. Assim o banner deixa de ser um anexo
     // visual solto e passa a integrar o mesmo bloco que título, campos e select.
-    if (/^https?:\/\//i.test(panel.imageUrl)) {
+    if (isLocalImage(panel.imageUrl)) {
+      container.addMediaGalleryComponents(
+        new MediaGalleryBuilder().addItems(
+          new MediaGalleryItemBuilder().setURL(localToAttachmentUrl(panel.imageUrl)).setDescription(truncate(panel.title, 1000))
+        )
+      );
+    } else if (/^https?:\/\//i.test(panel.imageUrl)) {
       container.addMediaGalleryComponents(
         new MediaGalleryBuilder().addItems(
           new MediaGalleryItemBuilder().setURL(panel.imageUrl).setDescription(truncate(panel.title, 1000))
@@ -1208,9 +1216,13 @@ Os campos aparecem na mensagem pública do painel e também podem usar **{user}*
     if (panel.footer.trim()) {
       container.addTextDisplayComponents(new TextDisplayBuilder().setContent(`-# ${truncate(panel.footer, 1900)}`));
     }
+    const attachments: AttachmentBuilder[] = [];
+    if (isLocalImage(panel.imageUrl)) {
+      attachments.push(new AttachmentBuilder(localImagePath(panel.imageUrl), { name: panel.imageUrl }));
+    }
     const options = panel.options.filter((option) => option.active).sort((a, b) => a.position - b.position).slice(0, 25);
     if (!options.length) {
-      return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container] }, `painel de ticket ${panel.id}`);
+      return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container], ...(attachments.length ? { files: attachments, attachments: [] } : {}) }, `painel de ticket ${panel.id}`);
     }
 
     container.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
@@ -1221,7 +1233,7 @@ Os campos aparecem na mensagem pública do painel e também podem usar **{user}*
           options.slice(index, index + 5).map((option) => this.button(guildId, `ticket:open:${panel.id}:${option.id}`, option.name, option.emojiSemantic, bstyle(panel.buttonStyle)))
         ));
       }
-      return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container] }, `painel de ticket ${panel.id}`);
+      return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container], ...(attachments.length ? { files: attachments, attachments: [] } : {}) }, `painel de ticket ${panel.id}`);
     }
 
     const select = new StringSelectMenuBuilder()
@@ -1236,7 +1248,7 @@ Os campos aparecem na mensagem pública do painel e também podem usar **{user}*
       select.addOptions(menuOption);
     }
     container.addActionRowComponents(new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(select));
-    return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container] }, `painel de ticket ${panel.id}`);
+    return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container], ...(attachments.length ? { files: attachments, attachments: [] } : {}) }, `painel de ticket ${panel.id}`);
   }
 
   publicTicketPanelEdit(guildId: string, panel: TicketPanel) {
