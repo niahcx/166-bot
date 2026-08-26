@@ -24,14 +24,14 @@ export class TwoFactorService {
       .addFields(
         { name: "Tempo restante", value: `${bar} **${remaining}s**`, inline: true }
       )
-      .setFooter({ text: "RAVE • Gerador de 2FA" })
+      .setFooter({ text: "166 Community • Gerador de 2FA" })
       .setTimestamp();
   }
 
   openModal(interaction: { showModal(m: ModalBuilder): Promise<unknown> }) {
-    const modal = new ModalBuilder().setCustomId("rave:modal-2fa").setTitle("Gerar Código 2FA");
+    const modal = new ModalBuilder().setCustomId("166:modal-2fa").setTitle("Gerar Código 2FA");
     const input = new TextInputBuilder()
-      .setCustomId("rave:2fa-secret")
+      .setCustomId("166:2fa-secret")
       .setLabel("Chave Secreta (Base32)")
       .setPlaceholder("Ex: JBSWY3DPEHPK3PXP")
       .setStyle(TextInputStyle.Short)
@@ -43,7 +43,7 @@ export class TwoFactorService {
   }
 
   async handleModal(interaction: ModalSubmitInteraction) {
-    const secret = interaction.fields.getTextInputValue("rave:2fa-secret").trim().toUpperCase().replace(/\s/g, "");
+    const secret = interaction.fields.getTextInputValue("166:2fa-secret").trim().toUpperCase().replace(/\s/g, "");
     try {
       const result = this.generateCode(secret);
       await interaction.reply({

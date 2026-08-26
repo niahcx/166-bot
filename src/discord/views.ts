@@ -718,7 +718,8 @@ Disponível: **${this.products.quantityLimit(product, field)}**`, guildId)], com
       MISTIC_PAY: ["Pix • MisticPay", "pix"],
       PURIN_CASH: ["Pix • Purin Cash", "payment"],
       IMAP_PIX: [`Pix • ${imapBank.label}`, imapBank.emojiSemantic],
-      MANUAL_PIX: ["Pix manual", "pix"]
+      MANUAL_PIX: ["Pix manual", "pix"],
+      VEXO_PAY: ["Pix • VexoPay", "payment"]
     };
     const buttons = methods.map((method) => this.button(guildId, `cart:pay:${method}`, labels[method][0], labels[method][1], ButtonStyle.Primary));
     const rows = [] as Array<ActionRowBuilder<ButtonBuilder>>;

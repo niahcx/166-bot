@@ -1,6 +1,6 @@
 export type EmojiTheme = "neon" | "solid" | "badge" | "mono";
 export type DeliveryType = "STOCK" | "ROLE" | "MANUAL";
-export type PaymentProviderName = "MERCADO_PAGO" | "EFI_BANK" | "STRIPE" | "MISTIC_PAY" | "PURIN_CASH" | "IMAP_PIX" | "MANUAL_PIX";
+export type PaymentProviderName = "MERCADO_PAGO" | "EFI_BANK" | "STRIPE" | "MISTIC_PAY" | "PURIN_CASH" | "IMAP_PIX" | "MANUAL_PIX" | "VEXO_PAY";
 export type ImapBank = "INTER" | "PICPAY" | "NUBANK";
 export type ImapEmailProvider = "GMAIL" | "OUTLOOK" | "YAHOO" | "CUSTOM";
 export type OrderStatus = "PENDING" | "PAID" | "DELIVERED" | "AWAITING_DELIVERY" | "CANCELED" | "EXPIRED" | "REFUNDED";
@@ -21,6 +21,8 @@ export interface AppConfig {
   autoInstallEmojis: boolean;
   emojiInstallLimit: number;
   logLevel: string;
+  firebaseDbUrl?: string;
+  verifyUrl?: string;
 }
 
 export interface BrandSettings {

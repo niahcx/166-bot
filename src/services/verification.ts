@@ -42,7 +42,7 @@ export interface VerificationSettings {
 }
 
 const DEFAULT_SETTINGS: VerificationSettings = {
-  title: "RAVE • Verificação",
+  title: "166 Community • Verificação",
   description: "Clique no botão abaixo para verificar sua conta do Discord e liberar seu acesso ao servidor.\n\nA verificação é rápida e segura.",
   color: 0x2ecc71,
   imageUrl: "",
@@ -138,7 +138,7 @@ export class VerificationService {
       .setColor(this.settings.color)
       .setTitle(this.settings.title)
       .setDescription(this.settings.description)
-      .setFooter({ text: "Powered by RAVE" })
+      .setFooter({ text: "Powered by 166 Community" })
       .setTimestamp();
     const attachments: AttachmentBuilder[] = [];
     if (this.settings.imageUrl) {

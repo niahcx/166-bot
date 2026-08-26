@@ -21,6 +21,8 @@ interface RuntimeFile {
   autoInstallEmojis?: unknown;
   emojiInstallLimit?: unknown;
   logLevel?: unknown;
+  firebaseDbUrl?: unknown;
+  verifyUrl?: unknown;
 }
 
 const text = (value: unknown): string => String(value ?? "").trim();
@@ -88,6 +90,8 @@ export function loadConfig(projectRoot = process.cwd()): AppConfig {
     databasePath,
     autoInstallEmojis: runtime.autoInstallEmojis !== false,
     emojiInstallLimit: Number.isFinite(rawLimit) && rawLimit >= 0 ? Math.trunc(rawLimit) : 0,
-    logLevel: text(runtime.logLevel) || "info"
+    logLevel: text(runtime.logLevel) || "info",
+    firebaseDbUrl: text(runtime.firebaseDbUrl) || undefined,
+    verifyUrl: text(runtime.verifyUrl) || undefined
   };
 }
