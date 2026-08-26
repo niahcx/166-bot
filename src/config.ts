@@ -84,8 +84,8 @@ export function loadConfig(projectRoot = process.cwd()): AppConfig {
 
   return {
     botToken,
-    clientId: DISCORD_ID.test(text(runtime.clientId)) ? text(runtime.clientId) : undefined,
-    guildId: DISCORD_ID.test(text(runtime.guildId)) ? text(runtime.guildId) : undefined,
+    clientId: text(runtime.clientId) || text(process.env.CLIENT_ID) || undefined,
+    guildId: text(runtime.guildId) || text(process.env.GUILD_ID) || undefined,
     ownerIds,
     databasePath,
     autoInstallEmojis: runtime.autoInstallEmojis !== false,
