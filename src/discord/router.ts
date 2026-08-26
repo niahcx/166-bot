@@ -3053,9 +3053,9 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
       return;
     }
     await i.deferReply({ flags: MessageFlags.Ephemeral });
-    await this.resetTicketSelect(i, panelId);
+    await this.resetTicketSelect(i, panelId).catch(() => undefined);
     const channel = await this.tickets.open(i.guild!, i.member as GuildMember, panelId, optionId, option.name);
-    await i.editReply(`Ticket criado: ${channel}`);
+    await i.editReply(`✅ Ticket criado: ${channel}`).catch(() => undefined);
   }
 
   private async resetTicketSelect(i: ButtonInteraction | StringSelectMenuInteraction, panelId: string): Promise<void> {
