@@ -281,13 +281,13 @@ export class TicketService {
     const panel = this.getPanel(panelId, guild.id);
     const option = panel.options.find((item) => item.id === optionId && item.active);
     if (!option) throw new Error("Esta opção de atendimento está indisponível.");
-    const openForOption = Object.values(this.db.state.tickets)
-      .filter((ticket) => ticket.guildId === guild.id && ticket.ownerId === member.id && ticket.optionId === option.id && ticket.status === "OPEN");
-    if (openForOption.length >= option.maxOpenTicketsPerUser) {
-      const current = openForOption[0];
+    const openForMember = Object.values(this.db.state.tickets)
+      .filter((ticket) => ticket.guildId === guild.id && ticket.ownerId === member.id && ticket.status === "OPEN");
+    if (openForMember.length >= 1) {
+      const current = openForMember[0];
       const channel = current ? await guild.channels.fetch(current.channelId).catch(() => undefined) : undefined;
       const location = channel?.isTextBased() ? `: <#${current!.channelId}>` : ".";
-      throw new Error(`Você atingiu o limite de ${option.maxOpenTicketsPerUser} ticket(s) aberto(s) para esta opção${location}`);
+      throw new Error(`Você já possui um ticket aberto${location}`);
     }
 
     const purchases = this.userPurchases(guild.id, member.id);
@@ -553,16 +553,42 @@ export class TicketService {
     return ticket;
   }
 
-  async addMember(ticketId: string, userId: string, actorId: string) {
-    const ticket = this.getTicket(ticketId); const channel = await this.client.channels.fetch(ticket.channelId); if (!(channel instanceof TextChannel)) throw new Error("Canal não encontrado.");
-    await channel.permissionOverwrites.edit(userId, { ViewChannel: true, SendMessages: true, ReadMessageHistory: true });
-    this.db.audit(actorId, "TICKET_MEMBER_ADD", "ticket", ticketId, { userId }); this.db.save(); await this.log(ticket, "Membro adicionado", `<@${userId}> foi adicionado por <@${actorId}>.`, 0x3b82f6);
+  private async resolveGuildMember(guild: Guild, input: string): Promise<GuildMember | null> {
+    const mentionMatch = input.match(/^<@!?(\d+)>$/);
+    const rawId = mentionMatch ? mentionMatch[1] : input.replace(/\D/g, "");
+    if (rawId && /^\d{17,20}$/.test(rawId)) {
+      const member = await guild.members.fetch(rawId).catch(() => null);
+      if (member) return member;
+    }
+    const query = input.replace(/<|@|!|>/g, "").trim().toLowerCase();
+    if (query.length < 2) return null;
+    const members = await guild.members.fetch({ query, limit: 5 }).catch(() => null);
+    return members?.first() ?? null;
   }
 
-  async removeMember(ticketId: string, userId: string, actorId: string) {
-    const ticket = this.getTicket(ticketId); if (userId === ticket.ownerId) throw new Error("O dono do ticket não pode ser removido.");
-    const channel = await this.client.channels.fetch(ticket.channelId); if (!(channel instanceof TextChannel)) throw new Error("Canal não encontrado.");
-    await channel.permissionOverwrites.delete(userId); this.db.audit(actorId, "TICKET_MEMBER_REMOVE", "ticket", ticketId, { userId }); this.db.save(); await this.log(ticket, "Membro removido", `<@${userId}> foi removido por <@${actorId}>.`, 0xf59e0b);
+  async addMember(ticketId: string, userInput: string, actorId: string) {
+    const ticket = this.getTicket(ticketId);
+    const channel = await this.client.channels.fetch(ticket.channelId);
+    if (!(channel instanceof TextChannel)) throw new Error("Canal não encontrado.");
+    const resolved = await this.resolveGuildMember(channel.guild, userInput);
+    if (!resolved) throw new Error("Não foi possível encontrar este usuário. Envie o ID ou menção (@usuario).");
+    await channel.permissionOverwrites.edit(resolved.id, { ViewChannel: true, SendMessages: true, ReadMessageHistory: true });
+    this.db.audit(actorId, "TICKET_MEMBER_ADD", "ticket", ticketId, { userId: resolved.id });
+    this.db.save();
+    await this.log(ticket, "Membro adicionado", `<@${resolved.id}> foi adicionado por <@${actorId}>.`, 0x3b82f6);
+  }
+
+  async removeMember(ticketId: string, userInput: string, actorId: string) {
+    const ticket = this.getTicket(ticketId);
+    const channel = await this.client.channels.fetch(ticket.channelId);
+    if (!(channel instanceof TextChannel)) throw new Error("Canal não encontrado.");
+    const resolved = await this.resolveGuildMember(channel.guild, userInput);
+    if (!resolved) throw new Error("Não foi possível encontrar este usuário.");
+    if (resolved.id === ticket.ownerId) throw new Error("O dono do ticket não pode ser removido.");
+    await channel.permissionOverwrites.delete(resolved.id);
+    this.db.audit(actorId, "TICKET_MEMBER_REMOVE", "ticket", ticketId, { userId: resolved.id });
+    this.db.save();
+    await this.log(ticket, "Membro removido", `<@${resolved.id}> foi removido por <@${actorId}>.`, 0xf59e0b);
   }
 
   async rename(ticketId: string, name: string, actorId: string) {
