@@ -2575,7 +2575,7 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
       return;
     }
     if (id === "modal:checkout") throw new Error("Este fluxo antigo foi removido. Use o painel individual do produto.");
-    if (id.startsWith("modal:ticket:open:")) { const [, , , panelId, optionId] = id.split(":"); await i.deferReply({ flags: MessageFlags.Ephemeral }); const channel = await this.tickets.open(i.guild!, i.member as GuildMember, panelId!, optionId!, i.fields.getTextInputValue("subject")); await i.editReply(`Ticket criado: ${channel}`); return; }
+    if (id.startsWith("modal:ticket:open:")) { const [, , , panelId, optionId] = id.split(":"); let ch: import("discord.js").TextChannel | undefined; try { await i.deferReply({ flags: MessageFlags.Ephemeral }); } catch { return; } try { ch = await this.tickets.open(i.guild!, i.member as GuildMember, panelId!, optionId!, i.fields.getTextInputValue("subject")); } catch (err) { try { await i.editReply({ content: `❌ Erro: ${String(err).slice(0, 1800)}` }); } catch { /* ignore */ } return; } try { await i.editReply(`✅ Ticket criado: ${ch}`); } catch { /* ignore */ } return; }
     if (id.startsWith("modal:ticket:add:")) { const ticketId = id.split(":")[3]!; await this.tickets.addMember(ticketId, i.fields.getTextInputValue("user").replace(/\D/g, ""), i.user.id); return i.reply({ content: "Usuário adicionado.", flags: MessageFlags.Ephemeral }); }
     if (id.startsWith("modal:ticket:remove:")) { const ticketId = id.split(":")[3]!; await this.tickets.removeMember(ticketId, i.fields.getTextInputValue("user").replace(/\D/g, ""), i.user.id); return i.reply({ content: "Usuário removido.", flags: MessageFlags.Ephemeral }); }
     if (id.startsWith("modal:ticket:rename:")) { const ticketId = id.split(":")[3]!; await this.tickets.rename(ticketId, i.fields.getTextInputValue("name"), i.user.id); return i.reply({ content: "Canal renomeado.", flags: MessageFlags.Ephemeral }); }
@@ -3049,13 +3049,24 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
     if (!option) throw new Error("Opção de ticket inválida.");
     if (option.askSubject) {
       await i.showModal(modal(`modal:ticket:open:${panelId}:${optionId}`, "Abrir atendimento", [input("subject", "Resumo do assunto", "", TextInputStyle.Paragraph, true, 1000)]));
-      await this.resetTicketSelect(i, panelId);
+      await this.resetTicketSelect(i, panelId).catch(() => undefined);
       return;
     }
-    await i.deferReply({ flags: MessageFlags.Ephemeral });
+    let channel: import("discord.js").TextChannel;
+    try {
+      await i.deferReply({ flags: MessageFlags.Ephemeral });
+    } catch {
+      return;
+    }
     await this.resetTicketSelect(i, panelId).catch(() => undefined);
-    const channel = await this.tickets.open(i.guild!, i.member as GuildMember, panelId, optionId, option.name);
-    await i.editReply(`✅ Ticket criado: ${channel}`).catch(() => undefined);
+    try {
+      channel = await this.tickets.open(i.guild!, i.member as GuildMember, panelId, optionId, option.name);
+    } catch (openErr) {
+      this.logger.error("Erro ao abrir ticket.", { error: String(openErr) });
+      try { await i.editReply({ content: `❌ Erro ao abrir ticket: ${String(openErr).slice(0, 1800)}` }); } catch { /* ignore */ }
+      return;
+    }
+    try { await i.editReply(`✅ Ticket criado: ${channel}`); } catch { /* ignore */ }
   }
 
   private async resetTicketSelect(i: ButtonInteraction | StringSelectMenuInteraction, panelId: string): Promise<void> {

@@ -1255,7 +1255,10 @@ Os campos aparecem na mensagem pública do painel e também podem usar **{user}*
         .setLabel(truncate(option.name, 100))
         .setDescription(truncate(option.description || "Abrir atendimento", 100))
         .setValue(option.id);
-      if (option.emojiSemantic.trim()) menuOption.setEmoji(this.emojis.component(option.emojiSemantic, guildId));
+      if (option.emojiSemantic.trim()) {
+        const emoji = this.emojis.component(option.emojiSemantic, guildId);
+        if (typeof emoji === "object" && emoji && "id" in emoji && emoji.id) menuOption.setEmoji(emoji);
+      }
       select.addOptions(menuOption);
     }
     container.addActionRowComponents(new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(select));
