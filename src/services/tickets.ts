@@ -20,7 +20,6 @@ import type { Logger } from "../core/logger.js";
 import { channelSafe, colorNumber, formatMoney, makeId, nowIso, truncate } from "../core/utils.js";
 import type { ButtonStyleName, Order, TicketOption, TicketPanel, TicketPanelField, TicketRecord } from "../types.js";
 import type { EmojiManager } from "../emojis/manager.js";
-import type { APIMessageComponentEmoji } from "discord-api-types/v10";
 
 const style = (name: ButtonStyleName) => ({ PRIMARY: ButtonStyle.Primary, SECONDARY: ButtonStyle.Secondary, SUCCESS: ButtonStyle.Success, DANGER: ButtonStyle.Danger }[name]);
 const html = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -226,15 +225,6 @@ export class TicketService {
     this.db.save();
   }
 
-  private safeEmoji(semantic: string, gid: string): APIMessageComponentEmoji | undefined {
-    try {
-      const result = this.emojis.component(semantic, gid);
-      if (typeof result === "string") return undefined;
-      if (result && typeof result === "object" && result.id) return result as APIMessageComponentEmoji;
-      return undefined;
-    } catch { return undefined; }
-  }
-
   controls(ticket: TicketRecord): ActionRowBuilder<ButtonBuilder>[] {
     const gid = ticket.guildId;
     if (ticket.status === "OPEN") return [
@@ -339,8 +329,9 @@ export class TicketService {
 
     const replace = (value: string) => value.replaceAll("{user}", `<@${member.id}>`).replaceAll("{subject}", subject || option.name);
     const staffMention = roles.length > 0 ? roles.map((id) => `<@&${id}>`).join(" ") : "";
+    const panelColor = Number.isFinite(colorNumber(panel.color)) ? colorNumber(panel.color) : 0x5865F2;
     const embed = new EmbedBuilder()
-      .setColor(colorNumber(panel.color))
+      .setColor(panelColor)
       .setTitle(`Atendimento - ${option.openingTitle}`)
       .setDescription(replace(option.openingDescription))
       .addFields(
@@ -351,15 +342,18 @@ export class TicketService {
       )
       .setTimestamp();
     if (panel.footer) embed.setFooter({ text: truncate(panel.footer, 2048) });
-    if (panel.imageUrl) embed.setImage(panel.imageUrl);
-    if (panel.thumbnailUrl) embed.setThumbnail(panel.thumbnailUrl);
+    if (panel.imageUrl && panel.imageUrl.startsWith("http")) embed.setImage(panel.imageUrl);
+    if (panel.thumbnailUrl && panel.thumbnailUrl.startsWith("http")) embed.setThumbnail(panel.thumbnailUrl);
 
-    await channel.send({
-      content: [staffMention, `<@${member.id}>`].filter(Boolean).join(" "),
-      embeds: [embed],
-      components: this.controls(ticket),
-      allowedMentions: { users: [member.id], roles: roles }
-    });
+    try {
+      await channel.send({
+        content: [staffMention, `<@${member.id}>`].filter(Boolean).join(" ") || undefined,
+        embeds: [embed],
+        components: this.controls(ticket)
+      });
+    } catch (err) {
+      this.logger.error("Falha ao enviar painel staff no ticket.", { ticketId: ticket.id, error: String(err) });
+    }
 
     const memberPanel = new EmbedBuilder()
       .setColor(0x5865F2)
@@ -371,28 +365,35 @@ export class TicketService {
       )
       .setFooter({ text: "166 Community • Atendimento" })
       .setTimestamp();
-    await channel.send({
-      embeds: [memberPanel],
-      components: [
-        new ActionRowBuilder<ButtonBuilder>().addComponents(
-          new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger),
-          new ButtonBuilder().setCustomId(`ticket:member-status:${ticket.id}`).setLabel("Ver status").setStyle(ButtonStyle.Secondary)
-        )
-      ],
-      allowedMentions: { users: [] }
-    });
+    try {
+      await channel.send({
+        embeds: [memberPanel],
+        components: [
+          new ActionRowBuilder<ButtonBuilder>().addComponents(
+            new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger),
+            new ButtonBuilder().setCustomId(`ticket:member-status:${ticket.id}`).setLabel("Ver status").setStyle(ButtonStyle.Secondary)
+          )
+        ]
+      });
+    } catch (err) {
+      this.logger.error("Falha ao enviar painel membro no ticket.", { ticketId: ticket.id, error: String(err) });
+    }
 
     if (needsPurchaseChoice) {
-      const gate = await channel.send({
-        embeds: [new EmbedBuilder()
-          .setColor(colorNumber(panel.color))
-          .setTitle("Este atendimento é sobre alguma das suas compras?")
-          .setDescription("Selecione uma compra registrada abaixo ou informe que o atendimento é sobre outro assunto.\n\nEnquanto esta etapa não for respondida, o envio de mensagens ficará bloqueado.")
-          .setFooter({ text: "166 Community • Identificação automática do atendimento" })],
-        components: this.purchaseGateComponents(ticket, purchases)
-      });
-      ticket.gateMessageId = gate.id;
-      this.db.save();
+      try {
+        const gate = await channel.send({
+          embeds: [new EmbedBuilder()
+            .setColor(panelColor)
+            .setTitle("Este atendimento é sobre alguma das suas compras?")
+            .setDescription("Selecione uma compra registrada abaixo ou informe que o atendimento é sobre outro assunto.\n\nEnquanto esta etapa não for respondida, o envio de mensagens ficará bloqueado.")
+            .setFooter({ text: "166 Community • Identificação automática do atendimento" })],
+          components: this.purchaseGateComponents(ticket, purchases)
+        });
+        ticket.gateMessageId = gate.id;
+        this.db.save();
+      } catch (err) {
+        this.logger.error("Falha ao enviar purchase gate no ticket.", { ticketId: ticket.id, error: String(err) });
+      }
     }
 
     await this.log(ticket, "Ticket aberto", `Aberto por <@${member.id}> usando **${panel.name} → ${option.name}**.`, 0x22c55e);
