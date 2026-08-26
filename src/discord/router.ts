@@ -590,10 +590,8 @@ Canais configurados como exceção serão ignorados. Esta ação será registrad
       return i.showModal(modal(`modal:product:create:${selectedDelivery}`, selectedDelivery === "STOCK" ? "Produto automático" : "Produto manual", [
         input("name", "Nome do produto", "", TextInputStyle.Short, true, 100),
         input("description", "Descrição do produto", "", TextInputStyle.Paragraph, true, 4000),
-        input("field_name", "Nome da primeira opção", "Opção principal", TextInputStyle.Short, true, 100),
+        input("field_name", "Nome da opção", "Opção principal", TextInputStyle.Short, true, 100),
         input("price", "Preço (ex: 9,90)", "", TextInputStyle.Short, true, 20, "9,90"),
-        input("image", "URL da imagem do produto (opcional)", "", TextInputStyle.Short, false, 500, "https://..."),
-        input("banner", "URL do banner (opcional)", "", TextInputStyle.Short, false, 500, "https://..."),
         input("color", "Cor hexadecimal (opcional)", "#3155ff", TextInputStyle.Short, false, 7)
       ]));
     }
@@ -1882,8 +1880,8 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
         emojiSemantic: automatic ? "delivery" : "products",
         deliveryType,
         buttonEmoji: "cart",
-        imageUrl: i.fields.getTextInputValue("image").trim(),
-        bannerUrl: i.fields.getTextInputValue("banner").trim(),
+        imageUrl: "",
+        bannerUrl: "",
         color: normalizeColor(i.fields.getTextInputValue("color")) || this.db.brand(gid).color,
         deliveryMessage: automatic ? "Entrega automática após a confirmação do pagamento." : "A equipe realizará a entrega manualmente neste canal.",
         fields: [{

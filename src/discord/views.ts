@@ -580,7 +580,16 @@ Vendido: **${sold}**`;
     const publicPayload = this.publicProduct(guildId, product);
     const container = new ContainerBuilder().setAccentColor(colorNumber(product.color));
 
-    if (product.imageUrl && /^https?:\/\//i.test(product.imageUrl)) {
+    const attachments: AttachmentBuilder[] = [];
+    if (isLocalImage(product.imageUrl)) {
+      attachments.push(new AttachmentBuilder(localImagePath(product.imageUrl), { name: product.imageUrl }));
+      container.addMediaGalleryComponents(
+        new MediaGalleryBuilder().addItems(
+          new MediaGalleryItemBuilder().setURL(localToAttachmentUrl(product.imageUrl)).setDescription(truncate(product.name, 1000))
+        )
+      );
+      container.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
+    } else if (product.imageUrl && /^https?:\/\//i.test(product.imageUrl)) {
       container.addMediaGalleryComponents(
         new MediaGalleryBuilder().addItems(
           new MediaGalleryItemBuilder().setURL(product.imageUrl).setDescription(truncate(product.name, 1000))
@@ -632,7 +641,16 @@ Vendido: **${sold}**`;
       );
     }
 
-    if (/^https?:\/\//i.test(product.bannerUrl)) {
+    if (isLocalImage(product.bannerUrl)) {
+      if (!attachments.find((a) => a.name === product.bannerUrl)) {
+        attachments.push(new AttachmentBuilder(localImagePath(product.bannerUrl), { name: product.bannerUrl }));
+      }
+      container.addMediaGalleryComponents(
+        new MediaGalleryBuilder().addItems(
+          new MediaGalleryItemBuilder().setURL(localToAttachmentUrl(product.bannerUrl)).setDescription(truncate(product.name, 1000))
+        )
+      );
+    } else if (/^https?:\/\//i.test(product.bannerUrl)) {
       container.addMediaGalleryComponents(
         new MediaGalleryBuilder().addItems(
           new MediaGalleryItemBuilder().setURL(product.bannerUrl).setDescription(truncate(product.name, 1000))
@@ -643,7 +661,7 @@ Vendido: **${sold}**`;
     container.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
     for (const row of publicPayload.components) container.addActionRowComponents(row);
 
-    return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container] }, `produto publicado ${product.id}`);
+    return checkedDiscordPayload({ flags: MessageFlags.IsComponentsV2 as const, components: [container], ...(attachments.length ? { files: attachments, attachments: [] } : {}) }, `produto publicado ${product.id}`);
   }
 
   publishedProductEdit(guildId: string, product: Product) {
