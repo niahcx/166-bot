@@ -1,0 +1,25 @@
+{
+  "CRT_f1523f36cfa541": {
+    "id": "CRT_f1523f36cfa541",
+    "guildId": "1539674666405331096",
+    "userId": "1538865489529409688",
+    "channelId": "1540339070608343081",
+    "messageId": "1540339073456144526",
+    "sourceChannelId": "1540323910602719262",
+    "sourceMessageId": "1540338302048010291",
+    "items": [
+      {
+        "productId": "PRD_186e5ae553ea42",
+        "fieldId": "FLD_e55afd9d458647",
+        "quantity": 1
+      }
+    ],
+    "couponCode": "",
+    "selectedProvider": "",
+    "status": "CANCELED",
+    "orderId": "",
+    "createdAt": "2026-08-21T12:37:19.394Z",
+    "updatedAt": "2026-08-21T12:37:33.647Z",
+    "expiresAt": "2026-08-22T12:37:19.394Z"
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "AUD_f0a8c25d3a384b",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "BOT_MESSAGE_PUBLISH",
+    "targetType": "message_template",
+    "targetId": "MSG_71c6b8bc0cf448",
+    "details": {
+      "guildId": "1539674666405331096",
+      "channelId": "1540323907230244965",
+      "messageId": "1540342754004045886"
+    },
+    "createdAt": "2026-08-21T12:51:58.193Z"
+  },
+  {
+    "id": "AUD_6caa5ce575bc4c",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "BOT_MESSAGE_CREATE",
+    "targetType": "message_template",
+    "targetId": "MSG_71c6b8bc0cf448",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "Codigo 2FA - Como fazer?"
+    },
+    "createdAt": "2026-08-21T12:51:44.507Z"
+  },
+  {
+    "id": "AUD_976d8ab1c85e47",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "GHOST_STOCK_SET",
+    "targetType": "product",
+    "targetId": "PRD_08b0ef2b04144b",
+    "details": {
+      "guildId": "1539674666405331096",
+      "fieldId": "FLD_41a565d758284a",
+      "quantity": 1
+    },
+    "createdAt": "2026-08-21T12:39:57.325Z"
+  },
+  {
+    "id": "AUD_5ef0ba51ef6a4a",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "STOCK_ADD",
+    "targetType": "product",
+    "targetId": "PRD_08b0ef2b04144b",
+    "details": {
+      "guildId": "1539674666405331096",
+      "fieldId": "FLD_41a565d758284a",
+      "added": 1
+    },
+    "createdAt": "2026-08-21T12:39:44.026Z"
+  },
+  {
+    "id": "AUD_098192be845244",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "PRODUCT_CREATE",
+    "targetType": "product",
+    "targetId": "PRD_08b0ef2b04144b",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "RockStar 100% (cópia)"
+    },
+    "createdAt": "2026-08-21T12:38:59.642Z"
+  },
+  {
+    "id": "AUD_31e8e3344cea45",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "PRODUCT_UPDATE",
+    "targetType": "product",
+    "targetId": "PRD_186e5ae553ea42",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "RockStar 100%"
+    },
+    "createdAt": "2026-08-21T12:36:40.880Z"
+  },
+  {
+    "id": "AUD_1d1422ca76ba47",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "PRODUCT_UPDATE",
+    "targetType": "product",
+    "targetId": "PRD_186e5ae553ea42",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "RockStar 100%"
+    },
+    "createdAt": "2026-08-21T12:33:51.219Z"
+  },
+  {
+    "id": "AUD_15a851f5a0e946",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "PRODUCT_UPDATE",
+    "targetType": "product",
+    "targetId": "PRD_186e5ae553ea42",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "RockStar 100%"
+    },
+    "createdAt": "2026-08-21T12:33:26.834Z"
+  },
+  {
+    "id": "AUD_725025d25f4942",
+    "guildId": "1539674666405331096",
+    "actorId": "1521626849958957177",
+    "action": "PRODUCT_CREATE",
+    "targetType": "product",
+    "targetId": "PRD_186e5ae553ea42",
+    "details": {
+      "guildId": "1539674666405331096",
+      "name": "RockStar 100%"
+    },
+    "createdAt": "2026-08-21T12:26:19.124Z"
+  }
+]

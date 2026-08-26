@@ -1,0 +1,61 @@
+{
+  "guildId": "1539674666405331096",
+  "adminRoleIds": [],
+  "logChannelId": "",
+  "salesChannelId": "",
+  "ticketCategoryId": "",
+  "closedTicketCategoryId": "",
+  "archiveTicketCategoryId": "",
+  "purchaseCategoryId": "",
+  "ticketLogChannelId": "",
+  "staffRoleIds": [],
+  "customerRoleId": "",
+  "welcomeChannelId": "",
+  "goodbyeChannelId": "",
+  "autoRoleId": "",
+  "emojiTheme": "solid",
+  "emojiOverrides": {},
+  "stockRequest": {
+    "enabled": true,
+    "title": "Não encontrou o produto que procura?",
+    "description": "Nossa equipe pode verificar a disponibilidade para você.\n\nClique no botão abaixo e informe o item, a quantidade e os detalhes importantes.",
+    "color": "#3155ff",
+    "imageUrl": "",
+    "thumbnailUrl": "",
+    "footer": "PrimeBot • Pedidos de stock",
+    "buttonLabel": "Pedir Stock",
+    "buttonStyle": "PRIMARY",
+    "emojiSemantic": "stock_request",
+    "requestChannelId": "",
+    "notifyRoleIds": [],
+    "confirmationMessage": "Seu pedido de stock foi registrado. A equipe avisará quando houver disponibilidade."
+  },
+  "restockAnnouncements": {
+    "enabled": false,
+    "channelId": "",
+    "mentionRoleId": "",
+    "title": "Estoque atualizado",
+    "message": "Um produto acaba de receber novas unidades.",
+    "includeProductBanner": true
+  },
+  "emojiLibrary": {
+    "allowMembers": true,
+    "maxPerUser": 25
+  },
+  "permissions": {
+    "adminUserIds": [],
+    "adminRoleIds": [],
+    "authorizedUserIds": [],
+    "authorizedRoleIds": [],
+    "supportRoleIds": [],
+    "ticketRoleIds": [],
+    "paymentRoleIds": [],
+    "productRoleIds": [],
+    "adminCommandRoleIds": []
+  },
+  "locks": {
+    "ignoredChannelIds": [],
+    "speakingRoleIds": [],
+    "snapshots": {}
+  }
+}

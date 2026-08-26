@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 13,
+  "description": "Modelo completo do banco 166 Community por servidor.",
+  "credentials": "Credenciais privadas ficam em config/private-credentials.json.",
+  "writeStrategy": "JSON formatado, arquivo temporário e rename atômico"
+}

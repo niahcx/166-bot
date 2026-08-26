@@ -1,0 +1,7 @@
+node_modules/
+dist/
+storage/
+config/private-credentials.json
+Token.json
+*.log
+.env

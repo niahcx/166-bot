@@ -1,0 +1,5 @@
+DISPLAY_NAME=166 Community
+DESCRIPTION=Bot de vendas e atendimento para Discord
+MAIN=dist/index.js
+MEMORY=512
+VERSION=recommended

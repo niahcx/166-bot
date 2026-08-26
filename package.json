@@ -1,0 +1,38 @@
+{
+  "name": "166community-bot",
+  "version": "13.0.0",
+  "description": "166 Community bot profissional em TypeScript com Components V2, vendas, sete métodos PIX, tickets, restock, banco JSON e automações.",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "test:smoke": "node --import tsx scripts/smoke.ts",
+    "test:security": "node --import tsx scripts/security-flow.ts",
+    "test:payments": "node --import tsx scripts/payment-providers.ts",
+    "test:audit": "node scripts/source-audit.mjs"
+  },
+  "dependencies": {
+    "discord.js": "14.26.5",
+    "imapflow": "1.4.7",
+    "mailparser": "3.9.14",
+    "nanoid": "5.1.6",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@types/mailparser": "3.4.6",
+    "@types/node": "24.10.2",
+    "@types/qrcode": "1.5.6",
+    "tsx": "4.23.0",
+    "typescript": "7.0.2"
+  },
+  "overrides": {
+    "undici": "6.27.0"
+  }
+}

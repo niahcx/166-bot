@@ -1,0 +1,9 @@
+{
+  "clientId": "1542135942842679367",
+  "guildId": "1527383781344935966",
+  "ownerIds": ["1519516818551738409"],
+  "databasePath": "database",
+  "autoInstallEmojis": true,
+  "emojiInstallLimit": 0,
+  "logLevel": "info"
+}

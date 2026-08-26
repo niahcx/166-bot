@@ -1,0 +1,212 @@
+[
+  {
+    "id": "ERR_e310cdc4f93641",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540344171750101083",
+      "customId": "admin:payment:test-api",
+      "commandName": "",
+      "error": "Ative pelo menos um gateway de API para testar."
+    },
+    "createdAt": "2026-08-21T12:57:36.701Z"
+  },
+  {
+    "id": "ERR_700f0f51b79e4b",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540344114065711125",
+      "customId": "admin:payment:provider-select",
+      "commandName": "",
+      "error": "Configure e ative esse provedor antes de torná-lo padrão."
+    },
+    "createdAt": "2026-08-21T12:57:22.329Z"
+  },
+  {
+    "id": "ERR_06fae4a6ce0d47",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540344102648807454",
+      "customId": "admin:payment:provider-select",
+      "commandName": "",
+      "error": "Configure e ative esse provedor antes de torná-lo padrão."
+    },
+    "createdAt": "2026-08-21T12:57:19.572Z"
+  },
+  {
+    "id": "ERR_40468d2b08ae48",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540344035804323841",
+      "customId": "admin:payment:imap-test",
+      "commandName": "",
+      "error": "Configure a conta de e-mail e a senha de aplicativo do IMAP."
+    },
+    "createdAt": "2026-08-21T12:57:04.353Z"
+  },
+  {
+    "id": "ERR_72b0a3cf0fd944",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540343859299745892",
+      "customId": "admin:payment:test-api",
+      "commandName": "",
+      "error": "Ative pelo menos um gateway de API para testar."
+    },
+    "createdAt": "2026-08-21T12:56:21.698Z"
+  },
+  {
+    "id": "ERR_d8f4cb2087624b",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540343705020530830",
+      "customId": "",
+      "commandName": "painel",
+      "error": "Unknown interaction"
+    },
+    "createdAt": "2026-08-21T12:55:50.172Z"
+  },
+  {
+    "id": "ERR_a5be2170876c48",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540342961416441946",
+      "customId": "",
+      "commandName": "unlock",
+      "error": "Não existe snapshot anterior para este canal. O bot não alterará permissões personalizadas sem referência."
+    },
+    "createdAt": "2026-08-21T12:52:47.843Z"
+  },
+  {
+    "id": "ERR_68db4b6f0df741",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540342918949240892",
+      "customId": "",
+      "commandName": "unlock",
+      "error": "Não existe snapshot anterior para este canal. O bot não alterará permissões personalizadas sem referência."
+    },
+    "createdAt": "2026-08-21T12:52:37.335Z"
+  },
+  {
+    "id": "ERR_29ff3d02f03444",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540340403893698581",
+      "customId": "admin:payment:test-api",
+      "commandName": "",
+      "error": "Ative pelo menos um gateway de API para testar."
+    },
+    "createdAt": "2026-08-21T12:42:37.719Z"
+  },
+  {
+    "id": "ERR_1d32c8f4e7c34b",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540339873913765940",
+      "customId": "cart:payment-methods",
+      "commandName": "",
+      "error": "Nenhuma forma de pagamento está ativa. Avise a equipe do servidor."
+    },
+    "createdAt": "2026-08-21T12:40:31.369Z"
+  },
+  {
+    "id": "ERR_c7b8ea2be63f40",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540336199254806558",
+      "customId": "modal:product:create:MANUAL",
+      "commandName": "",
+      "error": "Valor monetário inválido."
+    },
+    "createdAt": "2026-08-21T12:25:55.278Z"
+  },
+  {
+    "id": "ERR_0f347b07082547",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540331674200449104",
+      "customId": "rave:enviar-channel",
+      "commandName": "",
+      "error": "Cannot properly serialize component type: undefined"
+    },
+    "createdAt": "2026-08-21T12:07:56.637Z"
+  },
+  {
+    "id": "ERR_72d97d5915c744",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540327504290652181",
+      "customId": "rave:enviar-channel",
+      "commandName": "",
+      "error": "Cannot properly serialize component type: undefined"
+    },
+    "createdAt": "2026-08-21T11:51:22.340Z"
+  },
+  {
+    "id": "ERR_fe3ee966847a41",
+    "guildId": "1539674666405331096",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1540324167079952454",
+      "customId": "rave:enviar-channel",
+      "commandName": "",
+      "error": "Unknown interaction"
+    },
+    "createdAt": "2026-08-21T11:38:09.709Z"
+  }
+]

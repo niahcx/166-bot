@@ -1,0 +1,10 @@
+{
+  "welcomeEnabled": false,
+  "welcomeMessage": "Bem-vindo(a), {user}! Agora somos {count} membros.",
+  "goodbyeEnabled": false,
+  "goodbyeMessage": "{user} saiu do servidor.",
+  "autoRoleEnabled": false,
+  "autoResponsesEnabled": false,
+  "autoResponses": [],
+  "channelSchedules": []
+}

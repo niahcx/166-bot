@@ -1,0 +1,1578 @@
+{
+  "discord:solid": {
+    "id": "1529158352297263205",
+    "name": "prime_discord",
+    "semantic": "discord",
+    "theme": "solid",
+    "sha256": "fd748a0d866b3be9c680163b0e8d2ae9ff23fa7ee097e854c5880f7091c90037",
+    "installedAt": "2026-07-22T13:07:35.452Z"
+  },
+  "blurple_nitro:solid": {
+    "id": "1529158355740786758",
+    "name": "prime_blurple_nitro",
+    "semantic": "blurple_nitro",
+    "theme": "solid",
+    "sha256": "c8afa6eb27e621b805eee476ae7ed121f4878d2f931c3a7c3d4425b6687830a5",
+    "installedAt": "2026-07-22T13:07:35.464Z"
+  },
+  "discordserverboost:solid": {
+    "id": "1529158359104884876",
+    "name": "prime_discordserverboost",
+    "semantic": "discordserverboost",
+    "theme": "solid",
+    "sha256": "ace6b57eb43fb0e52f2c56871dfb0ee6c58276857f597f664a96a9442e4ff988",
+    "installedAt": "2026-07-22T13:07:35.472Z"
+  },
+  "discordnitro:solid": {
+    "id": "1529158362241962154",
+    "name": "prime_discordnitro",
+    "semantic": "discordnitro",
+    "theme": "solid",
+    "sha256": "15805f6bc0f0730079efbfde9d1db653b7fca5cc40a25d3c8b438c19f6048988",
+    "installedAt": "2026-07-22T13:07:35.482Z"
+  },
+  "nitro_booster:solid": {
+    "id": "1529158365916430467",
+    "name": "prime_nitro_booster",
+    "semantic": "nitro_booster",
+    "theme": "solid",
+    "sha256": "c81a5fba7bdb2604718be7dc0170ae30c4d5399aa5df0e744b8dfbd790c75b8d",
+    "installedAt": "2026-07-22T13:07:35.492Z"
+  },
+  "blurple_boost_level_6:solid": {
+    "id": "1529158369980711045",
+    "name": "prime_blurple_boost_level_6",
+    "semantic": "blurple_boost_level_6",
+    "theme": "solid",
+    "sha256": "008470e99e2e5c1ed603d49bb7ea29fd3c2f8fd64b2ee29d81e1764635a81a7c",
+    "installedAt": "2026-07-22T13:07:35.499Z"
+  },
+  "extra_150969:solid": {
+    "id": "1529158374019829872",
+    "name": "prime_extra_150969",
+    "semantic": "extra_150969",
+    "theme": "solid",
+    "sha256": "1228b115dd2188ecf1d0d87c4f5909c16a8c277e8ede168b02bca58a6bcfca81",
+    "installedAt": "2026-07-22T13:07:35.503Z"
+  },
+  "alert:solid": {
+    "id": "1529158379375951984",
+    "name": "prime_alert",
+    "semantic": "alert",
+    "theme": "solid",
+    "sha256": "bf78733c22231e58f7c3e7ca4477a58fa935ab5a1a523d4919412020dfc4763b",
+    "installedAt": "2026-07-22T13:07:35.510Z"
+  },
+  "announcement:solid": {
+    "id": "1529158382894714883",
+    "name": "prime_announcement",
+    "semantic": "announcement",
+    "theme": "solid",
+    "sha256": "1a7eeb08b5a0c7b69c8974cdafe265c99ba2cf094cc2c0db9a40c55fd4555e9c",
+    "installedAt": "2026-07-22T13:07:35.515Z"
+  },
+  "announcement2:solid": {
+    "id": "1529158386304811078",
+    "name": "prime_announcement2",
+    "semantic": "announcement2",
+    "theme": "solid",
+    "sha256": "bf4d11e436b43d6dc07971c74019698cb9407f1e56de10a173a1ee6be91c6a84",
+    "installedAt": "2026-07-22T13:07:35.519Z"
+  },
+  "arrow:solid": {
+    "id": "1529158389928820816",
+    "name": "prime_arrow",
+    "semantic": "arrow",
+    "theme": "solid",
+    "sha256": "155afd408f7e8724e2f8f4d4c78fa1ba9f105cf96f50a6aaf1789efd28033d3d",
+    "installedAt": "2026-07-22T13:07:35.523Z"
+  },
+  "arrow2:solid": {
+    "id": "1529158393514692870",
+    "name": "prime_arrow2",
+    "semantic": "arrow2",
+    "theme": "solid",
+    "sha256": "8ec373af2804888862289aaf183959622c5558ed22a62093e8461e05385eee95",
+    "installedAt": "2026-07-22T13:07:35.527Z"
+  },
+  "arrow3:solid": {
+    "id": "1529158396803022981",
+    "name": "prime_arrow3",
+    "semantic": "arrow3",
+    "theme": "solid",
+    "sha256": "85ca45d3d813da58cf55a50ff581e5e5fdf38a31d05fa764ad1881f334a32014",
+    "installedAt": "2026-07-22T13:07:35.531Z"
+  },
+  "back:solid": {
+    "id": "1529158400246812693",
+    "name": "prime_back",
+    "semantic": "back",
+    "theme": "solid",
+    "sha256": "4edcdb4edfe28f7562e18473bccdd280dc80acf61fd2fcf45604d2668689f2c2",
+    "installedAt": "2026-07-22T13:07:35.534Z"
+  },
+  "bag:solid": {
+    "id": "1529158403308654735",
+    "name": "prime_bag",
+    "semantic": "bag",
+    "theme": "solid",
+    "sha256": "9f567afac294bc094c514e4336afebf6b8925dd35ea7902f33aa44dbc13f46bf",
+    "installedAt": "2026-07-22T13:07:35.537Z"
+  },
+  "ban:solid": {
+    "id": "1529158407095849120",
+    "name": "prime_ban",
+    "semantic": "ban",
+    "theme": "solid",
+    "sha256": "65c06c1c9c215ddf95c91262b9b3547fec8265777d6410b5c4e98841e8ef8560",
+    "installedAt": "2026-07-22T13:07:35.541Z"
+  },
+  "bank:solid": {
+    "id": "1529158410426253383",
+    "name": "prime_bank",
+    "semantic": "bank",
+    "theme": "solid",
+    "sha256": "5d6424a6ebee8337b340ea84b0870884846c6ff1a621a9681f0f52a301678d7f",
+    "installedAt": "2026-07-22T13:07:35.545Z"
+  },
+  "basket:solid": {
+    "id": "1529158415333593238",
+    "name": "prime_basket",
+    "semantic": "basket",
+    "theme": "solid",
+    "sha256": "f89f2fd9c27b8789d4e863b7f03357795f767d5b6c826d1e215bcd1b137cfac6",
+    "installedAt": "2026-07-22T13:07:35.548Z"
+  },
+  "blue:solid": {
+    "id": "1529158418676449453",
+    "name": "prime_blue",
+    "semantic": "blue",
+    "theme": "solid",
+    "sha256": "b48aec28994b7423f4a9b7e4d45f39c607f828eb84deebf5477720aa2e3b7b92",
+    "installedAt": "2026-07-22T13:07:35.552Z"
+  },
+  "boost:solid": {
+    "id": "1529158422107263027",
+    "name": "prime_boost",
+    "semantic": "boost",
+    "theme": "solid",
+    "sha256": "7eff1304cd925eb2d82036623aaeabbd634bb3bd853db4727108a0e7f86d7118",
+    "installedAt": "2026-07-22T13:07:35.557Z"
+  },
+  "bulb:solid": {
+    "id": "1529158426490437724",
+    "name": "prime_bulb",
+    "semantic": "bulb",
+    "theme": "solid",
+    "sha256": "e7b0bff3d6550b4307bd02f6e9556680c8826abeebb70592daa552543922a2c7",
+    "installedAt": "2026-07-22T13:07:35.560Z"
+  },
+  "calendar:solid": {
+    "id": "1529158429799612456",
+    "name": "prime_calendar",
+    "semantic": "calendar",
+    "theme": "solid",
+    "sha256": "d462a47946f72df2903695f002937c30f946012227ba4c5f1dbe6ee1a31640f6",
+    "installedAt": "2026-07-22T13:07:35.564Z"
+  },
+  "card:solid": {
+    "id": "1529158432601542799",
+    "name": "prime_card",
+    "semantic": "card",
+    "theme": "solid",
+    "sha256": "596e1639da888d7e549b398c7d939bf0c5ad9fbdc51313206efd228421c9c3d0",
+    "installedAt": "2026-07-22T13:07:35.568Z"
+  },
+  "cardbox:solid": {
+    "id": "1529158436435136662",
+    "name": "prime_cardbox",
+    "semantic": "cardbox",
+    "theme": "solid",
+    "sha256": "da8adfc3fb678e68fc3f19bbb8dc8335f9d212e18b4da070414798d331095acb",
+    "installedAt": "2026-07-22T13:07:35.572Z"
+  },
+  "cart:solid": {
+    "id": "1529158440138706994",
+    "name": "prime_cart",
+    "semantic": "cart",
+    "theme": "solid",
+    "sha256": "ba268087fb5f648f9ee007cb1db6b0afc44438d244b77a17cf78a1a6bfbb5638",
+    "installedAt": "2026-07-22T13:07:35.576Z"
+  },
+  "cast:solid": {
+    "id": "1529158443385225256",
+    "name": "prime_cast",
+    "semantic": "cast",
+    "theme": "solid",
+    "sha256": "6c7c34e54bc8c595bcae9e45059cc6e5f67b9fc2f7da4f9decc86354ebc2992b",
+    "installedAt": "2026-07-22T13:07:35.580Z"
+  },
+  "chart:solid": {
+    "id": "1529158446967033987",
+    "name": "prime_chart",
+    "semantic": "chart",
+    "theme": "solid",
+    "sha256": "2b9f20b6bc4c309392cf6aedda1274dac105c502d0df17776824f425d317fb5b",
+    "installedAt": "2026-07-22T13:07:35.584Z"
+  },
+  "chevron:solid": {
+    "id": "1529158450041454823",
+    "name": "prime_chevron",
+    "semantic": "chevron",
+    "theme": "solid",
+    "sha256": "47cccd3b2607a5d5c464ff0e526e63bbabf5e2b63d9c3988bbbec1bc397aea82",
+    "installedAt": "2026-07-22T13:07:35.587Z"
+  },
+  "chevron_arrow:solid": {
+    "id": "1529158453585645608",
+    "name": "prime_chevron_arrow",
+    "semantic": "chevron_arrow",
+    "theme": "solid",
+    "sha256": "c79153aa27ef4f48f9201755f80ce0e1e3d20a14f12adf36a6da8720fb3982d6",
+    "installedAt": "2026-07-22T13:07:35.592Z"
+  },
+  "clock:solid": {
+    "id": "1529158456911855637",
+    "name": "prime_clock",
+    "semantic": "clock",
+    "theme": "solid",
+    "sha256": "df603daf1969cfbe4d1a6e0f8b98a2eec1cbe0fcbd81439d93936e187030385e",
+    "installedAt": "2026-07-22T13:07:35.596Z"
+  },
+  "cloud:solid": {
+    "id": "1529158460363636928",
+    "name": "prime_cloud",
+    "semantic": "cloud",
+    "theme": "solid",
+    "sha256": "04133027b9015639ac12d54a1c95c8045bff7b8dd10765ff80e021d6436383e3",
+    "installedAt": "2026-07-22T13:07:35.599Z"
+  },
+  "coin:solid": {
+    "id": "1529158463903629482",
+    "name": "prime_coin",
+    "semantic": "coin",
+    "theme": "solid",
+    "sha256": "e1d90e9769817f603624426a944c318fb8d9865803176113a9c338234a0dfacf",
+    "installedAt": "2026-07-22T13:07:35.604Z"
+  },
+  "colors:solid": {
+    "id": "1529158466835320976",
+    "name": "prime_colors",
+    "semantic": "colors",
+    "theme": "solid",
+    "sha256": "b46a6b689e0c40ddaa2d31509c0979b79f15e16781eb8f7760527a07edf16868",
+    "installedAt": "2026-07-22T13:07:35.608Z"
+  },
+  "commands:solid": {
+    "id": "1529158470694080754",
+    "name": "prime_commands",
+    "semantic": "commands",
+    "theme": "solid",
+    "sha256": "7f8ef5474e7828b17835e4088792a723b6119a189a7f1cfa01d2d515660a665e",
+    "installedAt": "2026-07-22T13:07:35.612Z"
+  },
+  "config:solid": {
+    "id": "1529158474586521601",
+    "name": "prime_config",
+    "semantic": "config",
+    "theme": "solid",
+    "sha256": "831f6a773aa1b1165a6a1f38b9434938241ce22c5a778f4ad33b5750723d1697",
+    "installedAt": "2026-07-22T13:07:35.616Z"
+  },
+  "controller:solid": {
+    "id": "1529158478936019067",
+    "name": "prime_controller",
+    "semantic": "controller",
+    "theme": "solid",
+    "sha256": "7fc805eae58c465219a3a4346aa79328cf1dc453797d3670a36aabbb8740d5a4",
+    "installedAt": "2026-07-22T13:07:35.620Z"
+  },
+  "correct:solid": {
+    "id": "1529158482190798848",
+    "name": "prime_correct",
+    "semantic": "correct",
+    "theme": "solid",
+    "sha256": "cb3094809f6653f0a7b562c185e6e45b583edd7ab9f56f815bd4310db05b01fe",
+    "installedAt": "2026-07-22T13:07:35.625Z"
+  },
+  "coupon:solid": {
+    "id": "1529158485676130509",
+    "name": "prime_coupon",
+    "semantic": "coupon",
+    "theme": "solid",
+    "sha256": "dd88a22d38cfb7237f2e1fd79238a4ecf59d789f63acb41aa6144bb9d38b5bf5",
+    "installedAt": "2026-07-22T13:07:35.629Z"
+  },
+  "delete:solid": {
+    "id": "1529158489170120765",
+    "name": "prime_delete",
+    "semantic": "delete",
+    "theme": "solid",
+    "sha256": "06027285417ef11bf2a5685d7a9a249cbe09f2f3e372b9417068c02cba279d17",
+    "installedAt": "2026-07-22T13:07:35.633Z"
+  },
+  "deslike:solid": {
+    "id": "1529158492672495787",
+    "name": "prime_deslike",
+    "semantic": "deslike",
+    "theme": "solid",
+    "sha256": "9a5f687f46ac553ef07089879a4f00aecc4c9e16b56c69f1361cc971b623a751",
+    "installedAt": "2026-07-22T13:07:35.636Z"
+  },
+  "diamond:solid": {
+    "id": "1529158495788863598",
+    "name": "prime_diamond",
+    "semantic": "diamond",
+    "theme": "solid",
+    "sha256": "276657f25b7d480e3de979af7d8ca793998d987c70ccd8d6f56d3561d07eb3be",
+    "installedAt": "2026-07-22T13:07:35.641Z"
+  },
+  "dir:solid": {
+    "id": "1529158499014152283",
+    "name": "prime_dir",
+    "semantic": "dir",
+    "theme": "solid",
+    "sha256": "726d53918323313f1713f06c958514fecb895790e519e6c041f4b9751c344c3f",
+    "installedAt": "2026-07-22T13:07:35.646Z"
+  },
+  "dnd:solid": {
+    "id": "1529158503359447150",
+    "name": "prime_dnd",
+    "semantic": "dnd",
+    "theme": "solid",
+    "sha256": "21cd0beeedda9020f0ca78b46209a81adec9fa5da516a9714dbc83e637d444f9",
+    "installedAt": "2026-07-22T13:07:35.650Z"
+  },
+  "dollar:solid": {
+    "id": "1529158507155423262",
+    "name": "prime_dollar",
+    "semantic": "dollar",
+    "theme": "solid",
+    "sha256": "f2338d7ff19e4b966e1500fd2c50d09cd95e9818dfe0f385069222c4c4b85d92",
+    "installedAt": "2026-07-22T13:07:35.654Z"
+  },
+  "donation:solid": {
+    "id": "1529158510884028628",
+    "name": "prime_donation",
+    "semantic": "donation",
+    "theme": "solid",
+    "sha256": "2175c7d78770f9a5ce875fbe7cabd96347beaee239f8d2ee98465eb3a0f72ed1",
+    "installedAt": "2026-07-22T13:07:35.659Z"
+  },
+  "donation2:solid": {
+    "id": "1529158515443109968",
+    "name": "prime_donation2",
+    "semantic": "donation2",
+    "theme": "solid",
+    "sha256": "627a33908c70eb3f2d217e30d6c7ce43319564a23c6e508b63e5238d8f5f5103",
+    "installedAt": "2026-07-22T13:07:35.664Z"
+  },
+  "double_check:solid": {
+    "id": "1529158519767568619",
+    "name": "prime_double_check",
+    "semantic": "double_check",
+    "theme": "solid",
+    "sha256": "d31f1503d640573a5e7ced763ebfb8e812ea57b34039d407d2cbcd4e70ae4e40",
+    "installedAt": "2026-07-22T13:07:35.668Z"
+  },
+  "double_speech:solid": {
+    "id": "1529158525295530054",
+    "name": "prime_double_speech",
+    "semantic": "double_speech",
+    "theme": "solid",
+    "sha256": "1e48677a8927f1c1a6134e550a49f40aa487ed7c52e8afa4c68a7a876f8c730d",
+    "installedAt": "2026-07-22T13:07:35.673Z"
+  },
+  "early_developer:solid": {
+    "id": "1529158529934426162",
+    "name": "prime_early_developer",
+    "semantic": "early_developer",
+    "theme": "solid",
+    "sha256": "48cbbf15162cc5ae17adfbd478297d5d133feaf3a6bef887f896ccb5731087b4",
+    "installedAt": "2026-07-22T13:07:35.679Z"
+  },
+  "edit:solid": {
+    "id": "1529158533801574420",
+    "name": "prime_edit",
+    "semantic": "edit",
+    "theme": "solid",
+    "sha256": "a6f154c8877130a03ca15e3b3a558fcfb43bbc3fbdde9cf9ceaa17bbb34baf8a",
+    "installedAt": "2026-07-22T13:07:35.683Z"
+  },
+  "efi_bank:solid": {
+    "id": "1529158541670219906",
+    "name": "prime_efi_bank",
+    "semantic": "efi_bank",
+    "theme": "solid",
+    "sha256": "6a3c67e316b4ebe6f2fbecb664e90421d68abced39a242f35367b0f66a46ca47",
+    "installedAt": "2026-07-22T13:07:35.688Z"
+  },
+  "embed:solid": {
+    "id": "1529158545893752912",
+    "name": "prime_embed",
+    "semantic": "embed",
+    "theme": "solid",
+    "sha256": "dbc5de10ee65f3a9460a46fa15ea053df76d598c6737eafb6de32f0e3d3b9341",
+    "installedAt": "2026-07-22T13:07:35.692Z"
+  },
+  "fire:solid": {
+    "id": "1529158550268547333",
+    "name": "prime_fire",
+    "semantic": "fire",
+    "theme": "solid",
+    "sha256": "60ce36518b83a1cb3876d0a306089c8822a7a96d26cc7c546afd3c8566425567",
+    "installedAt": "2026-07-22T13:07:35.697Z"
+  },
+  "flag:solid": {
+    "id": "1529158555263828108",
+    "name": "prime_flag",
+    "semantic": "flag",
+    "theme": "solid",
+    "sha256": "72d05cfd1c25f1bdf1b3e55a7ca35006a2550d1f95a81edabaad25be20b775ec",
+    "installedAt": "2026-07-22T13:07:35.701Z"
+  },
+  "folder:solid": {
+    "id": "1529158559156408340",
+    "name": "prime_folder",
+    "semantic": "folder",
+    "theme": "solid",
+    "sha256": "edc6bd750642dc98bca57935c75a66dd3ef6259cf099ab0260c94f1efa9f2a49",
+    "installedAt": "2026-07-22T13:07:35.706Z"
+  },
+  "forbidden:solid": {
+    "id": "1529158562599800902",
+    "name": "prime_forbidden",
+    "semantic": "forbidden",
+    "theme": "solid",
+    "sha256": "b06ca479a56204dd7f2945d406a277780f67f39fa56762530ced8569740c66be",
+    "installedAt": "2026-07-22T13:07:35.710Z"
+  },
+  "ghost:solid": {
+    "id": "1529158566479401152",
+    "name": "prime_ghost",
+    "semantic": "ghost",
+    "theme": "solid",
+    "sha256": "fef93eaca3184742873a36cbb1488734ee321466b02cd2231170b21edb9cb449",
+    "installedAt": "2026-07-22T13:07:35.714Z"
+  },
+  "gift:solid": {
+    "id": "1529158570447470765",
+    "name": "prime_gift",
+    "semantic": "gift",
+    "theme": "solid",
+    "sha256": "1fb3aff9e6719de44a16d8276b9aa4b8b4e8cbd3eba4b5eaa10d08c6332b2534",
+    "installedAt": "2026-07-22T13:07:35.718Z"
+  },
+  "gift2:solid": {
+    "id": "1529158574708752434",
+    "name": "prime_gift2",
+    "semantic": "gift2",
+    "theme": "solid",
+    "sha256": "bcc97b5b97d155c28085b57a4f6f3a1a9ad165bea717c4377c1c168685fa3ca6",
+    "installedAt": "2026-07-22T13:07:35.724Z"
+  },
+  "git:solid": {
+    "id": "1529158579133874227",
+    "name": "prime_git",
+    "semantic": "git",
+    "theme": "solid",
+    "sha256": "92af12bee1f0adfb34f8d11442061e02f534af0fb4bc684ef022d25b7b0a1cc1",
+    "installedAt": "2026-07-22T13:07:35.727Z"
+  },
+  "github:solid": {
+    "id": "1529158583110074450",
+    "name": "prime_github",
+    "semantic": "github",
+    "theme": "solid",
+    "sha256": "4f5bb3b37940a8995545e3af489a9e6958441232b35e46c21bc13b9d7983f7a8",
+    "installedAt": "2026-07-22T13:07:35.732Z"
+  },
+  "giveaway:solid": {
+    "id": "1529158587270692984",
+    "name": "prime_giveaway",
+    "semantic": "giveaway",
+    "theme": "solid",
+    "sha256": "e2b0ec0b2917798ce62d6686f02b035352853264a8cc47209e2f9f0b7969f773",
+    "installedAt": "2026-07-22T13:07:35.737Z"
+  },
+  "gold:solid": {
+    "id": "1529158591490031787",
+    "name": "prime_gold",
+    "semantic": "gold",
+    "theme": "solid",
+    "sha256": "628ed3aa97a5756d7aee91201442b937b215811d3362a6a36f77672482f8c2ab",
+    "installedAt": "2026-07-22T13:07:35.742Z"
+  },
+  "gray:solid": {
+    "id": "1529158594694742058",
+    "name": "prime_gray",
+    "semantic": "gray",
+    "theme": "solid",
+    "sha256": "177fbd04d1a25d9810f36a1db87b33555bd5d87cdf7caa23770c16528198595c",
+    "installedAt": "2026-07-22T13:07:35.747Z"
+  },
+  "green:solid": {
+    "id": "1529158599085920308",
+    "name": "prime_green",
+    "semantic": "green",
+    "theme": "solid",
+    "sha256": "934aa02e3f6a2f05a52c2702bc64a395b6bac296e6638367eaab0d5ff1ad2f92",
+    "installedAt": "2026-07-22T13:07:35.751Z"
+  },
+  "group:solid": {
+    "id": "1529158603317969039",
+    "name": "prime_group",
+    "semantic": "group",
+    "theme": "solid",
+    "sha256": "3c7565917292ee7849c04296d141af66e7d1f87d93e531d9b0e8a349d33c6ce3",
+    "installedAt": "2026-07-22T13:07:35.756Z"
+  },
+  "hammer:solid": {
+    "id": "1529158607676113050",
+    "name": "prime_hammer",
+    "semantic": "hammer",
+    "theme": "solid",
+    "sha256": "eb54d44c176ab2468319685f11120bbf3d552bbaf0d9bf8f8d2f789fce27fbff",
+    "installedAt": "2026-07-22T13:07:35.761Z"
+  },
+  "headset:solid": {
+    "id": "1529158611899650069",
+    "name": "prime_headset",
+    "semantic": "headset",
+    "theme": "solid",
+    "sha256": "0336af03dd061a45775d4e694250fc9ba3ec71733faba35dcc2b4a977599b52f",
+    "installedAt": "2026-07-22T13:07:35.766Z"
+  },
+  "headset_muted:solid": {
+    "id": "1529158615204630720",
+    "name": "prime_headset_muted",
+    "semantic": "headset_muted",
+    "theme": "solid",
+    "sha256": "3345d816d6f25f7b0afcc4cbedb44ff257de8b89a96554e9e5b67497cddef1d2",
+    "installedAt": "2026-07-22T13:07:35.770Z"
+  },
+  "heart:solid": {
+    "id": "1529158618392432680",
+    "name": "prime_heart",
+    "semantic": "heart",
+    "theme": "solid",
+    "sha256": "fbc8ec9a0fb629e74b68e44cd7c46b503b4500f42c5d4fef7a9248318e023710",
+    "installedAt": "2026-07-22T13:07:35.775Z"
+  },
+  "heart2:solid": {
+    "id": "1529158621643149543",
+    "name": "prime_heart2",
+    "semantic": "heart2",
+    "theme": "solid",
+    "sha256": "d2a91dcc97ff3bc0b3edc1f429606f9a09a5eb00c479217510828057e3a68a06",
+    "installedAt": "2026-07-22T13:07:35.780Z"
+  },
+  "home:solid": {
+    "id": "1529158625095057458",
+    "name": "prime_home",
+    "semantic": "home",
+    "theme": "solid",
+    "sha256": "8f5dca402024d6d14eb4320a2f57a59e298b3e4969eca1eadc6d77d725dc52a1",
+    "installedAt": "2026-07-22T13:07:35.785Z"
+  },
+  "hrench2:solid": {
+    "id": "1529158628961943762",
+    "name": "prime_hrench2",
+    "semantic": "hrench2",
+    "theme": "solid",
+    "sha256": "f0c26f22d299f077ffe31010e1b8625c95068a896991d281b3a054e334c922cd",
+    "installedAt": "2026-07-22T13:07:35.790Z"
+  },
+  "idle:solid": {
+    "id": "1529158632237961396",
+    "name": "prime_idle",
+    "semantic": "idle",
+    "theme": "solid",
+    "sha256": "6d523ee50bd8f3d05a607b7ced8f5d1d37cd7a38020a84836f7b63f004e3f78a",
+    "installedAt": "2026-07-22T13:07:35.795Z"
+  },
+  "image:solid": {
+    "id": "1529158635270176798",
+    "name": "prime_image",
+    "semantic": "image",
+    "theme": "solid",
+    "sha256": "a2b2189ba9d10650603010cb9854bc17d42301ed41efd00eefb47180058303e8",
+    "installedAt": "2026-07-22T13:07:35.800Z"
+  },
+  "infinity:solid": {
+    "id": "1529158638797721692",
+    "name": "prime_infinity",
+    "semantic": "infinity",
+    "theme": "solid",
+    "sha256": "78983a82b7f1361d7e0c5aace92a5342633753e90dc9e8f11737bde16f4419a2",
+    "installedAt": "2026-07-22T13:07:35.805Z"
+  },
+  "information:solid": {
+    "id": "1529158642035720242",
+    "name": "prime_information",
+    "semantic": "information",
+    "theme": "solid",
+    "sha256": "2e27ba29e727829c8e5afaadf758c574af6d14aa70384ab1b575b594b87e5e16",
+    "installedAt": "2026-07-22T13:07:35.811Z"
+  },
+  "inter:solid": {
+    "id": "1529158645001228399",
+    "name": "prime_inter",
+    "semantic": "inter",
+    "theme": "solid",
+    "sha256": "f14c05d395080d2e48aece06ad023f3a5a57a0715a5ee4bc6558ccdc80320fee",
+    "installedAt": "2026-07-22T13:07:35.816Z"
+  },
+  "interrogation:solid": {
+    "id": "1529158648394158110",
+    "name": "prime_interrogation",
+    "semantic": "interrogation",
+    "theme": "solid",
+    "sha256": "f0c925794f75e0ab0e08ca88dbec91cad53aedc0a516f7c060384b0155382171",
+    "installedAt": "2026-07-22T13:07:35.821Z"
+  },
+  "javascript:solid": {
+    "id": "1529158651053604929",
+    "name": "prime_javascript",
+    "semantic": "javascript",
+    "theme": "solid",
+    "sha256": "aa561babd133a7021b18da00ac333f3ffe3d011ad036ea1c2f7f3e12546c6f94",
+    "installedAt": "2026-07-22T13:07:35.827Z"
+  },
+  "king:solid": {
+    "id": "1529158654643667046",
+    "name": "prime_king",
+    "semantic": "king",
+    "theme": "solid",
+    "sha256": "7d2e5defd1559e41368a4bfd58a75b7d6287b182aa84386240ff22f8e6c4382e",
+    "installedAt": "2026-07-22T13:07:35.832Z"
+  },
+  "leaf:solid": {
+    "id": "1529158658615672933",
+    "name": "prime_leaf",
+    "semantic": "leaf",
+    "theme": "solid",
+    "sha256": "d19c465e083fe9b084ef8512bfa900ea4edaf1da2b3dcf0d60237d0a0f136a9a",
+    "installedAt": "2026-07-22T13:07:35.836Z"
+  },
+  "less18:solid": {
+    "id": "1529158662075977740",
+    "name": "prime_less18",
+    "semantic": "less18",
+    "theme": "solid",
+    "sha256": "21601483df5395848f9d9adeb37dcdde7df4aed4d60e8a2a6c77dd6b0ca04b71",
+    "installedAt": "2026-07-22T13:07:35.841Z"
+  },
+  "light:solid": {
+    "id": "1529158665473622116",
+    "name": "prime_light",
+    "semantic": "light",
+    "theme": "solid",
+    "sha256": "a04f60e79a5ad14555121567737ddc1b38c548928075f5dec528776a827bc0ad",
+    "installedAt": "2026-07-22T13:07:35.846Z"
+  },
+  "light_on:solid": {
+    "id": "1529158668564566190",
+    "name": "prime_light_on",
+    "semantic": "light_on",
+    "theme": "solid",
+    "sha256": "8bd84c078e8bd1c2feece03cdcf5b2260615ed7dca966ee091d1595b8376544f",
+    "installedAt": "2026-07-22T13:07:35.851Z"
+  },
+  "like:solid": {
+    "id": "1529158671941238895",
+    "name": "prime_like",
+    "semantic": "like",
+    "theme": "solid",
+    "sha256": "85364c0287fb71bea21d4a3f31ab20ba2a40d6d564c350dc24d2f4a7c5b76a31",
+    "installedAt": "2026-07-22T13:07:35.856Z"
+  },
+  "link:solid": {
+    "id": "1529158676080754749",
+    "name": "prime_link",
+    "semantic": "link",
+    "theme": "solid",
+    "sha256": "5e4b6b241ce7bc0aa56cfcc4217977ba46a6479fb8376d7f51c169777013554a",
+    "installedAt": "2026-07-22T13:07:35.861Z"
+  },
+  "listening_music:solid": {
+    "id": "1529158679457431744",
+    "name": "prime_listening_music",
+    "semantic": "listening_music",
+    "theme": "solid",
+    "sha256": "7ca77afc9ac0f33f76f50af5a0af2f79aee981cf3dda4c7fffcd1e81ffde9a21",
+    "installedAt": "2026-07-22T13:07:35.866Z"
+  },
+  "litecoin:solid": {
+    "id": "1529158682930053321",
+    "name": "prime_litecoin",
+    "semantic": "litecoin",
+    "theme": "solid",
+    "sha256": "7d0d30025383155141bd7bd5760d1c758fba355d8c36af35e7325ce689d1116d",
+    "installedAt": "2026-07-22T13:07:35.871Z"
+  },
+  "location:solid": {
+    "id": "1529158686893936752",
+    "name": "prime_location",
+    "semantic": "location",
+    "theme": "solid",
+    "sha256": "0ea3f55e5a7832417ed4565be821b67512dd68e4e5889e0f0f86c36474789c5e",
+    "installedAt": "2026-07-22T13:07:35.876Z"
+  },
+  "lock:solid": {
+    "id": "1529158689909510238",
+    "name": "prime_lock",
+    "semantic": "lock",
+    "theme": "solid",
+    "sha256": "9b6bd9478b169afeb6d019f867c232ca824dfb754e819c50f8dfd6dcc0423ee9",
+    "installedAt": "2026-07-22T13:07:35.881Z"
+  },
+  "mail2:solid": {
+    "id": "1529158693529321473",
+    "name": "prime_mail2",
+    "semantic": "mail2",
+    "theme": "solid",
+    "sha256": "56de3da10ca632ebd7ef87308e2a6765bc876148d104b729211857cabd2cf26f",
+    "installedAt": "2026-07-22T13:07:35.887Z"
+  },
+  "member:solid": {
+    "id": "1529158697194885322",
+    "name": "prime_member",
+    "semantic": "member",
+    "theme": "solid",
+    "sha256": "75c5d60c2d729416434c507665620841e97d418658a80e4c0ccd296ab873157b",
+    "installedAt": "2026-07-22T13:07:35.892Z"
+  },
+  "members:solid": {
+    "id": "1529158701556957295",
+    "name": "prime_members",
+    "semantic": "members",
+    "theme": "solid",
+    "sha256": "b0fcfe1b6c6692589979e6d730236383add8c5572d783f57a79f8bff50026c3f",
+    "installedAt": "2026-07-22T13:07:35.898Z"
+  },
+  "men:solid": {
+    "id": "1529158705076113578",
+    "name": "prime_men",
+    "semantic": "men",
+    "theme": "solid",
+    "sha256": "6b6c34b147c5e457c693ce5c8dad3d1a5e31038ff6a3f91b4d3e3de119742da0",
+    "installedAt": "2026-07-22T13:07:35.903Z"
+  },
+  "mercado_pago:solid": {
+    "id": "1529158708293013574",
+    "name": "prime_mercado_pago",
+    "semantic": "mercado_pago",
+    "theme": "solid",
+    "sha256": "802b3e11475cd15ca1b3e50d420a74b86c447e224cb37ffd2d4704123dd46c61",
+    "installedAt": "2026-07-22T13:07:35.908Z"
+  },
+  "message:solid": {
+    "id": "1529158711476752424",
+    "name": "prime_message",
+    "semantic": "message",
+    "theme": "solid",
+    "sha256": "398d89bd5ee19f40474d00c3437503e8601220593be34e93632d38fadfb6043a",
+    "installedAt": "2026-07-22T13:07:35.914Z"
+  },
+  "microphone:solid": {
+    "id": "1529158714622345326",
+    "name": "prime_microphone",
+    "semantic": "microphone",
+    "theme": "solid",
+    "sha256": "a1032504b4b1d8b939187a27cb3b3c1d3b44f31edcc123020b1b59aa50cf929f",
+    "installedAt": "2026-07-22T13:07:35.919Z"
+  },
+  "microphone_muted:solid": {
+    "id": "1529158717751427144",
+    "name": "prime_microphone_muted",
+    "semantic": "microphone_muted",
+    "theme": "solid",
+    "sha256": "8066a291c71bb7e2d999793f9e3229a4b0210b322ac7e6c0c680c32ffaa3fbcd",
+    "installedAt": "2026-07-22T13:07:35.924Z"
+  },
+  "minus:solid": {
+    "id": "1529158721119326398",
+    "name": "prime_minus",
+    "semantic": "minus",
+    "theme": "solid",
+    "sha256": "8df6bf2d75fc6bc92e760a0e7c2799072ae15b729b4afe44693c3b62fbd254a6",
+    "installedAt": "2026-07-22T13:07:35.930Z"
+  },
+  "mobile:solid": {
+    "id": "1529158724520906875",
+    "name": "prime_mobile",
+    "semantic": "mobile",
+    "theme": "solid",
+    "sha256": "d544b643529aef86f264b93c4f28c35b3bcf8ab32abd52a5d1ea9c8061a9b1b1",
+    "installedAt": "2026-07-22T13:07:35.934Z"
+  },
+  "moon:solid": {
+    "id": "1529158729076048056",
+    "name": "prime_moon",
+    "semantic": "moon",
+    "theme": "solid",
+    "sha256": "7e8f296e6b8fbd585196d96a7a463c36f31e6e4684319ee38ff51270a5c8e2e4",
+    "installedAt": "2026-07-22T13:07:35.940Z"
+  },
+  "more18:solid": {
+    "id": "1529158732603461833",
+    "name": "prime_more18",
+    "semantic": "more18",
+    "theme": "solid",
+    "sha256": "e4e27c3e288c3b54ed883470dc3c0ab6ff10f57fb83e909c41f3f9f45e1723d9",
+    "installedAt": "2026-07-22T13:07:35.945Z"
+  },
+  "music:solid": {
+    "id": "1529158735933472891",
+    "name": "prime_music",
+    "semantic": "music",
+    "theme": "solid",
+    "sha256": "bc3c7d8c5e267c93699b4088f5b31a05cd6f211c612211ca451ffef844fbf2df",
+    "installedAt": "2026-07-22T13:07:35.951Z"
+  },
+  "nubank:solid": {
+    "id": "1529158739461017680",
+    "name": "prime_nubank",
+    "semantic": "nubank",
+    "theme": "solid",
+    "sha256": "fc64e1fe89f0646248b23946ebf81093f8e2d9ace870c0da4d9e3835fd7d33c2",
+    "installedAt": "2026-07-22T13:07:35.956Z"
+  },
+  "off:solid": {
+    "id": "1529158743030235416",
+    "name": "prime_off",
+    "semantic": "off",
+    "theme": "solid",
+    "sha256": "ab17f6660a26a8be2c50ef03bdbc2b68f2b4a52487cb2f87592a23cf77060d3c",
+    "installedAt": "2026-07-22T13:07:35.962Z"
+  },
+  "on:solid": {
+    "id": "1529158746150801489",
+    "name": "prime_on",
+    "semantic": "on",
+    "theme": "solid",
+    "sha256": "38577e73f92cf106748288d6b292832b6338a50a174bfd913fcde2b335f94bc1",
+    "installedAt": "2026-07-22T13:07:35.967Z"
+  },
+  "online:solid": {
+    "id": "1529158749472690226",
+    "name": "prime_online",
+    "semantic": "online",
+    "theme": "solid",
+    "sha256": "46cb1bf9d3eb903d9501f6711a0d3a0b4e47a442ea7ecbee315eff28e88085b2",
+    "installedAt": "2026-07-22T13:07:35.972Z"
+  },
+  "pagbank:solid": {
+    "id": "1529158752866013256",
+    "name": "prime_pagbank",
+    "semantic": "pagbank",
+    "theme": "solid",
+    "sha256": "5d730757cc12ca839ec3af5e9336e632344597efe5a1db7ae59eee4cce5bc40b",
+    "installedAt": "2026-07-22T13:07:35.977Z"
+  },
+  "paint:solid": {
+    "id": "1529158756158537759",
+    "name": "prime_paint",
+    "semantic": "paint",
+    "theme": "solid",
+    "sha256": "67b82099f512785765e34eb84e5f850a83ca92344e545c71ccd71e92d088cd89",
+    "installedAt": "2026-07-22T13:07:35.983Z"
+  },
+  "partner:solid": {
+    "id": "1529158759392215213",
+    "name": "prime_partner",
+    "semantic": "partner",
+    "theme": "solid",
+    "sha256": "45d9d0b0536023ebd03585fa80ec6e385c29b21dbcd5a6efa2eeacbbb877fac8",
+    "installedAt": "2026-07-22T13:07:35.988Z"
+  },
+  "pause:solid": {
+    "id": "1529158762940731594",
+    "name": "prime_pause",
+    "semantic": "pause",
+    "theme": "solid",
+    "sha256": "3246b24a5aa2b031c8869089c4b017add9c02b82fcaf0b496504a78c21fc3719",
+    "installedAt": "2026-07-22T13:07:35.994Z"
+  },
+  "php:solid": {
+    "id": "1529158766610878492",
+    "name": "prime_php",
+    "semantic": "php",
+    "theme": "solid",
+    "sha256": "dd99e52ad7adb17703db0ae84b6bcf8ca9a215bd7d35b637852ca4346cad9406",
+    "installedAt": "2026-07-22T13:07:36.000Z"
+  },
+  "picpay:solid": {
+    "id": "1529158770129764392",
+    "name": "prime_picpay",
+    "semantic": "picpay",
+    "theme": "solid",
+    "sha256": "37b9ba14e16d920a19d417fb81ed030cca11384a1ed123b82c9db981b76a1c92",
+    "installedAt": "2026-07-22T13:07:36.005Z"
+  },
+  "pin:solid": {
+    "id": "1529158774160625807",
+    "name": "prime_pin",
+    "semantic": "pin",
+    "theme": "solid",
+    "sha256": "4a431020b0a54bd10d75f1b0c2e9fe79a2b861fc61e2fe086e0af2888c2e2f6f",
+    "installedAt": "2026-07-22T13:07:36.010Z"
+  },
+  "pix:solid": {
+    "id": "1529158777818058832",
+    "name": "prime_pix",
+    "semantic": "pix",
+    "theme": "solid",
+    "sha256": "81c6544ca663315d0357f046913331c8a246f3aec791d270b0bb478903020ca6",
+    "installedAt": "2026-07-22T13:07:36.016Z"
+  },
+  "planet:solid": {
+    "id": "1529158781106262159",
+    "name": "prime_planet",
+    "semantic": "planet",
+    "theme": "solid",
+    "sha256": "1ecb065bd4fbd59d4e176910b5b85f47b594c7b23b53d42b276e56c15e53c979",
+    "installedAt": "2026-07-22T13:07:36.021Z"
+  },
+  "play:solid": {
+    "id": "1529158784444793003",
+    "name": "prime_play",
+    "semantic": "play",
+    "theme": "solid",
+    "sha256": "999053a438b4da81aea0496d76a436cee54c0a1295c59aa78ad70a17ed3bdb04",
+    "installedAt": "2026-07-22T13:07:36.027Z"
+  },
+  "plus:solid": {
+    "id": "1529158787603239044",
+    "name": "prime_plus",
+    "semantic": "plus",
+    "theme": "solid",
+    "sha256": "dfaec2fdb4f2390ceb9e5f13cae73a9c86f7d854babf4f423375f638c8f0a474",
+    "installedAt": "2026-07-22T13:07:36.032Z"
+  },
+  "power:solid": {
+    "id": "1529158791101288549",
+    "name": "prime_power",
+    "semantic": "power",
+    "theme": "solid",
+    "sha256": "0ef2009445425dbd2699e9a8504b58e99d458c41221cd9f94e478b18b9b5800f",
+    "installedAt": "2026-07-22T13:07:36.038Z"
+  },
+  "pushin_pay:solid": {
+    "id": "1529158794305601616",
+    "name": "prime_pushin_pay",
+    "semantic": "pushin_pay",
+    "theme": "solid",
+    "sha256": "84d561bcb7dfb1f94a63b69925f3f9eda53e90fc9d488bd2cead7b2eb811b124",
+    "installedAt": "2026-07-22T13:07:36.044Z"
+  },
+  "python:solid": {
+    "id": "1529158797376098324",
+    "name": "prime_python",
+    "semantic": "python",
+    "theme": "solid",
+    "sha256": "e08baaa5ea582857204c40b4913417d5bee97098d2f9118a039ced4c3393bb2b",
+    "installedAt": "2026-07-22T13:07:36.049Z"
+  },
+  "question:solid": {
+    "id": "1529158800848715946",
+    "name": "prime_question",
+    "semantic": "question",
+    "theme": "solid",
+    "sha256": "e5441bc389a3ba2f9bc829af6c0aa0bcbf72a0088bdfc66ff8117d1d405be96f",
+    "installedAt": "2026-07-22T13:07:36.055Z"
+  },
+  "reaction:solid": {
+    "id": "1529158804254490787",
+    "name": "prime_reaction",
+    "semantic": "reaction",
+    "theme": "solid",
+    "sha256": "18d78fb499649d47212ff8d56d1c9b20972a9ddc5d8b169582a0290091ce4e70",
+    "installedAt": "2026-07-22T13:07:36.061Z"
+  },
+  "reaction_add:solid": {
+    "id": "1529158807945609526",
+    "name": "prime_reaction_add",
+    "semantic": "reaction_add",
+    "theme": "solid",
+    "sha256": "d2f5d230a825e2cffa050734892d43710b70528efd3d7aecaec7ba965704f719",
+    "installedAt": "2026-07-22T13:07:36.067Z"
+  },
+  "receipt:solid": {
+    "id": "1529158811338674399",
+    "name": "prime_receipt",
+    "semantic": "receipt",
+    "theme": "solid",
+    "sha256": "537d34bd0845c7ae71bd50662c3bf5cc2918250b64e450b3ead7635eebc0beff",
+    "installedAt": "2026-07-22T13:07:36.074Z"
+  },
+  "red:solid": {
+    "id": "1529158814887313499",
+    "name": "prime_red",
+    "semantic": "red",
+    "theme": "solid",
+    "sha256": "0f9579df25ccb84ee38bb40dbe9ddb75ba1e16ae6ef967048c1adbaa283bab3c",
+    "installedAt": "2026-07-22T13:07:36.081Z"
+  },
+  "relations:solid": {
+    "id": "1529158818402144408",
+    "name": "prime_relations",
+    "semantic": "relations",
+    "theme": "solid",
+    "sha256": "b630a687e6076ce1958a8bc4c8ffbe85650cd1a4223df503d37d614ffd00ef6e",
+    "installedAt": "2026-07-22T13:07:36.088Z"
+  },
+  "reload:solid": {
+    "id": "1529158821891670211",
+    "name": "prime_reload",
+    "semantic": "reload",
+    "theme": "solid",
+    "sha256": "c7bf960fa0272955b5ff443d985fdaaf8b351def70b49fc45a7e840a039b3b01",
+    "installedAt": "2026-07-22T13:07:36.095Z"
+  },
+  "robot:solid": {
+    "id": "1529158825171619942",
+    "name": "prime_robot",
+    "semantic": "robot",
+    "theme": "solid",
+    "sha256": "7e8c4928c6e5dff7792b0c21628071b1921e223fcf67c93d16474147db43aed9",
+    "installedAt": "2026-07-22T13:07:36.100Z"
+  },
+  "rocket:solid": {
+    "id": "1529158828929581261",
+    "name": "prime_rocket",
+    "semantic": "rocket",
+    "theme": "solid",
+    "sha256": "83860dbaf5bd774571eecafb62518546abbc1a4f330950137f5f7ff4bebe7ad6",
+    "installedAt": "2026-07-22T13:07:36.107Z"
+  },
+  "role:solid": {
+    "id": "1529158832050278611",
+    "name": "prime_role",
+    "semantic": "role",
+    "theme": "solid",
+    "sha256": "b06870dbca458ae672792b629bf78bf2d32d605a8fb29d13f56a9903730d7581",
+    "installedAt": "2026-07-22T13:07:36.114Z"
+  },
+  "route:solid": {
+    "id": "1529158834851942522",
+    "name": "prime_route",
+    "semantic": "route",
+    "theme": "solid",
+    "sha256": "44449c789cc5330a464f8f779003f12630cf6169bd384aecab457a351ce95510",
+    "installedAt": "2026-07-22T13:07:36.120Z"
+  },
+  "save:solid": {
+    "id": "1529158838345928704",
+    "name": "prime_save",
+    "semantic": "save",
+    "theme": "solid",
+    "sha256": "e977454b72cd3ca2bd5ca82419e325a851bc33c3b2f9c64ee0f549389a3075a5",
+    "installedAt": "2026-07-22T13:07:36.126Z"
+  },
+  "science:solid": {
+    "id": "1529158841533595828",
+    "name": "prime_science",
+    "semantic": "science",
+    "theme": "solid",
+    "sha256": "068ed55d9d058cf122faeb47e45089599a88fa15cb8e32306ddd96a2dd090745",
+    "installedAt": "2026-07-22T13:07:36.132Z"
+  },
+  "search:solid": {
+    "id": "1529158844809351218",
+    "name": "prime_search",
+    "semantic": "search",
+    "theme": "solid",
+    "sha256": "5e3fd36e115459a81fad95358fb28aea99ae241bbf15e16d3fed649ad420a345",
+    "installedAt": "2026-07-22T13:07:36.139Z"
+  },
+  "settings:solid": {
+    "id": "1529158848106205285",
+    "name": "prime_settings",
+    "semantic": "settings",
+    "theme": "solid",
+    "sha256": "b88147b6e17d811bcce5fa7c35fdd8eb6b80fe7afcd25ec6eca4e5b7fb8a5db9",
+    "installedAt": "2026-07-22T13:07:36.144Z"
+  },
+  "settings2:solid": {
+    "id": "1529158851352465502",
+    "name": "prime_settings2",
+    "semantic": "settings2",
+    "theme": "solid",
+    "sha256": "6e5b80f8f456c285b279dd76a4ab3dc954f9936c22e712aed3e76a6546082683",
+    "installedAt": "2026-07-22T13:07:36.151Z"
+  },
+  "shield:solid": {
+    "id": "1529158856364654834",
+    "name": "prime_shield",
+    "semantic": "shield",
+    "theme": "solid",
+    "sha256": "c21949fdd99d32048db316404e00d69019b0aabf93427d00fce73132d077e1da",
+    "installedAt": "2026-07-22T13:07:36.157Z"
+  },
+  "shield_star:solid": {
+    "id": "1529158859468570695",
+    "name": "prime_shield_star",
+    "semantic": "shield_star",
+    "theme": "solid",
+    "sha256": "9e433037d2abd020d994b4d06b994726ffa8db298036628b49cfa2d63b3618c1",
+    "installedAt": "2026-07-22T13:07:36.163Z"
+  },
+  "slash:solid": {
+    "id": "1529158862706311248",
+    "name": "prime_slash",
+    "semantic": "slash",
+    "theme": "solid",
+    "sha256": "5056c36f4504b5ab17673cd624a34e40c44707b81fcc04514b8ef388f96329c0",
+    "installedAt": "2026-07-22T13:07:36.169Z"
+  },
+  "solar_system:solid": {
+    "id": "1529158865893982471",
+    "name": "prime_solar_system",
+    "semantic": "solar_system",
+    "theme": "solid",
+    "sha256": "ffaf8969caeddaab19bc8402b48334f4a1442c67a531ee2d176a30874bdecc2d",
+    "installedAt": "2026-07-22T13:07:36.176Z"
+  },
+  "sound:solid": {
+    "id": "1529158869308412098",
+    "name": "prime_sound",
+    "semantic": "sound",
+    "theme": "solid",
+    "sha256": "618ff84eea3f51b1b79335f2d5807df6581b1b8693bcb71d0c5fc103f22c3951",
+    "installedAt": "2026-07-22T13:07:36.182Z"
+  },
+  "sparkles:solid": {
+    "id": "1529158872617586708",
+    "name": "prime_sparkles",
+    "semantic": "sparkles",
+    "theme": "solid",
+    "sha256": "d7567f0f9880f0ad3d3f138477e5cc1ae1c41b453f77920681b36c93c1bfa2b0",
+    "installedAt": "2026-07-22T13:07:36.188Z"
+  },
+  "speech:solid": {
+    "id": "1529158876358774834",
+    "name": "prime_speech",
+    "semantic": "speech",
+    "theme": "solid",
+    "sha256": "16c40da1ba2ddce76e13f4e994694d15015b6e557ed3ed560204cd62d77c9390",
+    "installedAt": "2026-07-22T13:07:36.195Z"
+  },
+  "speech2:solid": {
+    "id": "1529158879496241192",
+    "name": "prime_speech2",
+    "semantic": "speech2",
+    "theme": "solid",
+    "sha256": "1faefe995a5cbe9e96a523d407b202d25d02b9b82cee6ba927dcc3114e928e31",
+    "installedAt": "2026-07-22T13:07:36.201Z"
+  },
+  "speech3:solid": {
+    "id": "1529158882562281592",
+    "name": "prime_speech3",
+    "semantic": "speech3",
+    "theme": "solid",
+    "sha256": "68875fe237deff257923b418f626b2de352a34e32fce0746a288d6f9afe96450",
+    "installedAt": "2026-07-22T13:07:36.207Z"
+  },
+  "star:solid": {
+    "id": "1529158885737234522",
+    "name": "prime_star",
+    "semantic": "star",
+    "theme": "solid",
+    "sha256": "9c374545b0f871687225b113cdf8a6952a33fa2fcba31b59c43d320d2334a1e9",
+    "installedAt": "2026-07-22T13:07:36.214Z"
+  },
+  "store:solid": {
+    "id": "1529158888450953225",
+    "name": "prime_store",
+    "semantic": "store",
+    "theme": "solid",
+    "sha256": "5ecb1f9ea22e0a5ece29958d9800ac8b2c8b669a0c0f49f9ccc591a694c1d57e",
+    "installedAt": "2026-07-22T13:07:36.220Z"
+  },
+  "streaming:solid": {
+    "id": "1529158892112580678",
+    "name": "prime_streaming",
+    "semantic": "streaming",
+    "theme": "solid",
+    "sha256": "960360942d41386f32a32506f84f210a99803aee909ed8678dfd09976dcfeeb1",
+    "installedAt": "2026-07-22T13:07:36.227Z"
+  },
+  "stripe:solid": {
+    "id": "1529158895472214036",
+    "name": "prime_stripe",
+    "semantic": "stripe",
+    "theme": "solid",
+    "sha256": "bed6a8ea797f3da60623dde5c6b0cea0263c25d420d04ad43e9528c1851380df",
+    "installedAt": "2026-07-22T13:07:36.233Z"
+  },
+  "student:solid": {
+    "id": "1529158898643239094",
+    "name": "prime_student",
+    "semantic": "student",
+    "theme": "solid",
+    "sha256": "91986b7e284d1ee41dcd9424fbd5cb773b94fdc298f11cd9a96af540945218f3",
+    "installedAt": "2026-07-22T13:07:36.239Z"
+  },
+  "sword:solid": {
+    "id": "1529158902149808328",
+    "name": "prime_sword",
+    "semantic": "sword",
+    "theme": "solid",
+    "sha256": "bfcacec608368c043dc2f6a060da5e67a2588238976999bc5d819ca935a66dd8",
+    "installedAt": "2026-07-22T13:07:36.246Z"
+  },
+  "swords:solid": {
+    "id": "1529158905920225361",
+    "name": "prime_swords",
+    "semantic": "swords",
+    "theme": "solid",
+    "sha256": "19a67ad79ea1b8109ce34d2a39255f260b1877f72cd6a05858b01abcba0721ff",
+    "installedAt": "2026-07-22T13:07:36.253Z"
+  },
+  "telegram:solid": {
+    "id": "1529158909271740516",
+    "name": "prime_telegram",
+    "semantic": "telegram",
+    "theme": "solid",
+    "sha256": "1d536795e0c763ba5a9314bd119dce50d9d3cbf33374ea372586e2a65c2af62b",
+    "installedAt": "2026-07-22T13:07:36.259Z"
+  },
+  "textc:solid": {
+    "id": "1529158912379457678",
+    "name": "prime_textc",
+    "semantic": "textc",
+    "theme": "solid",
+    "sha256": "c3039fccc47c2ac2a3a612e5413330384c09432f5de340ff9c23a85462929da7",
+    "installedAt": "2026-07-22T13:07:36.266Z"
+  },
+  "thunder:solid": {
+    "id": "1529158915588100289",
+    "name": "prime_thunder",
+    "semantic": "thunder",
+    "theme": "solid",
+    "sha256": "22d225b6ea903ec72be8e7d2ea5db11f80f9148d48fe4f3bce1d8a7e15ac9029",
+    "installedAt": "2026-07-22T13:07:36.272Z"
+  },
+  "ticket:solid": {
+    "id": "1529158918692147320",
+    "name": "prime_ticket",
+    "semantic": "ticket",
+    "theme": "solid",
+    "sha256": "198e023461c25b113d150962df62c4bf2c9fc4eb61dcd7bbbdf5c28104cf8de6",
+    "installedAt": "2026-07-22T13:07:36.279Z"
+  },
+  "time:solid": {
+    "id": "1529158921862909982",
+    "name": "prime_time",
+    "semantic": "time",
+    "theme": "solid",
+    "sha256": "44293435d66eba82193f7cd6d7798723a673882bc710fc24e089d176933273c4",
+    "installedAt": "2026-07-22T13:07:36.284Z"
+  },
+  "trophy:solid": {
+    "id": "1529158924933140521",
+    "name": "prime_trophy",
+    "semantic": "trophy",
+    "theme": "solid",
+    "sha256": "f1fbda6b513886a7580b39c2f104268e3d665fff0e44ed9b17e22d5ea0a3ad6b",
+    "installedAt": "2026-07-22T13:07:36.291Z"
+  },
+  "truck:solid": {
+    "id": "1529158927823016179",
+    "name": "prime_truck",
+    "semantic": "truck",
+    "theme": "solid",
+    "sha256": "cfd0644d644467b334f7791a8dfcc143a61fa9f9b56eac3953a7160c08eaedd9",
+    "installedAt": "2026-07-22T13:07:36.297Z"
+  },
+  "typescript:solid": {
+    "id": "1529158931220398252",
+    "name": "prime_typescript",
+    "semantic": "typescript",
+    "theme": "solid",
+    "sha256": "adc1cb459254039a3f503c54733a189a04c7f9314f648645f2a32b7c8f6c896b",
+    "installedAt": "2026-07-22T13:07:36.303Z"
+  },
+  "typescript2:solid": {
+    "id": "1529158935070904411",
+    "name": "prime_typescript2",
+    "semantic": "typescript2",
+    "theme": "solid",
+    "sha256": "2abf611540608b86875fe83808276313f9fd0cb0c0679bc9465bd1928bf9edd2",
+    "installedAt": "2026-07-22T13:07:36.310Z"
+  },
+  "unlock:solid": {
+    "id": "1529158937855791205",
+    "name": "prime_unlock",
+    "semantic": "unlock",
+    "theme": "solid",
+    "sha256": "9a66800c7c49f447e5d3b97be5e1361be4a628f5dea7467c2157562426549507",
+    "installedAt": "2026-07-22T13:07:36.317Z"
+  },
+  "verified:solid": {
+    "id": "1529158941777592360",
+    "name": "prime_verified",
+    "semantic": "verified",
+    "theme": "solid",
+    "sha256": "adcbd12c7416ff86a8172c3540e5d57b688cb8f725f45c611541a79626c230f6",
+    "installedAt": "2026-07-22T13:07:36.323Z"
+  },
+  "voice:solid": {
+    "id": "1529158945149812806",
+    "name": "prime_voice",
+    "semantic": "voice",
+    "theme": "solid",
+    "sha256": "61e16e80c894e2792467b42bf749d70aed0bd9bd0a3020d9ac12146270e933bc",
+    "installedAt": "2026-07-22T13:07:36.330Z"
+  },
+  "voice_lock:solid": {
+    "id": "1529158948752720102",
+    "name": "prime_voice_lock",
+    "semantic": "voice_lock",
+    "theme": "solid",
+    "sha256": "7a960960ccae3f58b2dff3b6179122549218c2422a9259d236c4ca63502eb3ca",
+    "installedAt": "2026-07-22T13:07:36.336Z"
+  },
+  "vscode:solid": {
+    "id": "1529158952070156328",
+    "name": "prime_vscode",
+    "semantic": "vscode",
+    "theme": "solid",
+    "sha256": "96b7845d9ba8378bd6d4aec8a0e1ea79b02e2f6cc5d6c09e64a11ae46941ca9f",
+    "installedAt": "2026-07-22T13:07:36.344Z"
+  },
+  "wallet:solid": {
+    "id": "1529158955094380684",
+    "name": "prime_wallet",
+    "semantic": "wallet",
+    "theme": "solid",
+    "sha256": "f895c2f39313cc4eb083d41b3b05bb45026db90401afee2d613ed7f00eaa9083",
+    "installedAt": "2026-07-22T13:07:36.350Z"
+  },
+  "wand:solid": {
+    "id": "1529158958491635752",
+    "name": "prime_wand",
+    "semantic": "wand",
+    "theme": "solid",
+    "sha256": "4e5f7fb1844730c62857c7d344736667a233f3c3f9133c674ac3d34966a3d80a",
+    "installedAt": "2026-07-22T13:07:36.356Z"
+  },
+  "warn:solid": {
+    "id": "1529158961763193052",
+    "name": "prime_warn",
+    "semantic": "warn",
+    "theme": "solid",
+    "sha256": "d385963f943c9181e456bd15a98df8faccc918f78256f270af486f99d078e9e2",
+    "installedAt": "2026-07-22T13:07:36.363Z"
+  },
+  "web:solid": {
+    "id": "1529158965030817842",
+    "name": "prime_web",
+    "semantic": "web",
+    "theme": "solid",
+    "sha256": "aa800a322810c10c41ff4e74d2e91349e35be9c8d88f94209be5ff93e60d2884",
+    "installedAt": "2026-07-22T13:07:36.370Z"
+  },
+  "website:solid": {
+    "id": "1529158968247717888",
+    "name": "prime_website",
+    "semantic": "website",
+    "theme": "solid",
+    "sha256": "39349c2bddf0f62acba7135856e32847b05fd35372245761fc12f69464f43910",
+    "installedAt": "2026-07-22T13:07:36.376Z"
+  },
+  "whatsapp:solid": {
+    "id": "1529158971972259932",
+    "name": "prime_whatsapp",
+    "semantic": "whatsapp",
+    "theme": "solid",
+    "sha256": "d2809035d414147e1e4c1d9ebd5a5840b8a6941c554593d2ca88c5416ebbf619",
+    "installedAt": "2026-07-22T13:07:36.383Z"
+  },
+  "wifi:solid": {
+    "id": "1529158975864443113",
+    "name": "prime_wifi",
+    "semantic": "wifi",
+    "theme": "solid",
+    "sha256": "81403c45884f8ce1880f061bed89217ea9e6b044c094cb8ebfb4d77025684963",
+    "installedAt": "2026-07-22T13:07:36.390Z"
+  },
+  "wifi2:solid": {
+    "id": "1529158979089993889",
+    "name": "prime_wifi2",
+    "semantic": "wifi2",
+    "theme": "solid",
+    "sha256": "60155c683e18e596b46f66c9ea82a71c794ca98a972aaa85615b88f45eba51a7",
+    "installedAt": "2026-07-22T13:07:36.396Z"
+  },
+  "women:solid": {
+    "id": "1529158982021812370",
+    "name": "prime_women",
+    "semantic": "women",
+    "theme": "solid",
+    "sha256": "c7a9aa1a3d80cf5c8f2c3464980e3425be83bccc61b47ba0f57cd922232774ae",
+    "installedAt": "2026-07-22T13:07:36.403Z"
+  },
+  "wrong:solid": {
+    "id": "1529158985930899526",
+    "name": "prime_wrong",
+    "semantic": "wrong",
+    "theme": "solid",
+    "sha256": "b2549a261b54a5c16c1b92cc2bb29e829727ca94f9cf761871c013647c0aaec0",
+    "installedAt": "2026-07-22T13:07:36.410Z"
+  },
+  "z0:solid": {
+    "id": "1529158999243620542",
+    "name": "prime_z0",
+    "semantic": "z0",
+    "theme": "solid",
+    "sha256": "03f094b223ee60440beef38e57dcf13b17e9798fbc53074420f833fff8b6b356",
+    "installedAt": "2026-07-22T13:07:36.417Z"
+  },
+  "z1:solid": {
+    "id": "1529159002779287657",
+    "name": "prime_z1",
+    "semantic": "z1",
+    "theme": "solid",
+    "sha256": "f8fd8dd3c4f82978a03c5fce4c1a0c828d36b021f74ecccec6a101de49cb8d85",
+    "installedAt": "2026-07-22T13:07:36.423Z"
+  },
+  "z2:solid": {
+    "id": "1529159006042456085",
+    "name": "prime_z2",
+    "semantic": "z2",
+    "theme": "solid",
+    "sha256": "cd152330574c7fb90d494326c39db4d8c9adce643a1c6a14364a2875c1d2ee4a",
+    "installedAt": "2026-07-22T13:07:36.430Z"
+  },
+  "z3:solid": {
+    "id": "1529159009574191164",
+    "name": "prime_z3",
+    "semantic": "z3",
+    "theme": "solid",
+    "sha256": "428c2c2be536baef8fd2ee4218b2ed88f3daad1d66f1bba3dfa5fa6ebf342774",
+    "installedAt": "2026-07-22T13:07:36.437Z"
+  },
+  "z4:solid": {
+    "id": "1529159012963192904",
+    "name": "prime_z4",
+    "semantic": "z4",
+    "theme": "solid",
+    "sha256": "be6dd2fba94ba0eb08ed019e163efb9cec15a0039a62d8ffbe52de69702526bf",
+    "installedAt": "2026-07-22T13:07:36.444Z"
+  },
+  "zynx:solid": {
+    "id": "1529159016456913057",
+    "name": "prime_zynx",
+    "semantic": "zynx",
+    "theme": "solid",
+    "sha256": "28d874099867221897331ff4b0143d1842a9bfb6f09a000db2f6daf9496b6795",
+    "installedAt": "2026-07-22T13:07:36.451Z"
+  },
+  "zynx_0:solid": {
+    "id": "1529159019652976650",
+    "name": "prime_zynx_0",
+    "semantic": "zynx_0",
+    "theme": "solid",
+    "sha256": "fe4a17bf3486125ce668b704b74d7c5f2c61c772603714ba6c2ad26bc7ef4165",
+    "installedAt": "2026-07-22T13:07:36.458Z"
+  },
+  "zynx_1:solid": {
+    "id": "1529159022987575326",
+    "name": "prime_zynx_1",
+    "semantic": "zynx_1",
+    "theme": "solid",
+    "sha256": "41e7049964c167ba347cde36e6b7f65cb08186051ace4be31073851bfd2109e1",
+    "installedAt": "2026-07-22T13:07:36.465Z"
+  },
+  "zynx_2:solid": {
+    "id": "1529159026456264724",
+    "name": "prime_zynx_2",
+    "semantic": "zynx_2",
+    "theme": "solid",
+    "sha256": "cd8779257ecb9dceb97909810fa4ae0deb06608ff2e355b9c11128b77da7cc83",
+    "installedAt": "2026-07-22T13:07:36.471Z"
+  },
+  "zynx_3:solid": {
+    "id": "1529159029916696716",
+    "name": "prime_zynx_3",
+    "semantic": "zynx_3",
+    "theme": "solid",
+    "sha256": "6f1562f43331926142dc1c9984652e47328dfc87ef44fe27a004c3bf63cb1cde",
+    "installedAt": "2026-07-22T13:07:36.479Z"
+  },
+  "zynx_4:solid": {
+    "id": "1529159033397842101",
+    "name": "prime_zynx_4",
+    "semantic": "zynx_4",
+    "theme": "solid",
+    "sha256": "98205592b1abdae539cf7126e2373b89ede76864b105379bdc3f4db169cabc7d",
+    "installedAt": "2026-07-22T13:07:36.485Z"
+  },
+  "zynx_5:solid": {
+    "id": "1529159036640166140",
+    "name": "prime_zynx_5",
+    "semantic": "zynx_5",
+    "theme": "solid",
+    "sha256": "a65674de09370a360ab40bc15621823db1dded9ecc522b15e37a281505f623f5",
+    "installedAt": "2026-07-22T13:07:36.492Z"
+  },
+  "entrega0:solid": {
+    "id": "1529475002108350535",
+    "name": "prime_entrega0",
+    "semantic": "entrega0",
+    "theme": "solid",
+    "sha256": "5cfef0b7dfd6c925a6e958ca477064202c2a9d8a49ccd27b72d7681d0f31f116",
+    "installedAt": "2026-07-22T13:07:37.145Z"
+  },
+  "entrega1:solid": {
+    "id": "1529475006466363433",
+    "name": "prime_entrega1",
+    "semantic": "entrega1",
+    "theme": "solid",
+    "sha256": "1a65007ca03480ed8b39bed1af9c7eb43c3713eeca78c05eacc84776e923cb79",
+    "installedAt": "2026-07-22T13:07:38.172Z"
+  },
+  "entrega2:solid": {
+    "id": "1529475010874310736",
+    "name": "prime_entrega2",
+    "semantic": "entrega2",
+    "theme": "solid",
+    "sha256": "169039de51ac6a63c393014f6ad8f4cca0aa968832ca991ef48a24ffad91683b",
+    "installedAt": "2026-07-22T13:07:39.109Z"
+  },
+  "entrega3:solid": {
+    "id": "1529475014561104023",
+    "name": "prime_entrega3",
+    "semantic": "entrega3",
+    "theme": "solid",
+    "sha256": "c5e898ee2d57fec6aeac2ca16137adfbcc47635ee8f7c32a69d299a3582a72e0",
+    "installedAt": "2026-07-22T13:07:40.000Z"
+  },
+  "entrega4:solid": {
+    "id": "1529475018298359960",
+    "name": "prime_entrega4",
+    "semantic": "entrega4",
+    "theme": "solid",
+    "sha256": "64288bd54f6ea412b71cfad0dd12768a7f7800e41f0d6fcf784a1161c906b05f",
+    "installedAt": "2026-07-22T13:07:40.899Z"
+  },
+  "entrega5:solid": {
+    "id": "1529475022241005588",
+    "name": "prime_entrega5",
+    "semantic": "entrega5",
+    "theme": "solid",
+    "sha256": "9441093db07335903b0046f75b293c0414b07fae7abd5705b0ff6a61950d3947",
+    "installedAt": "2026-07-22T13:07:41.788Z"
+  },
+  "entrega6:solid": {
+    "id": "1529475025600516117",
+    "name": "prime_entrega6",
+    "semantic": "entrega6",
+    "theme": "solid",
+    "sha256": "9ce382ba5dc825b150b31566e6ff4e498a84a26a11d59299022be621ecd6d235",
+    "installedAt": "2026-07-22T13:07:42.649Z"
+  }
+}

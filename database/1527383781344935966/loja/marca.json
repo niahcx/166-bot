@@ -1,0 +1,14 @@
+{
+  "name": "PrimeBot",
+  "color": "#3155ff",
+  "footer": "PrimeBot • Automação completa para Discord",
+  "logoUrl": "",
+  "bannerUrl": "",
+  "storeTitle": "Produtos",
+  "storeDescription": "Escolha um produto para iniciar uma compra privada.",
+  "ticketTitle": "Central de Atendimento",
+  "ticketDescription": "Selecione o assunto para abrir um atendimento privado.",
+  "presenceText": "suas vendas funcionarem 24/7",
+  "presenceType": "Watching",
+  "status": "online"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ERR_85e8403eda8a46",
+    "guildId": "1527383781344935966",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1529477342110416966",
+      "customId": "admin:payment:test-api",
+      "commandName": "",
+      "error": "Ative pelo menos um gateway de API para testar."
+    },
+    "createdAt": "2026-07-22T13:16:54.906Z"
+  },
+  {
+    "id": "ERR_44f7e3fd8ea642",
+    "guildId": "1527383781344935966",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1529475491759915078",
+      "customId": "",
+      "commandName": "painel",
+      "error": "Unknown interaction"
+    },
+    "createdAt": "2026-07-22T13:09:43.991Z"
+  },
+  {
+    "id": "ERR_197a30eefc9b41",
+    "guildId": "1527383781344935966",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1529475376110112888",
+      "customId": "",
+      "commandName": "painel",
+      "error": "Unknown interaction"
+    },
+    "createdAt": "2026-07-22T13:09:13.350Z"
+  },
+  {
+    "id": "ERR_e67b3b783b5746",
+    "guildId": "1527383781344935966",
+    "actorId": "system",
+    "action": "INTERACTION_ERROR",
+    "targetType": "error",
+    "targetId": "",
+    "details": {
+      "interactionId": "1529475194056347688",
+      "customId": "",
+      "commandName": "ticket",
+      "error": "Nenhum painel de ticket foi configurado."
+    },
+    "createdAt": "2026-07-22T13:08:23.108Z"
+  }
+]

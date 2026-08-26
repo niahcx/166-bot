@@ -1,0 +1,24 @@
+{
+  "MSG_71c6b8bc0cf448": {
+    "id": "MSG_71c6b8bc0cf448",
+    "guildId": "1539674666405331096",
+    "name": "Codigo 2FA - Como fazer?",
+    "content": "Tutorial Codigo 2FA",
+    "title": "Codigo 2FA",
+    "description": "Neste Canal vc fara /2FA abrira uma tela Para Por o \"codigo secreto\" vc tera de por la o seu codigo secreto ex : \"FRNDIEN4FJMV49NR3W2\" e recebera um codigo onde vc tera de por na conta RockStar",
+    "color": "#3155ff",
+    "bannerUrl": "",
+    "thumbnailUrl": "",
+    "footer": "PrimeBot • Automação completa para Discord",
+    "links": [],
+    "publications": [
+      {
+        "channelId": "1540323907230244965",
+        "messageId": "1540342754004045886",
+        "publishedAt": "2026-08-21T12:51:58.193Z"
+      }
+    ],
+    "createdAt": "2026-08-21T12:51:44.507Z",
+    "updatedAt": "2026-08-21T12:51:58.193Z"
+  }
+}

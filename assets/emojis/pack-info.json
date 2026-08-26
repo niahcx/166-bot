@@ -1,0 +1,23 @@
+{
+  "id": "166community-emojis-2026-07-public-v15",
+  "name": "Pacote principal com entrega automática original do public.zip para Components V2",
+  "count": 197,
+  "composition": {
+    "mainPack": "190 imagens PNG de 128x128",
+    "automaticDelivery": "7 emojis originais de 64x64 do public.zip"
+  },
+  "automaticDeliveryOrder": [
+    "entrega0.png",
+    "entrega1.png",
+    "entrega2.png",
+    "entrega3.png",
+    "entrega4.png",
+    "entrega5.png",
+    "entrega6.png"
+  ],
+  "excludedFiles": [
+    "emojis.json",
+    "emojis_data.json"
+  ],
+  "security": "IDs antigos, tokens e configurações das sources de referência não foram incorporados."
+}

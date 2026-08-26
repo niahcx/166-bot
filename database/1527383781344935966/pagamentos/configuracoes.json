@@ -1,0 +1,52 @@
+{
+  "defaultProvider": "MANUAL_PIX",
+  "orderExpiresMinutes": 15,
+  "pollIntervalSeconds": 15,
+  "manualPixCode": "",
+  "manualPixKey": "",
+  "mercadoPago": {
+    "enabled": false,
+    "payerEmail": "sla@gmail.com",
+    "statementDescriptor": "PRIMEBOT",
+    "pixKey": "sla"
+  },
+  "efiBank": {
+    "enabled": false,
+    "sandbox": true,
+    "pixKey": "",
+    "merchantName": "PrimeBot",
+    "merchantCity": "SAO PAULO",
+    "certificateConfigured": false
+  },
+  "stripe": {
+    "enabled": false,
+    "statementDescriptor": "PRIMEBOT",
+    "webhookUrl": ""
+  },
+  "misticPay": {
+    "enabled": false,
+    "webhookUrl": ""
+  },
+  "purinCash": {
+    "enabled": false,
+    "callbackUrl": ""
+  },
+  "imapPix": {
+    "enabled": false,
+    "bank": "INTER",
+    "emailProvider": "GMAIL",
+    "host": "imap.gmail.com",
+    "port": 993,
+    "secure": true,
+    "username": "",
+    "mailbox": "INBOX",
+    "pollIntervalSeconds": 30,
+    "lookbackMinutes": 90,
+    "maxWaitMinutes": 15,
+    "markSeen": false,
+    "pixKey": "",
+    "pixKeyType": "random",
+    "merchantName": "PrimeBot",
+    "merchantCity": "SAO PAULO"
+  }
+}

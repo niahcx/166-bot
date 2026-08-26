@@ -1,0 +1,1972 @@
+[
+  {
+    "semantic": "discord",
+    "theme": "solid",
+    "name": "prime_discord",
+    "file": "pack/discord.png",
+    "label": "Discord",
+    "fallback": "💬",
+    "sha256": "fd748a0d866b3be9c680163b0e8d2ae9ff23fa7ee097e854c5880f7091c90037",
+    "source": "1129-discord.png"
+  },
+  {
+    "semantic": "blurple_nitro",
+    "theme": "solid",
+    "name": "prime_blurple_nitro",
+    "file": "pack/blurple_nitro.png",
+    "label": "Blurple Nitro",
+    "fallback": "💎",
+    "sha256": "c8afa6eb27e621b805eee476ae7ed121f4878d2f931c3a7c3d4425b6687830a5",
+    "source": "1608-blurple-nitro.png"
+  },
+  {
+    "semantic": "discordserverboost",
+    "theme": "solid",
+    "name": "prime_discordserverboost",
+    "file": "pack/discordserverboost.png",
+    "label": "Discordserverboost",
+    "fallback": "🚀",
+    "sha256": "ace6b57eb43fb0e52f2c56871dfb0ee6c58276857f597f664a96a9442e4ff988",
+    "source": "1978-discordserverboost.png"
+  },
+  {
+    "semantic": "discordnitro",
+    "theme": "solid",
+    "name": "prime_discordnitro",
+    "file": "pack/discordnitro.png",
+    "label": "Discordnitro",
+    "fallback": "💎",
+    "sha256": "15805f6bc0f0730079efbfde9d1db653b7fca5cc40a25d3c8b438c19f6048988",
+    "source": "2193-discordnitro.png"
+  },
+  {
+    "semantic": "nitro_booster",
+    "theme": "solid",
+    "name": "prime_nitro_booster",
+    "file": "pack/nitro_booster.png",
+    "label": "Nitro Booster",
+    "fallback": "🚀",
+    "sha256": "c81a5fba7bdb2604718be7dc0170ae30c4d5399aa5df0e744b8dfbd790c75b8d",
+    "source": "3856-nitro-booster.png"
+  },
+  {
+    "semantic": "blurple_boost_level_6",
+    "theme": "solid",
+    "name": "prime_blurple_boost_level_6",
+    "file": "pack/blurple_boost_level_6.png",
+    "label": "Blurple Boost Level 6",
+    "fallback": "🚀",
+    "sha256": "008470e99e2e5c1ed603d49bb7ea29fd3c2f8fd64b2ee29d81e1764635a81a7c",
+    "source": "9836-blurple-boost-level-6.png"
+  },
+  {
+    "semantic": "extra_150969",
+    "theme": "solid",
+    "name": "prime_extra_150969",
+    "file": "pack/extra_150969.png",
+    "label": "Extra 150969",
+    "fallback": "✨",
+    "sha256": "1228b115dd2188ecf1d0d87c4f5909c16a8c277e8ede168b02bca58a6bcfca81",
+    "source": "assets/1509690800538390691 (1).webp"
+  },
+  {
+    "semantic": "alert",
+    "theme": "solid",
+    "name": "prime_alert",
+    "file": "pack/alert.png",
+    "label": "Alerta",
+    "fallback": "⚠️",
+    "sha256": "bf78733c22231e58f7c3e7ca4477a58fa935ab5a1a523d4919412020dfc4763b",
+    "source": "assets/alert.png"
+  },
+  {
+    "semantic": "announcement",
+    "theme": "solid",
+    "name": "prime_announcement",
+    "file": "pack/announcement.png",
+    "label": "Anúncio",
+    "fallback": "📢",
+    "sha256": "1a7eeb08b5a0c7b69c8974cdafe265c99ba2cf094cc2c0db9a40c55fd4555e9c",
+    "source": "assets/announcement.png"
+  },
+  {
+    "semantic": "announcement2",
+    "theme": "solid",
+    "name": "prime_announcement2",
+    "file": "pack/announcement2.png",
+    "label": "Anúncio alternativo",
+    "fallback": "📣",
+    "sha256": "bf4d11e436b43d6dc07971c74019698cb9407f1e56de10a173a1ee6be91c6a84",
+    "source": "assets/announcement2.png"
+  },
+  {
+    "semantic": "arrow",
+    "theme": "solid",
+    "name": "prime_arrow",
+    "file": "pack/arrow.png",
+    "label": "Arrow",
+    "fallback": "➡️",
+    "sha256": "155afd408f7e8724e2f8f4d4c78fa1ba9f105cf96f50a6aaf1789efd28033d3d",
+    "source": "assets/arrow.png"
+  },
+  {
+    "semantic": "arrow2",
+    "theme": "solid",
+    "name": "prime_arrow2",
+    "file": "pack/arrow2.png",
+    "label": "Arrow2",
+    "fallback": "➜",
+    "sha256": "8ec373af2804888862289aaf183959622c5558ed22a62093e8461e05385eee95",
+    "source": "assets/arrow2.png"
+  },
+  {
+    "semantic": "arrow3",
+    "theme": "solid",
+    "name": "prime_arrow3",
+    "file": "pack/arrow3.png",
+    "label": "Arrow3",
+    "fallback": "↪️",
+    "sha256": "85ca45d3d813da58cf55a50ff581e5e5fdf38a31d05fa764ad1881f334a32014",
+    "source": "assets/arrow3.png"
+  },
+  {
+    "semantic": "back",
+    "theme": "solid",
+    "name": "prime_back",
+    "file": "pack/back.png",
+    "label": "Voltar",
+    "fallback": "⬅️",
+    "sha256": "4edcdb4edfe28f7562e18473bccdd280dc80acf61fd2fcf45604d2668689f2c2",
+    "source": "assets/back.png"
+  },
+  {
+    "semantic": "bag",
+    "theme": "solid",
+    "name": "prime_bag",
+    "file": "pack/bag.png",
+    "label": "Sacola",
+    "fallback": "🛍️",
+    "sha256": "9f567afac294bc094c514e4336afebf6b8925dd35ea7902f33aa44dbc13f46bf",
+    "source": "assets/bag.png"
+  },
+  {
+    "semantic": "ban",
+    "theme": "solid",
+    "name": "prime_ban",
+    "file": "pack/ban.png",
+    "label": "Banimento",
+    "fallback": "🔨",
+    "sha256": "65c06c1c9c215ddf95c91262b9b3547fec8265777d6410b5c4e98841e8ef8560",
+    "source": "assets/ban.png"
+  },
+  {
+    "semantic": "bank",
+    "theme": "solid",
+    "name": "prime_bank",
+    "file": "pack/bank.png",
+    "label": "Banco",
+    "fallback": "🏦",
+    "sha256": "5d6424a6ebee8337b340ea84b0870884846c6ff1a621a9681f0f52a301678d7f",
+    "source": "assets/bank.png"
+  },
+  {
+    "semantic": "basket",
+    "theme": "solid",
+    "name": "prime_basket",
+    "file": "pack/basket.png",
+    "label": "Cesta",
+    "fallback": "🧺",
+    "sha256": "f89f2fd9c27b8789d4e863b7f03357795f767d5b6c826d1e215bcd1b137cfac6",
+    "source": "assets/basket.png"
+  },
+  {
+    "semantic": "blue",
+    "theme": "solid",
+    "name": "prime_blue",
+    "file": "pack/blue.png",
+    "label": "Blue",
+    "fallback": "🔵",
+    "sha256": "b48aec28994b7423f4a9b7e4d45f39c607f828eb84deebf5477720aa2e3b7b92",
+    "source": "assets/blue.png"
+  },
+  {
+    "semantic": "boost",
+    "theme": "solid",
+    "name": "prime_boost",
+    "file": "pack/boost.png",
+    "label": "Impulso",
+    "fallback": "🚀",
+    "sha256": "7eff1304cd925eb2d82036623aaeabbd634bb3bd853db4727108a0e7f86d7118",
+    "source": "assets/boost.png"
+  },
+  {
+    "semantic": "bulb",
+    "theme": "solid",
+    "name": "prime_bulb",
+    "file": "pack/bulb.png",
+    "label": "Ideia",
+    "fallback": "💡",
+    "sha256": "e7b0bff3d6550b4307bd02f6e9556680c8826abeebb70592daa552543922a2c7",
+    "source": "assets/bulb.png"
+  },
+  {
+    "semantic": "calendar",
+    "theme": "solid",
+    "name": "prime_calendar",
+    "file": "pack/calendar.png",
+    "label": "Calendário",
+    "fallback": "📅",
+    "sha256": "d462a47946f72df2903695f002937c30f946012227ba4c5f1dbe6ee1a31640f6",
+    "source": "assets/calendar.png"
+  },
+  {
+    "semantic": "card",
+    "theme": "solid",
+    "name": "prime_card",
+    "file": "pack/card.png",
+    "label": "Cartão",
+    "fallback": "💳",
+    "sha256": "596e1639da888d7e549b398c7d939bf0c5ad9fbdc51313206efd228421c9c3d0",
+    "source": "assets/card.png"
+  },
+  {
+    "semantic": "cardbox",
+    "theme": "solid",
+    "name": "prime_cardbox",
+    "file": "pack/cardbox.png",
+    "label": "Caixa",
+    "fallback": "📦",
+    "sha256": "da8adfc3fb678e68fc3f19bbb8dc8335f9d212e18b4da070414798d331095acb",
+    "source": "assets/cardbox.png"
+  },
+  {
+    "semantic": "cart",
+    "theme": "solid",
+    "name": "prime_cart",
+    "file": "pack/cart.png",
+    "label": "Carrinho",
+    "fallback": "🛒",
+    "sha256": "ba268087fb5f648f9ee007cb1db6b0afc44438d244b77a17cf78a1a6bfbb5638",
+    "source": "assets/cart.png"
+  },
+  {
+    "semantic": "cast",
+    "theme": "solid",
+    "name": "prime_cast",
+    "file": "pack/cast.png",
+    "label": "Cast",
+    "fallback": "📡",
+    "sha256": "6c7c34e54bc8c595bcae9e45059cc6e5f67b9fc2f7da4f9decc86354ebc2992b",
+    "source": "assets/cast.png"
+  },
+  {
+    "semantic": "chart",
+    "theme": "solid",
+    "name": "prime_chart",
+    "file": "pack/chart.png",
+    "label": "Rendimento",
+    "fallback": "📊",
+    "sha256": "2b9f20b6bc4c309392cf6aedda1274dac105c502d0df17776824f425d317fb5b",
+    "source": "assets/chart.png"
+  },
+  {
+    "semantic": "chevron",
+    "theme": "solid",
+    "name": "prime_chevron",
+    "file": "pack/chevron.png",
+    "label": "Chevron",
+    "fallback": "›",
+    "sha256": "47cccd3b2607a5d5c464ff0e526e63bbabf5e2b63d9c3988bbbec1bc397aea82",
+    "source": "assets/chevron.png"
+  },
+  {
+    "semantic": "chevron_arrow",
+    "theme": "solid",
+    "name": "prime_chevron_arrow",
+    "file": "pack/chevron_arrow.png",
+    "label": "Chevron Arrow",
+    "fallback": "»",
+    "sha256": "c79153aa27ef4f48f9201755f80ce0e1e3d20a14f12adf36a6da8720fb3982d6",
+    "source": "assets/chevron_arrow.png"
+  },
+  {
+    "semantic": "clock",
+    "theme": "solid",
+    "name": "prime_clock",
+    "file": "pack/clock.png",
+    "label": "Relógio",
+    "fallback": "🕒",
+    "sha256": "df603daf1969cfbe4d1a6e0f8b98a2eec1cbe0fcbd81439d93936e187030385e",
+    "source": "assets/clock.png"
+  },
+  {
+    "semantic": "cloud",
+    "theme": "solid",
+    "name": "prime_cloud",
+    "file": "pack/cloud.png",
+    "label": "Nuvem",
+    "fallback": "☁️",
+    "sha256": "04133027b9015639ac12d54a1c95c8045bff7b8dd10765ff80e021d6436383e3",
+    "source": "assets/cloud.png"
+  },
+  {
+    "semantic": "coin",
+    "theme": "solid",
+    "name": "prime_coin",
+    "file": "pack/coin.png",
+    "label": "Moeda",
+    "fallback": "🪙",
+    "sha256": "e1d90e9769817f603624426a944c318fb8d9865803176113a9c338234a0dfacf",
+    "source": "assets/coin.png"
+  },
+  {
+    "semantic": "colors",
+    "theme": "solid",
+    "name": "prime_colors",
+    "file": "pack/colors.png",
+    "label": "Cores",
+    "fallback": "🎨",
+    "sha256": "b46a6b689e0c40ddaa2d31509c0979b79f15e16781eb8f7760527a07edf16868",
+    "source": "assets/colors.png"
+  },
+  {
+    "semantic": "commands",
+    "theme": "solid",
+    "name": "prime_commands",
+    "file": "pack/commands.png",
+    "label": "Comandos",
+    "fallback": "⌨️",
+    "sha256": "7f8ef5474e7828b17835e4088792a723b6119a189a7f1cfa01d2d515660a665e",
+    "source": "assets/commands.png"
+  },
+  {
+    "semantic": "config",
+    "theme": "solid",
+    "name": "prime_config",
+    "file": "pack/config.png",
+    "label": "Configurações",
+    "fallback": "⚙️",
+    "sha256": "831f6a773aa1b1165a6a1f38b9434938241ce22c5a778f4ad33b5750723d1697",
+    "source": "assets/config.png"
+  },
+  {
+    "semantic": "controller",
+    "theme": "solid",
+    "name": "prime_controller",
+    "file": "pack/controller.png",
+    "label": "Controller",
+    "fallback": "🎮",
+    "sha256": "7fc805eae58c465219a3a4346aa79328cf1dc453797d3670a36aabbb8740d5a4",
+    "source": "assets/controller.png"
+  },
+  {
+    "semantic": "correct",
+    "theme": "solid",
+    "name": "prime_correct",
+    "file": "pack/correct.png",
+    "label": "Correto",
+    "fallback": "✅",
+    "sha256": "cb3094809f6653f0a7b562c185e6e45b583edd7ab9f56f815bd4310db05b01fe",
+    "source": "assets/correct.png"
+  },
+  {
+    "semantic": "coupon",
+    "theme": "solid",
+    "name": "prime_coupon",
+    "file": "pack/coupon.png",
+    "label": "Cupom",
+    "fallback": "🎟️",
+    "sha256": "dd88a22d38cfb7237f2e1fd79238a4ecf59d789f63acb41aa6144bb9d38b5bf5",
+    "source": "assets/coupon.png"
+  },
+  {
+    "semantic": "delete",
+    "theme": "solid",
+    "name": "prime_delete",
+    "file": "pack/delete.png",
+    "label": "Excluir",
+    "fallback": "🗑️",
+    "sha256": "06027285417ef11bf2a5685d7a9a249cbe09f2f3e372b9417068c02cba279d17",
+    "source": "assets/delete.png"
+  },
+  {
+    "semantic": "deslike",
+    "theme": "solid",
+    "name": "prime_deslike",
+    "file": "pack/deslike.png",
+    "label": "Deslike",
+    "fallback": "👎",
+    "sha256": "9a5f687f46ac553ef07089879a4f00aecc4c9e16b56c69f1361cc971b623a751",
+    "source": "assets/deslike.png"
+  },
+  {
+    "semantic": "diamond",
+    "theme": "solid",
+    "name": "prime_diamond",
+    "file": "pack/diamond.png",
+    "label": "Diamante",
+    "fallback": "💎",
+    "sha256": "276657f25b7d480e3de979af7d8ca793998d987c70ccd8d6f56d3561d07eb3be",
+    "source": "assets/diamond.png"
+  },
+  {
+    "semantic": "dir",
+    "theme": "solid",
+    "name": "prime_dir",
+    "file": "pack/dir.png",
+    "label": "Dir",
+    "fallback": "📁",
+    "sha256": "726d53918323313f1713f06c958514fecb895790e519e6c041f4b9751c344c3f",
+    "source": "assets/dir.png"
+  },
+  {
+    "semantic": "dnd",
+    "theme": "solid",
+    "name": "prime_dnd",
+    "file": "pack/dnd.png",
+    "label": "Dnd",
+    "fallback": "⛔",
+    "sha256": "21cd0beeedda9020f0ca78b46209a81adec9fa5da516a9714dbc83e637d444f9",
+    "source": "assets/dnd.png"
+  },
+  {
+    "semantic": "dollar",
+    "theme": "solid",
+    "name": "prime_dollar",
+    "file": "pack/dollar.png",
+    "label": "Dinheiro",
+    "fallback": "💵",
+    "sha256": "f2338d7ff19e4b966e1500fd2c50d09cd95e9818dfe0f385069222c4c4b85d92",
+    "source": "assets/dollar.png"
+  },
+  {
+    "semantic": "donation",
+    "theme": "solid",
+    "name": "prime_donation",
+    "file": "pack/donation.png",
+    "label": "Doação",
+    "fallback": "💰",
+    "sha256": "2175c7d78770f9a5ce875fbe7cabd96347beaee239f8d2ee98465eb3a0f72ed1",
+    "source": "assets/donation.png"
+  },
+  {
+    "semantic": "donation2",
+    "theme": "solid",
+    "name": "prime_donation2",
+    "file": "pack/donation2.png",
+    "label": "Donation2",
+    "fallback": "💸",
+    "sha256": "627a33908c70eb3f2d217e30d6c7ce43319564a23c6e508b63e5238d8f5f5103",
+    "source": "assets/donation2.png"
+  },
+  {
+    "semantic": "double_check",
+    "theme": "solid",
+    "name": "prime_double_check",
+    "file": "pack/double_check.png",
+    "label": "Double Check",
+    "fallback": "✅",
+    "sha256": "d31f1503d640573a5e7ced763ebfb8e812ea57b34039d407d2cbcd4e70ae4e40",
+    "source": "assets/double_check.png"
+  },
+  {
+    "semantic": "double_speech",
+    "theme": "solid",
+    "name": "prime_double_speech",
+    "file": "pack/double_speech.png",
+    "label": "Double Speech",
+    "fallback": "💬",
+    "sha256": "1e48677a8927f1c1a6134e550a49f40aa487ed7c52e8afa4c68a7a876f8c730d",
+    "source": "assets/double_speech.png"
+  },
+  {
+    "semantic": "early_developer",
+    "theme": "solid",
+    "name": "prime_early_developer",
+    "file": "pack/early_developer.png",
+    "label": "Early Developer",
+    "fallback": "🛠️",
+    "sha256": "48cbbf15162cc5ae17adfbd478297d5d133feaf3a6bef887f896ccb5731087b4",
+    "source": "assets/early_developer.png"
+  },
+  {
+    "semantic": "edit",
+    "theme": "solid",
+    "name": "prime_edit",
+    "file": "pack/edit.png",
+    "label": "Editar",
+    "fallback": "✏️",
+    "sha256": "a6f154c8877130a03ca15e3b3a558fcfb43bbc3fbdde9cf9ceaa17bbb34baf8a",
+    "source": "assets/edit.png"
+  },
+  {
+    "semantic": "efi_bank",
+    "theme": "solid",
+    "name": "prime_efi_bank",
+    "file": "pack/efi_bank.png",
+    "label": "Efí Bank",
+    "fallback": "🏦",
+    "sha256": "6a3c67e316b4ebe6f2fbecb664e90421d68abced39a242f35367b0f66a46ca47",
+    "source": "assets/efi_bank.png"
+  },
+  {
+    "semantic": "embed",
+    "theme": "solid",
+    "name": "prime_embed",
+    "file": "pack/embed.png",
+    "label": "Embed",
+    "fallback": "🖼️",
+    "sha256": "dbc5de10ee65f3a9460a46fa15ea053df76d598c6737eafb6de32f0e3d3b9341",
+    "source": "assets/embed.png"
+  },
+  {
+    "semantic": "fire",
+    "theme": "solid",
+    "name": "prime_fire",
+    "file": "pack/fire.png",
+    "label": "Destaque",
+    "fallback": "🔥",
+    "sha256": "60ce36518b83a1cb3876d0a306089c8822a7a96d26cc7c546afd3c8566425567",
+    "source": "assets/fire.png"
+  },
+  {
+    "semantic": "flag",
+    "theme": "solid",
+    "name": "prime_flag",
+    "file": "pack/flag.png",
+    "label": "Flag",
+    "fallback": "🚩",
+    "sha256": "72d05cfd1c25f1bdf1b3e55a7ca35006a2550d1f95a81edabaad25be20b775ec",
+    "source": "assets/flag.png"
+  },
+  {
+    "semantic": "folder",
+    "theme": "solid",
+    "name": "prime_folder",
+    "file": "pack/folder.png",
+    "label": "Pasta",
+    "fallback": "📂",
+    "sha256": "edc6bd750642dc98bca57935c75a66dd3ef6259cf099ab0260c94f1efa9f2a49",
+    "source": "assets/folder.png"
+  },
+  {
+    "semantic": "forbidden",
+    "theme": "solid",
+    "name": "prime_forbidden",
+    "file": "pack/forbidden.png",
+    "label": "Proibido",
+    "fallback": "🚫",
+    "sha256": "b06ca479a56204dd7f2945d406a277780f67f39fa56762530ced8569740c66be",
+    "source": "assets/forbidden.png"
+  },
+  {
+    "semantic": "ghost",
+    "theme": "solid",
+    "name": "prime_ghost",
+    "file": "pack/ghost.png",
+    "label": "Ghost",
+    "fallback": "👻",
+    "sha256": "fef93eaca3184742873a36cbb1488734ee321466b02cd2231170b21edb9cb449",
+    "source": "assets/ghost.png"
+  },
+  {
+    "semantic": "gift",
+    "theme": "solid",
+    "name": "prime_gift",
+    "file": "pack/gift.png",
+    "label": "Presente",
+    "fallback": "🎁",
+    "sha256": "1fb3aff9e6719de44a16d8276b9aa4b8b4e8cbd3eba4b5eaa10d08c6332b2534",
+    "source": "assets/gift.png"
+  },
+  {
+    "semantic": "gift2",
+    "theme": "solid",
+    "name": "prime_gift2",
+    "file": "pack/gift2.png",
+    "label": "Gift2",
+    "fallback": "🎉",
+    "sha256": "bcc97b5b97d155c28085b57a4f6f3a1a9ad165bea717c4377c1c168685fa3ca6",
+    "source": "assets/gift2.png"
+  },
+  {
+    "semantic": "git",
+    "theme": "solid",
+    "name": "prime_git",
+    "file": "pack/git.png",
+    "label": "Git",
+    "fallback": "🔀",
+    "sha256": "92af12bee1f0adfb34f8d11442061e02f534af0fb4bc684ef022d25b7b0a1cc1",
+    "source": "assets/git.png"
+  },
+  {
+    "semantic": "github",
+    "theme": "solid",
+    "name": "prime_github",
+    "file": "pack/github.png",
+    "label": "Github",
+    "fallback": "🐙",
+    "sha256": "4f5bb3b37940a8995545e3af489a9e6958441232b35e46c21bc13b9d7983f7a8",
+    "source": "assets/github.png"
+  },
+  {
+    "semantic": "giveaway",
+    "theme": "solid",
+    "name": "prime_giveaway",
+    "file": "pack/giveaway.png",
+    "label": "Sorteio",
+    "fallback": "🎉",
+    "sha256": "e2b0ec0b2917798ce62d6686f02b035352853264a8cc47209e2f9f0b7969f773",
+    "source": "assets/giveaway.png"
+  },
+  {
+    "semantic": "gold",
+    "theme": "solid",
+    "name": "prime_gold",
+    "file": "pack/gold.png",
+    "label": "Gold",
+    "fallback": "🟡",
+    "sha256": "628ed3aa97a5756d7aee91201442b937b215811d3362a6a36f77672482f8c2ab",
+    "source": "assets/gold.png"
+  },
+  {
+    "semantic": "gray",
+    "theme": "solid",
+    "name": "prime_gray",
+    "file": "pack/gray.png",
+    "label": "Gray",
+    "fallback": "⚪",
+    "sha256": "177fbd04d1a25d9810f36a1db87b33555bd5d87cdf7caa23770c16528198595c",
+    "source": "assets/gray.png"
+  },
+  {
+    "semantic": "green",
+    "theme": "solid",
+    "name": "prime_green",
+    "file": "pack/green.png",
+    "label": "Green",
+    "fallback": "🟢",
+    "sha256": "934aa02e3f6a2f05a52c2702bc64a395b6bac296e6638367eaab0d5ff1ad2f92",
+    "source": "assets/green.png"
+  },
+  {
+    "semantic": "group",
+    "theme": "solid",
+    "name": "prime_group",
+    "file": "pack/group.png",
+    "label": "Grupo",
+    "fallback": "👥",
+    "sha256": "3c7565917292ee7849c04296d141af66e7d1f87d93e531d9b0e8a349d33c6ce3",
+    "source": "assets/group.png"
+  },
+  {
+    "semantic": "hammer",
+    "theme": "solid",
+    "name": "prime_hammer",
+    "file": "pack/hammer.png",
+    "label": "Hammer",
+    "fallback": "🔨",
+    "sha256": "eb54d44c176ab2468319685f11120bbf3d552bbaf0d9bf8f8d2f789fce27fbff",
+    "source": "assets/hammer.png"
+  },
+  {
+    "semantic": "headset",
+    "theme": "solid",
+    "name": "prime_headset",
+    "file": "pack/headset.png",
+    "label": "Atendimento",
+    "fallback": "🎧",
+    "sha256": "0336af03dd061a45775d4e694250fc9ba3ec71733faba35dcc2b4a977599b52f",
+    "source": "assets/headset.png"
+  },
+  {
+    "semantic": "headset_muted",
+    "theme": "solid",
+    "name": "prime_headset_muted",
+    "file": "pack/headset_muted.png",
+    "label": "Headset Muted",
+    "fallback": "🔇",
+    "sha256": "3345d816d6f25f7b0afcc4cbedb44ff257de8b89a96554e9e5b67497cddef1d2",
+    "source": "assets/headset_muted.png"
+  },
+  {
+    "semantic": "heart",
+    "theme": "solid",
+    "name": "prime_heart",
+    "file": "pack/heart.png",
+    "label": "Heart",
+    "fallback": "❤️",
+    "sha256": "fbc8ec9a0fb629e74b68e44cd7c46b503b4500f42c5d4fef7a9248318e023710",
+    "source": "assets/heart.png"
+  },
+  {
+    "semantic": "heart2",
+    "theme": "solid",
+    "name": "prime_heart2",
+    "file": "pack/heart2.png",
+    "label": "Heart2",
+    "fallback": "💜",
+    "sha256": "d2a91dcc97ff3bc0b3edc1f429606f9a09a5eb00c479217510828057e3a68a06",
+    "source": "assets/heart2.png"
+  },
+  {
+    "semantic": "home",
+    "theme": "solid",
+    "name": "prime_home",
+    "file": "pack/home.png",
+    "label": "Início",
+    "fallback": "🏠",
+    "sha256": "8f5dca402024d6d14eb4320a2f57a59e298b3e4969eca1eadc6d77d725dc52a1",
+    "source": "assets/home.png"
+  },
+  {
+    "semantic": "hrench2",
+    "theme": "solid",
+    "name": "prime_hrench2",
+    "file": "pack/hrench2.png",
+    "label": "Hrench2",
+    "fallback": "🔧",
+    "sha256": "f0c26f22d299f077ffe31010e1b8625c95068a896991d281b3a054e334c922cd",
+    "source": "assets/hrench2.png"
+  },
+  {
+    "semantic": "idle",
+    "theme": "solid",
+    "name": "prime_idle",
+    "file": "pack/idle.png",
+    "label": "Idle",
+    "fallback": "🌙",
+    "sha256": "6d523ee50bd8f3d05a607b7ced8f5d1d37cd7a38020a84836f7b63f004e3f78a",
+    "source": "assets/idle.png"
+  },
+  {
+    "semantic": "image",
+    "theme": "solid",
+    "name": "prime_image",
+    "file": "pack/image.png",
+    "label": "Imagem",
+    "fallback": "🖼️",
+    "sha256": "a2b2189ba9d10650603010cb9854bc17d42301ed41efd00eefb47180058303e8",
+    "source": "assets/image.png"
+  },
+  {
+    "semantic": "infinity",
+    "theme": "solid",
+    "name": "prime_infinity",
+    "file": "pack/infinity.png",
+    "label": "Infinity",
+    "fallback": "♾️",
+    "sha256": "78983a82b7f1361d7e0c5aace92a5342633753e90dc9e8f11737bde16f4419a2",
+    "source": "assets/infinity.png"
+  },
+  {
+    "semantic": "information",
+    "theme": "solid",
+    "name": "prime_information",
+    "file": "pack/information.png",
+    "label": "Informação",
+    "fallback": "ℹ️",
+    "sha256": "2e27ba29e727829c8e5afaadf758c574af6d14aa70384ab1b575b594b87e5e16",
+    "source": "assets/information.png"
+  },
+  {
+    "semantic": "inter",
+    "theme": "solid",
+    "name": "prime_inter",
+    "file": "pack/inter.png",
+    "label": "Inter",
+    "fallback": "🏦",
+    "sha256": "f14c05d395080d2e48aece06ad023f3a5a57a0715a5ee4bc6558ccdc80320fee",
+    "source": "assets/inter.png"
+  },
+  {
+    "semantic": "interrogation",
+    "theme": "solid",
+    "name": "prime_interrogation",
+    "file": "pack/interrogation.png",
+    "label": "Interrogation",
+    "fallback": "❓",
+    "sha256": "f0c925794f75e0ab0e08ca88dbec91cad53aedc0a516f7c060384b0155382171",
+    "source": "assets/interrogation.png"
+  },
+  {
+    "semantic": "javascript",
+    "theme": "solid",
+    "name": "prime_javascript",
+    "file": "pack/javascript.png",
+    "label": "Javascript",
+    "fallback": "🟨",
+    "sha256": "aa561babd133a7021b18da00ac333f3ffe3d011ad036ea1c2f7f3e12546c6f94",
+    "source": "assets/javascript.png"
+  },
+  {
+    "semantic": "king",
+    "theme": "solid",
+    "name": "prime_king",
+    "file": "pack/king.png",
+    "label": "King",
+    "fallback": "👑",
+    "sha256": "7d2e5defd1559e41368a4bfd58a75b7d6287b182aa84386240ff22f8e6c4382e",
+    "source": "assets/king.png"
+  },
+  {
+    "semantic": "leaf",
+    "theme": "solid",
+    "name": "prime_leaf",
+    "file": "pack/leaf.png",
+    "label": "Leaf",
+    "fallback": "🍃",
+    "sha256": "d19c465e083fe9b084ef8512bfa900ea4edaf1da2b3dcf0d60237d0a0f136a9a",
+    "source": "assets/leaf.png"
+  },
+  {
+    "semantic": "less18",
+    "theme": "solid",
+    "name": "prime_less18",
+    "file": "pack/less18.png",
+    "label": "Less18",
+    "fallback": "🔞",
+    "sha256": "21601483df5395848f9d9adeb37dcdde7df4aed4d60e8a2a6c77dd6b0ca04b71",
+    "source": "assets/less18.png"
+  },
+  {
+    "semantic": "light",
+    "theme": "solid",
+    "name": "prime_light",
+    "file": "pack/light.png",
+    "label": "Light",
+    "fallback": "💡",
+    "sha256": "a04f60e79a5ad14555121567737ddc1b38c548928075f5dec528776a827bc0ad",
+    "source": "assets/light.png"
+  },
+  {
+    "semantic": "light_on",
+    "theme": "solid",
+    "name": "prime_light_on",
+    "file": "pack/light_on.png",
+    "label": "Light On",
+    "fallback": "🔆",
+    "sha256": "8bd84c078e8bd1c2feece03cdcf5b2260615ed7dca966ee091d1595b8376544f",
+    "source": "assets/light_on.png"
+  },
+  {
+    "semantic": "like",
+    "theme": "solid",
+    "name": "prime_like",
+    "file": "pack/like.png",
+    "label": "Like",
+    "fallback": "👍",
+    "sha256": "85364c0287fb71bea21d4a3f31ab20ba2a40d6d564c350dc24d2f4a7c5b76a31",
+    "source": "assets/like.png"
+  },
+  {
+    "semantic": "link",
+    "theme": "solid",
+    "name": "prime_link",
+    "file": "pack/link.png",
+    "label": "Link",
+    "fallback": "🔗",
+    "sha256": "5e4b6b241ce7bc0aa56cfcc4217977ba46a6479fb8376d7f51c169777013554a",
+    "source": "assets/link.png"
+  },
+  {
+    "semantic": "listening_music",
+    "theme": "solid",
+    "name": "prime_listening_music",
+    "file": "pack/listening_music.png",
+    "label": "Listening Music",
+    "fallback": "🎵",
+    "sha256": "7ca77afc9ac0f33f76f50af5a0af2f79aee981cf3dda4c7fffcd1e81ffde9a21",
+    "source": "assets/listening_music.png"
+  },
+  {
+    "semantic": "litecoin",
+    "theme": "solid",
+    "name": "prime_litecoin",
+    "file": "pack/litecoin.png",
+    "label": "Litecoin",
+    "fallback": "Ł",
+    "sha256": "7d0d30025383155141bd7bd5760d1c758fba355d8c36af35e7325ce689d1116d",
+    "source": "assets/litecoin.png"
+  },
+  {
+    "semantic": "location",
+    "theme": "solid",
+    "name": "prime_location",
+    "file": "pack/location.png",
+    "label": "Location",
+    "fallback": "📍",
+    "sha256": "0ea3f55e5a7832417ed4565be821b67512dd68e4e5889e0f0f86c36474789c5e",
+    "source": "assets/location.png"
+  },
+  {
+    "semantic": "lock",
+    "theme": "solid",
+    "name": "prime_lock",
+    "file": "pack/lock.png",
+    "label": "Bloquear",
+    "fallback": "🔒",
+    "sha256": "9b6bd9478b169afeb6d019f867c232ca824dfb754e819c50f8dfd6dcc0423ee9",
+    "source": "assets/lock.png"
+  },
+  {
+    "semantic": "mail2",
+    "theme": "solid",
+    "name": "prime_mail2",
+    "file": "pack/mail2.png",
+    "label": "E-mail",
+    "fallback": "📧",
+    "sha256": "56de3da10ca632ebd7ef87308e2a6765bc876148d104b729211857cabd2cf26f",
+    "source": "assets/mail2.png"
+  },
+  {
+    "semantic": "member",
+    "theme": "solid",
+    "name": "prime_member",
+    "file": "pack/member.png",
+    "label": "Membro",
+    "fallback": "👤",
+    "sha256": "75c5d60c2d729416434c507665620841e97d418658a80e4c0ccd296ab873157b",
+    "source": "assets/member.png"
+  },
+  {
+    "semantic": "members",
+    "theme": "solid",
+    "name": "prime_members",
+    "file": "pack/members.png",
+    "label": "Membros",
+    "fallback": "👥",
+    "sha256": "b0fcfe1b6c6692589979e6d730236383add8c5572d783f57a79f8bff50026c3f",
+    "source": "assets/members.png"
+  },
+  {
+    "semantic": "men",
+    "theme": "solid",
+    "name": "prime_men",
+    "file": "pack/men.png",
+    "label": "Men",
+    "fallback": "👨",
+    "sha256": "6b6c34b147c5e457c693ce5c8dad3d1a5e31038ff6a3f91b4d3e3de119742da0",
+    "source": "assets/men.png"
+  },
+  {
+    "semantic": "mercado_pago",
+    "theme": "solid",
+    "name": "prime_mercado_pago",
+    "file": "pack/mercado_pago.png",
+    "label": "Mercado Pago",
+    "fallback": "💳",
+    "sha256": "802b3e11475cd15ca1b3e50d420a74b86c447e224cb37ffd2d4704123dd46c61",
+    "source": "assets/mercado_pago.png"
+  },
+  {
+    "semantic": "message",
+    "theme": "solid",
+    "name": "prime_message",
+    "file": "pack/message.png",
+    "label": "Mensagem",
+    "fallback": "💬",
+    "sha256": "398d89bd5ee19f40474d00c3437503e8601220593be34e93632d38fadfb6043a",
+    "source": "assets/message.png"
+  },
+  {
+    "semantic": "microphone",
+    "theme": "solid",
+    "name": "prime_microphone",
+    "file": "pack/microphone.png",
+    "label": "Microphone",
+    "fallback": "🎙️",
+    "sha256": "a1032504b4b1d8b939187a27cb3b3c1d3b44f31edcc123020b1b59aa50cf929f",
+    "source": "assets/microphone.png"
+  },
+  {
+    "semantic": "microphone_muted",
+    "theme": "solid",
+    "name": "prime_microphone_muted",
+    "file": "pack/microphone_muted.png",
+    "label": "Microphone Muted",
+    "fallback": "🔇",
+    "sha256": "8066a291c71bb7e2d999793f9e3229a4b0210b322ac7e6c0c680c32ffaa3fbcd",
+    "source": "assets/microphone_muted.png"
+  },
+  {
+    "semantic": "minus",
+    "theme": "solid",
+    "name": "prime_minus",
+    "file": "pack/minus.png",
+    "label": "Remover",
+    "fallback": "➖",
+    "sha256": "8df6bf2d75fc6bc92e760a0e7c2799072ae15b729b4afe44693c3b62fbd254a6",
+    "source": "assets/minus.png"
+  },
+  {
+    "semantic": "mobile",
+    "theme": "solid",
+    "name": "prime_mobile",
+    "file": "pack/mobile.png",
+    "label": "Celular",
+    "fallback": "📱",
+    "sha256": "d544b643529aef86f264b93c4f28c35b3bcf8ab32abd52a5d1ea9c8061a9b1b1",
+    "source": "assets/mobile.png"
+  },
+  {
+    "semantic": "moon",
+    "theme": "solid",
+    "name": "prime_moon",
+    "file": "pack/moon.png",
+    "label": "Moon",
+    "fallback": "🌙",
+    "sha256": "7e8f296e6b8fbd585196d96a7a463c36f31e6e4684319ee38ff51270a5c8e2e4",
+    "source": "assets/moon.png"
+  },
+  {
+    "semantic": "more18",
+    "theme": "solid",
+    "name": "prime_more18",
+    "file": "pack/more18.png",
+    "label": "More18",
+    "fallback": "🔞",
+    "sha256": "e4e27c3e288c3b54ed883470dc3c0ab6ff10f57fb83e909c41f3f9f45e1723d9",
+    "source": "assets/more18.png"
+  },
+  {
+    "semantic": "music",
+    "theme": "solid",
+    "name": "prime_music",
+    "file": "pack/music.png",
+    "label": "Music",
+    "fallback": "🎶",
+    "sha256": "bc3c7d8c5e267c93699b4088f5b31a05cd6f211c612211ca451ffef844fbf2df",
+    "source": "assets/music.png"
+  },
+  {
+    "semantic": "nubank",
+    "theme": "solid",
+    "name": "prime_nubank",
+    "file": "pack/nubank.png",
+    "label": "Nubank",
+    "fallback": "💜",
+    "sha256": "fc64e1fe89f0646248b23946ebf81093f8e2d9ace870c0da4d9e3835fd7d33c2",
+    "source": "assets/nubank.png"
+  },
+  {
+    "semantic": "off",
+    "theme": "solid",
+    "name": "prime_off",
+    "file": "pack/off.png",
+    "label": "Desativado",
+    "fallback": "🔴",
+    "sha256": "ab17f6660a26a8be2c50ef03bdbc2b68f2b4a52487cb2f87592a23cf77060d3c",
+    "source": "assets/off.png"
+  },
+  {
+    "semantic": "on",
+    "theme": "solid",
+    "name": "prime_on",
+    "file": "pack/on.png",
+    "label": "Ativado",
+    "fallback": "🟢",
+    "sha256": "38577e73f92cf106748288d6b292832b6338a50a174bfd913fcde2b335f94bc1",
+    "source": "assets/on.png"
+  },
+  {
+    "semantic": "online",
+    "theme": "solid",
+    "name": "prime_online",
+    "file": "pack/online.png",
+    "label": "Online",
+    "fallback": "🟢",
+    "sha256": "46cb1bf9d3eb903d9501f6711a0d3a0b4e47a442ea7ecbee315eff28e88085b2",
+    "source": "assets/online.png"
+  },
+  {
+    "semantic": "pagbank",
+    "theme": "solid",
+    "name": "prime_pagbank",
+    "file": "pack/pagbank.png",
+    "label": "Pagbank",
+    "fallback": "💳",
+    "sha256": "5d730757cc12ca839ec3af5e9336e632344597efe5a1db7ae59eee4cce5bc40b",
+    "source": "assets/pagbank.png"
+  },
+  {
+    "semantic": "paint",
+    "theme": "solid",
+    "name": "prime_paint",
+    "file": "pack/paint.png",
+    "label": "Personalização",
+    "fallback": "🎨",
+    "sha256": "67b82099f512785765e34eb84e5f850a83ca92344e545c71ccd71e92d088cd89",
+    "source": "assets/paint.png"
+  },
+  {
+    "semantic": "partner",
+    "theme": "solid",
+    "name": "prime_partner",
+    "file": "pack/partner.png",
+    "label": "Parceria",
+    "fallback": "🤝",
+    "sha256": "45d9d0b0536023ebd03585fa80ec6e385c29b21dbcd5a6efa2eeacbbb877fac8",
+    "source": "assets/partner.png"
+  },
+  {
+    "semantic": "pause",
+    "theme": "solid",
+    "name": "prime_pause",
+    "file": "pack/pause.png",
+    "label": "Pausar",
+    "fallback": "⏸️",
+    "sha256": "3246b24a5aa2b031c8869089c4b017add9c02b82fcaf0b496504a78c21fc3719",
+    "source": "assets/pause.png"
+  },
+  {
+    "semantic": "php",
+    "theme": "solid",
+    "name": "prime_php",
+    "file": "pack/php.png",
+    "label": "Php",
+    "fallback": "🐘",
+    "sha256": "dd99e52ad7adb17703db0ae84b6bcf8ca9a215bd7d35b637852ca4346cad9406",
+    "source": "assets/php.png"
+  },
+  {
+    "semantic": "picpay",
+    "theme": "solid",
+    "name": "prime_picpay",
+    "file": "pack/picpay.png",
+    "label": "PicPay",
+    "fallback": "💚",
+    "sha256": "37b9ba14e16d920a19d417fb81ed030cca11384a1ed123b82c9db981b76a1c92",
+    "source": "assets/picpay.png"
+  },
+  {
+    "semantic": "pin",
+    "theme": "solid",
+    "name": "prime_pin",
+    "file": "pack/pin.png",
+    "label": "Fixar",
+    "fallback": "📌",
+    "sha256": "4a431020b0a54bd10d75f1b0c2e9fe79a2b861fc61e2fe086e0af2888c2e2f6f",
+    "source": "assets/pin.png"
+  },
+  {
+    "semantic": "pix",
+    "theme": "solid",
+    "name": "prime_pix",
+    "file": "pack/pix.png",
+    "label": "PIX",
+    "fallback": "💠",
+    "sha256": "81c6544ca663315d0357f046913331c8a246f3aec791d270b0bb478903020ca6",
+    "source": "assets/pix.png"
+  },
+  {
+    "semantic": "planet",
+    "theme": "solid",
+    "name": "prime_planet",
+    "file": "pack/planet.png",
+    "label": "Planet",
+    "fallback": "🪐",
+    "sha256": "1ecb065bd4fbd59d4e176910b5b85f47b594c7b23b53d42b276e56c15e53c979",
+    "source": "assets/planet.png"
+  },
+  {
+    "semantic": "play",
+    "theme": "solid",
+    "name": "prime_play",
+    "file": "pack/play.png",
+    "label": "Iniciar",
+    "fallback": "▶️",
+    "sha256": "999053a438b4da81aea0496d76a436cee54c0a1295c59aa78ad70a17ed3bdb04",
+    "source": "assets/play.png"
+  },
+  {
+    "semantic": "plus",
+    "theme": "solid",
+    "name": "prime_plus",
+    "file": "pack/plus.png",
+    "label": "Adicionar",
+    "fallback": "➕",
+    "sha256": "dfaec2fdb4f2390ceb9e5f13cae73a9c86f7d854babf4f423375f638c8f0a474",
+    "source": "assets/plus.png"
+  },
+  {
+    "semantic": "power",
+    "theme": "solid",
+    "name": "prime_power",
+    "file": "pack/power.png",
+    "label": "Ligar/Desligar",
+    "fallback": "⏻",
+    "sha256": "0ef2009445425dbd2699e9a8504b58e99d458c41221cd9f94e478b18b9b5800f",
+    "source": "assets/power.png"
+  },
+  {
+    "semantic": "pushin_pay",
+    "theme": "solid",
+    "name": "prime_pushin_pay",
+    "file": "pack/pushin_pay.png",
+    "label": "Pushin Pay",
+    "fallback": "💳",
+    "sha256": "84d561bcb7dfb1f94a63b69925f3f9eda53e90fc9d488bd2cead7b2eb811b124",
+    "source": "assets/pushin_pay.png"
+  },
+  {
+    "semantic": "python",
+    "theme": "solid",
+    "name": "prime_python",
+    "file": "pack/python.png",
+    "label": "Python",
+    "fallback": "🐍",
+    "sha256": "e08baaa5ea582857204c40b4913417d5bee97098d2f9118a039ced4c3393bb2b",
+    "source": "assets/python.png"
+  },
+  {
+    "semantic": "question",
+    "theme": "solid",
+    "name": "prime_question",
+    "file": "pack/question.png",
+    "label": "Dúvida",
+    "fallback": "❓",
+    "sha256": "e5441bc389a3ba2f9bc829af6c0aa0bcbf72a0088bdfc66ff8117d1d405be96f",
+    "source": "assets/question.png"
+  },
+  {
+    "semantic": "reaction",
+    "theme": "solid",
+    "name": "prime_reaction",
+    "file": "pack/reaction.png",
+    "label": "Emoji",
+    "fallback": "😀",
+    "sha256": "18d78fb499649d47212ff8d56d1c9b20972a9ddc5d8b169582a0290091ce4e70",
+    "source": "assets/reaction.png"
+  },
+  {
+    "semantic": "reaction_add",
+    "theme": "solid",
+    "name": "prime_reaction_add",
+    "file": "pack/reaction_add.png",
+    "label": "Adicionar emoji",
+    "fallback": "➕",
+    "sha256": "d2f5d230a825e2cffa050734892d43710b70528efd3d7aecaec7ba965704f719",
+    "source": "assets/reaction_add.png"
+  },
+  {
+    "semantic": "receipt",
+    "theme": "solid",
+    "name": "prime_receipt",
+    "file": "pack/receipt.png",
+    "label": "Comprovante",
+    "fallback": "🧾",
+    "sha256": "537d34bd0845c7ae71bd50662c3bf5cc2918250b64e450b3ead7635eebc0beff",
+    "source": "assets/receipt.png"
+  },
+  {
+    "semantic": "red",
+    "theme": "solid",
+    "name": "prime_red",
+    "file": "pack/red.png",
+    "label": "Red",
+    "fallback": "🔴",
+    "sha256": "0f9579df25ccb84ee38bb40dbe9ddb75ba1e16ae6ef967048c1adbaa283bab3c",
+    "source": "assets/red.png"
+  },
+  {
+    "semantic": "relations",
+    "theme": "solid",
+    "name": "prime_relations",
+    "file": "pack/relations.png",
+    "label": "Relations",
+    "fallback": "🤝",
+    "sha256": "b630a687e6076ce1958a8bc4c8ffbe85650cd1a4223df503d37d614ffd00ef6e",
+    "source": "assets/relations.png"
+  },
+  {
+    "semantic": "reload",
+    "theme": "solid",
+    "name": "prime_reload",
+    "file": "pack/reload.png",
+    "label": "Atualizar",
+    "fallback": "🔄",
+    "sha256": "c7bf960fa0272955b5ff443d985fdaaf8b351def70b49fc45a7e840a039b3b01",
+    "source": "assets/reload.png"
+  },
+  {
+    "semantic": "robot",
+    "theme": "solid",
+    "name": "prime_robot",
+    "file": "pack/robot.png",
+    "label": "Bot",
+    "fallback": "🤖",
+    "sha256": "7e8c4928c6e5dff7792b0c21628071b1921e223fcf67c93d16474147db43aed9",
+    "source": "assets/robot.png"
+  },
+  {
+    "semantic": "rocket",
+    "theme": "solid",
+    "name": "prime_rocket",
+    "file": "pack/rocket.png",
+    "label": "Iniciar",
+    "fallback": "🚀",
+    "sha256": "83860dbaf5bd774571eecafb62518546abbc1a4f330950137f5f7ff4bebe7ad6",
+    "source": "assets/rocket.png"
+  },
+  {
+    "semantic": "role",
+    "theme": "solid",
+    "name": "prime_role",
+    "file": "pack/role.png",
+    "label": "Cargo",
+    "fallback": "🏷️",
+    "sha256": "b06870dbca458ae672792b629bf78bf2d32d605a8fb29d13f56a9903730d7581",
+    "source": "assets/role.png"
+  },
+  {
+    "semantic": "route",
+    "theme": "solid",
+    "name": "prime_route",
+    "file": "pack/route.png",
+    "label": "Route",
+    "fallback": "🧭",
+    "sha256": "44449c789cc5330a464f8f779003f12630cf6169bd384aecab457a351ce95510",
+    "source": "assets/route.png"
+  },
+  {
+    "semantic": "save",
+    "theme": "solid",
+    "name": "prime_save",
+    "file": "pack/save.png",
+    "label": "Salvar",
+    "fallback": "💾",
+    "sha256": "e977454b72cd3ca2bd5ca82419e325a851bc33c3b2f9c64ee0f549389a3075a5",
+    "source": "assets/save.png"
+  },
+  {
+    "semantic": "science",
+    "theme": "solid",
+    "name": "prime_science",
+    "file": "pack/science.png",
+    "label": "Science",
+    "fallback": "🔬",
+    "sha256": "068ed55d9d058cf122faeb47e45089599a88fa15cb8e32306ddd96a2dd090745",
+    "source": "assets/science.png"
+  },
+  {
+    "semantic": "search",
+    "theme": "solid",
+    "name": "prime_search",
+    "file": "pack/search.png",
+    "label": "Pesquisar",
+    "fallback": "🔎",
+    "sha256": "5e3fd36e115459a81fad95358fb28aea99ae241bbf15e16d3fed649ad420a345",
+    "source": "assets/search.png"
+  },
+  {
+    "semantic": "settings",
+    "theme": "solid",
+    "name": "prime_settings",
+    "file": "pack/settings.png",
+    "label": "Configurações",
+    "fallback": "⚙️",
+    "sha256": "b88147b6e17d811bcce5fa7c35fdd8eb6b80fe7afcd25ec6eca4e5b7fb8a5db9",
+    "source": "assets/settings.png"
+  },
+  {
+    "semantic": "settings2",
+    "theme": "solid",
+    "name": "prime_settings2",
+    "file": "pack/settings2.png",
+    "label": "Settings2",
+    "fallback": "🛠️",
+    "sha256": "6e5b80f8f456c285b279dd76a4ab3dc954f9936c22e712aed3e76a6546082683",
+    "source": "assets/settings2.png"
+  },
+  {
+    "semantic": "shield",
+    "theme": "solid",
+    "name": "prime_shield",
+    "file": "pack/shield.png",
+    "label": "Proteção",
+    "fallback": "🛡️",
+    "sha256": "c21949fdd99d32048db316404e00d69019b0aabf93427d00fce73132d077e1da",
+    "source": "assets/shield.png"
+  },
+  {
+    "semantic": "shield_star",
+    "theme": "solid",
+    "name": "prime_shield_star",
+    "file": "pack/shield_star.png",
+    "label": "Shield Star",
+    "fallback": "🛡️",
+    "sha256": "9e433037d2abd020d994b4d06b994726ffa8db298036628b49cfa2d63b3618c1",
+    "source": "assets/shield_star.png"
+  },
+  {
+    "semantic": "slash",
+    "theme": "solid",
+    "name": "prime_slash",
+    "file": "pack/slash.png",
+    "label": "Slash",
+    "fallback": "⌨️",
+    "sha256": "5056c36f4504b5ab17673cd624a34e40c44707b81fcc04514b8ef388f96329c0",
+    "source": "assets/slash.png"
+  },
+  {
+    "semantic": "solar_system",
+    "theme": "solid",
+    "name": "prime_solar_system",
+    "file": "pack/solar_system.png",
+    "label": "Solar System",
+    "fallback": "🌌",
+    "sha256": "ffaf8969caeddaab19bc8402b48334f4a1442c67a531ee2d176a30874bdecc2d",
+    "source": "assets/solar_system.png"
+  },
+  {
+    "semantic": "sound",
+    "theme": "solid",
+    "name": "prime_sound",
+    "file": "pack/sound.png",
+    "label": "Sound",
+    "fallback": "🔊",
+    "sha256": "618ff84eea3f51b1b79335f2d5807df6581b1b8693bcb71d0c5fc103f22c3951",
+    "source": "assets/sound.png"
+  },
+  {
+    "semantic": "sparkles",
+    "theme": "solid",
+    "name": "prime_sparkles",
+    "file": "pack/sparkles.png",
+    "label": "Especial",
+    "fallback": "✨",
+    "sha256": "d7567f0f9880f0ad3d3f138477e5cc1ae1c41b453f77920681b36c93c1bfa2b0",
+    "source": "assets/sparkles.png"
+  },
+  {
+    "semantic": "speech",
+    "theme": "solid",
+    "name": "prime_speech",
+    "file": "pack/speech.png",
+    "label": "Speech",
+    "fallback": "💬",
+    "sha256": "16c40da1ba2ddce76e13f4e994694d15015b6e557ed3ed560204cd62d77c9390",
+    "source": "assets/speech.png"
+  },
+  {
+    "semantic": "speech2",
+    "theme": "solid",
+    "name": "prime_speech2",
+    "file": "pack/speech2.png",
+    "label": "Speech2",
+    "fallback": "🗨️",
+    "sha256": "1faefe995a5cbe9e96a523d407b202d25d02b9b82cee6ba927dcc3114e928e31",
+    "source": "assets/speech2.png"
+  },
+  {
+    "semantic": "speech3",
+    "theme": "solid",
+    "name": "prime_speech3",
+    "file": "pack/speech3.png",
+    "label": "Speech3",
+    "fallback": "💭",
+    "sha256": "68875fe237deff257923b418f626b2de352a34e32fce0746a288d6f9afe96450",
+    "source": "assets/speech3.png"
+  },
+  {
+    "semantic": "star",
+    "theme": "solid",
+    "name": "prime_star",
+    "file": "pack/star.png",
+    "label": "Estrela",
+    "fallback": "⭐",
+    "sha256": "9c374545b0f871687225b113cdf8a6952a33fa2fcba31b59c43d320d2334a1e9",
+    "source": "assets/star.png"
+  },
+  {
+    "semantic": "store",
+    "theme": "solid",
+    "name": "prime_store",
+    "file": "pack/store.png",
+    "label": "Loja",
+    "fallback": "🏪",
+    "sha256": "5ecb1f9ea22e0a5ece29958d9800ac8b2c8b669a0c0f49f9ccc591a694c1d57e",
+    "source": "assets/store.png"
+  },
+  {
+    "semantic": "streaming",
+    "theme": "solid",
+    "name": "prime_streaming",
+    "file": "pack/streaming.png",
+    "label": "Streaming",
+    "fallback": "📺",
+    "sha256": "960360942d41386f32a32506f84f210a99803aee909ed8678dfd09976dcfeeb1",
+    "source": "assets/streaming.png"
+  },
+  {
+    "semantic": "stripe",
+    "theme": "solid",
+    "name": "prime_stripe",
+    "file": "pack/stripe.png",
+    "label": "Stripe",
+    "fallback": "💳",
+    "sha256": "bed6a8ea797f3da60623dde5c6b0cea0263c25d420d04ad43e9528c1851380df",
+    "source": "assets/stripe.png"
+  },
+  {
+    "semantic": "student",
+    "theme": "solid",
+    "name": "prime_student",
+    "file": "pack/student.png",
+    "label": "Student",
+    "fallback": "🎓",
+    "sha256": "91986b7e284d1ee41dcd9424fbd5cb773b94fdc298f11cd9a96af540945218f3",
+    "source": "assets/student.png"
+  },
+  {
+    "semantic": "sword",
+    "theme": "solid",
+    "name": "prime_sword",
+    "file": "pack/sword.png",
+    "label": "Sword",
+    "fallback": "⚔️",
+    "sha256": "bfcacec608368c043dc2f6a060da5e67a2588238976999bc5d819ca935a66dd8",
+    "source": "assets/sword.png"
+  },
+  {
+    "semantic": "swords",
+    "theme": "solid",
+    "name": "prime_swords",
+    "file": "pack/swords.png",
+    "label": "Swords",
+    "fallback": "⚔️",
+    "sha256": "19a67ad79ea1b8109ce34d2a39255f260b1877f72cd6a05858b01abcba0721ff",
+    "source": "assets/swords.png"
+  },
+  {
+    "semantic": "telegram",
+    "theme": "solid",
+    "name": "prime_telegram",
+    "file": "pack/telegram.png",
+    "label": "Telegram",
+    "fallback": "✈️",
+    "sha256": "1d536795e0c763ba5a9314bd119dce50d9d3cbf33374ea372586e2a65c2af62b",
+    "source": "assets/telegram.png"
+  },
+  {
+    "semantic": "textc",
+    "theme": "solid",
+    "name": "prime_textc",
+    "file": "pack/textc.png",
+    "label": "Textc",
+    "fallback": "📝",
+    "sha256": "c3039fccc47c2ac2a3a612e5413330384c09432f5de340ff9c23a85462929da7",
+    "source": "assets/textc.png"
+  },
+  {
+    "semantic": "thunder",
+    "theme": "solid",
+    "name": "prime_thunder",
+    "file": "pack/thunder.png",
+    "label": "Thunder",
+    "fallback": "⚡",
+    "sha256": "22d225b6ea903ec72be8e7d2ea5db11f80f9148d48fe4f3bce1d8a7e15ac9029",
+    "source": "assets/thunder.png"
+  },
+  {
+    "semantic": "ticket",
+    "theme": "solid",
+    "name": "prime_ticket",
+    "file": "pack/ticket.png",
+    "label": "Ticket",
+    "fallback": "🎫",
+    "sha256": "198e023461c25b113d150962df62c4bf2c9fc4eb61dcd7bbbdf5c28104cf8de6",
+    "source": "assets/ticket.png"
+  },
+  {
+    "semantic": "time",
+    "theme": "solid",
+    "name": "prime_time",
+    "file": "pack/time.png",
+    "label": "Tempo",
+    "fallback": "⏱️",
+    "sha256": "44293435d66eba82193f7cd6d7798723a673882bc710fc24e089d176933273c4",
+    "source": "assets/time.png"
+  },
+  {
+    "semantic": "trophy",
+    "theme": "solid",
+    "name": "prime_trophy",
+    "file": "pack/trophy.png",
+    "label": "Troféu",
+    "fallback": "🏆",
+    "sha256": "f1fbda6b513886a7580b39c2f104268e3d665fff0e44ed9b17e22d5ea0a3ad6b",
+    "source": "assets/trophy.png"
+  },
+  {
+    "semantic": "truck",
+    "theme": "solid",
+    "name": "prime_truck",
+    "file": "pack/truck.png",
+    "label": "Entrega",
+    "fallback": "🚚",
+    "sha256": "cfd0644d644467b334f7791a8dfcc143a61fa9f9b56eac3953a7160c08eaedd9",
+    "source": "assets/truck.png"
+  },
+  {
+    "semantic": "typescript",
+    "theme": "solid",
+    "name": "prime_typescript",
+    "file": "pack/typescript.png",
+    "label": "Typescript",
+    "fallback": "🔷",
+    "sha256": "adc1cb459254039a3f503c54733a189a04c7f9314f648645f2a32b7c8f6c896b",
+    "source": "assets/typescript.png"
+  },
+  {
+    "semantic": "typescript2",
+    "theme": "solid",
+    "name": "prime_typescript2",
+    "file": "pack/typescript2.png",
+    "label": "Typescript2",
+    "fallback": "🔷",
+    "sha256": "2abf611540608b86875fe83808276313f9fd0cb0c0679bc9465bd1928bf9edd2",
+    "source": "assets/typescript2.png"
+  },
+  {
+    "semantic": "unlock",
+    "theme": "solid",
+    "name": "prime_unlock",
+    "file": "pack/unlock.png",
+    "label": "Desbloquear",
+    "fallback": "🔓",
+    "sha256": "9a66800c7c49f447e5d3b97be5e1361be4a628f5dea7467c2157562426549507",
+    "source": "assets/unlock.png"
+  },
+  {
+    "semantic": "verified",
+    "theme": "solid",
+    "name": "prime_verified",
+    "file": "pack/verified.png",
+    "label": "Verificado",
+    "fallback": "✅",
+    "sha256": "adcbd12c7416ff86a8172c3540e5d57b688cb8f725f45c611541a79626c230f6",
+    "source": "assets/verified.png"
+  },
+  {
+    "semantic": "voice",
+    "theme": "solid",
+    "name": "prime_voice",
+    "file": "pack/voice.png",
+    "label": "Voice",
+    "fallback": "🔊",
+    "sha256": "61e16e80c894e2792467b42bf749d70aed0bd9bd0a3020d9ac12146270e933bc",
+    "source": "assets/voice.png"
+  },
+  {
+    "semantic": "voice_lock",
+    "theme": "solid",
+    "name": "prime_voice_lock",
+    "file": "pack/voice_lock.png",
+    "label": "Voice Lock",
+    "fallback": "🔒",
+    "sha256": "7a960960ccae3f58b2dff3b6179122549218c2422a9259d236c4ca63502eb3ca",
+    "source": "assets/voice_lock.png"
+  },
+  {
+    "semantic": "vscode",
+    "theme": "solid",
+    "name": "prime_vscode",
+    "file": "pack/vscode.png",
+    "label": "Vscode",
+    "fallback": "💻",
+    "sha256": "96b7845d9ba8378bd6d4aec8a0e1ea79b02e2f6cc5d6c09e64a11ae46941ca9f",
+    "source": "assets/vscode.png"
+  },
+  {
+    "semantic": "wallet",
+    "theme": "solid",
+    "name": "prime_wallet",
+    "file": "pack/wallet.png",
+    "label": "Carteira",
+    "fallback": "👛",
+    "sha256": "f895c2f39313cc4eb083d41b3b05bb45026db90401afee2d613ed7f00eaa9083",
+    "source": "assets/wallet.png"
+  },
+  {
+    "semantic": "wand",
+    "theme": "solid",
+    "name": "prime_wand",
+    "file": "pack/wand.png",
+    "label": "Personalizar",
+    "fallback": "🪄",
+    "sha256": "4e5f7fb1844730c62857c7d344736667a233f3c3f9133c674ac3d34966a3d80a",
+    "source": "assets/wand.png"
+  },
+  {
+    "semantic": "warn",
+    "theme": "solid",
+    "name": "prime_warn",
+    "file": "pack/warn.png",
+    "label": "Aviso",
+    "fallback": "⚠️",
+    "sha256": "d385963f943c9181e456bd15a98df8faccc918f78256f270af486f99d078e9e2",
+    "source": "assets/warn.png"
+  },
+  {
+    "semantic": "web",
+    "theme": "solid",
+    "name": "prime_web",
+    "file": "pack/web.png",
+    "label": "Web",
+    "fallback": "🌐",
+    "sha256": "aa800a322810c10c41ff4e74d2e91349e35be9c8d88f94209be5ff93e60d2884",
+    "source": "assets/web.png"
+  },
+  {
+    "semantic": "website",
+    "theme": "solid",
+    "name": "prime_website",
+    "file": "pack/website.png",
+    "label": "Site",
+    "fallback": "🌍",
+    "sha256": "39349c2bddf0f62acba7135856e32847b05fd35372245761fc12f69464f43910",
+    "source": "assets/website.png"
+  },
+  {
+    "semantic": "whatsapp",
+    "theme": "solid",
+    "name": "prime_whatsapp",
+    "file": "pack/whatsapp.png",
+    "label": "Whatsapp",
+    "fallback": "💬",
+    "sha256": "d2809035d414147e1e4c1d9ebd5a5840b8a6941c554593d2ca88c5416ebbf619",
+    "source": "assets/whatsapp.png"
+  },
+  {
+    "semantic": "wifi",
+    "theme": "solid",
+    "name": "prime_wifi",
+    "file": "pack/wifi.png",
+    "label": "Wifi",
+    "fallback": "📶",
+    "sha256": "81403c45884f8ce1880f061bed89217ea9e6b044c094cb8ebfb4d77025684963",
+    "source": "assets/wifi.png"
+  },
+  {
+    "semantic": "wifi2",
+    "theme": "solid",
+    "name": "prime_wifi2",
+    "file": "pack/wifi2.png",
+    "label": "Wifi2",
+    "fallback": "📡",
+    "sha256": "60155c683e18e596b46f66c9ea82a71c794ca98a972aaa85615b88f45eba51a7",
+    "source": "assets/wifi2.png"
+  },
+  {
+    "semantic": "women",
+    "theme": "solid",
+    "name": "prime_women",
+    "file": "pack/women.png",
+    "label": "Women",
+    "fallback": "👩",
+    "sha256": "c7a9aa1a3d80cf5c8f2c3464980e3425be83bccc61b47ba0f57cd922232774ae",
+    "source": "assets/women.png"
+  },
+  {
+    "semantic": "wrong",
+    "theme": "solid",
+    "name": "prime_wrong",
+    "file": "pack/wrong.png",
+    "label": "Erro",
+    "fallback": "❌",
+    "sha256": "b2549a261b54a5c16c1b92cc2bb29e829727ca94f9cf761871c013647c0aaec0",
+    "source": "assets/wrong.png"
+  },
+  {
+    "semantic": "z0",
+    "theme": "solid",
+    "name": "prime_z0",
+    "file": "pack/z0.png",
+    "label": "Z0",
+    "fallback": "✨",
+    "sha256": "03f094b223ee60440beef38e57dcf13b17e9798fbc53074420f833fff8b6b356",
+    "source": "assets/z0.png"
+  },
+  {
+    "semantic": "z1",
+    "theme": "solid",
+    "name": "prime_z1",
+    "file": "pack/z1.png",
+    "label": "Z1",
+    "fallback": "✨",
+    "sha256": "f8fd8dd3c4f82978a03c5fce4c1a0c828d36b021f74ecccec6a101de49cb8d85",
+    "source": "assets/z1.png"
+  },
+  {
+    "semantic": "z2",
+    "theme": "solid",
+    "name": "prime_z2",
+    "file": "pack/z2.png",
+    "label": "Z2",
+    "fallback": "✨",
+    "sha256": "cd152330574c7fb90d494326c39db4d8c9adce643a1c6a14364a2875c1d2ee4a",
+    "source": "assets/z2.png"
+  },
+  {
+    "semantic": "z3",
+    "theme": "solid",
+    "name": "prime_z3",
+    "file": "pack/z3.png",
+    "label": "Z3",
+    "fallback": "✨",
+    "sha256": "428c2c2be536baef8fd2ee4218b2ed88f3daad1d66f1bba3dfa5fa6ebf342774",
+    "source": "assets/z3.png"
+  },
+  {
+    "semantic": "z4",
+    "theme": "solid",
+    "name": "prime_z4",
+    "file": "pack/z4.png",
+    "label": "Z4",
+    "fallback": "✨",
+    "sha256": "be6dd2fba94ba0eb08ed019e163efb9cec15a0039a62d8ffbe52de69702526bf",
+    "source": "assets/z4.png"
+  },
+  {
+    "semantic": "zynx",
+    "theme": "solid",
+    "name": "prime_zynx",
+    "file": "pack/zynx.png",
+    "label": "Zynx",
+    "fallback": "✨",
+    "sha256": "28d874099867221897331ff4b0143d1842a9bfb6f09a000db2f6daf9496b6795",
+    "source": "assets/zynx.png"
+  },
+  {
+    "semantic": "zynx_0",
+    "theme": "solid",
+    "name": "prime_zynx_0",
+    "file": "pack/zynx_0.png",
+    "label": "Zynx 0",
+    "fallback": "✨",
+    "sha256": "fe4a17bf3486125ce668b704b74d7c5f2c61c772603714ba6c2ad26bc7ef4165",
+    "source": "assets/zynx_0.png"
+  },
+  {
+    "semantic": "zynx_1",
+    "theme": "solid",
+    "name": "prime_zynx_1",
+    "file": "pack/zynx_1.png",
+    "label": "Zynx 1",
+    "fallback": "✨",
+    "sha256": "41e7049964c167ba347cde36e6b7f65cb08186051ace4be31073851bfd2109e1",
+    "source": "assets/zynx_1.png"
+  },
+  {
+    "semantic": "zynx_2",
+    "theme": "solid",
+    "name": "prime_zynx_2",
+    "file": "pack/zynx_2.png",
+    "label": "Zynx 2",
+    "fallback": "✨",
+    "sha256": "cd8779257ecb9dceb97909810fa4ae0deb06608ff2e355b9c11128b77da7cc83",
+    "source": "assets/zynx_2.png"
+  },
+  {
+    "semantic": "zynx_3",
+    "theme": "solid",
+    "name": "prime_zynx_3",
+    "file": "pack/zynx_3.png",
+    "label": "Zynx 3",
+    "fallback": "✨",
+    "sha256": "6f1562f43331926142dc1c9984652e47328dfc87ef44fe27a004c3bf63cb1cde",
+    "source": "assets/zynx_3.png"
+  },
+  {
+    "semantic": "zynx_4",
+    "theme": "solid",
+    "name": "prime_zynx_4",
+    "file": "pack/zynx_4.png",
+    "label": "Zynx 4",
+    "fallback": "✨",
+    "sha256": "98205592b1abdae539cf7126e2373b89ede76864b105379bdc3f4db169cabc7d",
+    "source": "assets/zynx_4.png"
+  },
+  {
+    "semantic": "zynx_5",
+    "theme": "solid",
+    "name": "prime_zynx_5",
+    "file": "pack/zynx_5.png",
+    "label": "Zynx 5",
+    "fallback": "✨",
+    "sha256": "a65674de09370a360ab40bc15621823db1dded9ecc522b15e37a281505f623f5",
+    "source": "assets/zynx_5.png"
+  },
+  {
+    "semantic": "entrega0",
+    "theme": "solid",
+    "name": "prime_entrega0",
+    "file": "entrega-automatica/entrega0.png",
+    "label": "Entrega automática 1/7 • início + E",
+    "fallback": "E",
+    "sha256": "5cfef0b7dfd6c925a6e958ca477064202c2a9d8a49ccd27b72d7681d0f31f116",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega1",
+    "theme": "solid",
+    "name": "prime_entrega1",
+    "file": "entrega-automatica/entrega1.png",
+    "label": "Entrega automática 2/7 • ntre",
+    "fallback": "ntre",
+    "sha256": "1a65007ca03480ed8b39bed1af9c7eb43c3713eeca78c05eacc84776e923cb79",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega2",
+    "theme": "solid",
+    "name": "prime_entrega2",
+    "file": "entrega-automatica/entrega2.png",
+    "label": "Entrega automática 3/7 • ga",
+    "fallback": "ga",
+    "sha256": "169039de51ac6a63c393014f6ad8f4cca0aa968832ca991ef48a24ffad91683b",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega3",
+    "theme": "solid",
+    "name": "prime_entrega3",
+    "file": "entrega-automatica/entrega3.png",
+    "label": "Entrega automática 4/7 • auto",
+    "fallback": "auto",
+    "sha256": "c5e898ee2d57fec6aeac2ca16137adfbcc47635ee8f7c32a69d299a3582a72e0",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega4",
+    "theme": "solid",
+    "name": "prime_entrega4",
+    "file": "entrega-automatica/entrega4.png",
+    "label": "Entrega automática 5/7 • má",
+    "fallback": "má",
+    "sha256": "64288bd54f6ea412b71cfad0dd12768a7f7800e41f0d6fcf784a1161c906b05f",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega5",
+    "theme": "solid",
+    "name": "prime_entrega5",
+    "file": "entrega-automatica/entrega5.png",
+    "label": "Entrega automática 6/7 • tica",
+    "fallback": "tica",
+    "sha256": "9441093db07335903b0046f75b293c0414b07fae7abd5705b0ff6a61950d3947",
+    "source": "public.zip original"
+  },
+  {
+    "semantic": "entrega6",
+    "theme": "solid",
+    "name": "prime_entrega6",
+    "file": "entrega-automatica/entrega6.png",
+    "label": "Entrega automática 7/7 • acabamento",
+    "fallback": "",
+    "sha256": "9ce382ba5dc825b150b31566e6ff4e498a84a26a11d59299022be621ecd6d235",
+    "source": "public.zip original"
+  }
+]
