@@ -1139,10 +1139,14 @@ ${providerLabel}` : "Ainda não configurada", inline: true },
       );
     return { embeds: [embed], components: [
       new ActionRowBuilder<ButtonBuilder>().addComponents(
-        this.button(guildId, `admin:ticket:options:${panel.id}`, "Opções de atendimento", "support", ButtonStyle.Primary),
-        this.button(guildId, `admin:ticket:publish:${panel.id}`, "Publicar / atualizar", "announcement", ButtonStyle.Success),
+        this.button(guildId, `admin:ticket:options:${panel.id}`, "Opções", "support", ButtonStyle.Primary),
+        this.button(guildId, `admin:ticket:publish:${panel.id}`, "Publicar", "announcement", ButtonStyle.Success),
+        this.button(guildId, `admin:ticket:image-upload:${panel.id}`, "Banner", "image"),
+        this.button(guildId, `admin:ticket:mode-toggle:${panel.id}`, panel.mode === "SELECT" ? "Botões" : "Menu", panel.mode === "SELECT" ? "commands" : "listening_music"),
+        this.button(guildId, "admin:tickets", "Voltar", "back")
+      ),
+      new ActionRowBuilder<ButtonBuilder>().addComponents(
         this.button(guildId, `admin:ticket:basic:${panel.id}`, "Editar visual", "edit", ButtonStyle.Secondary),
-        this.button(guildId, "admin:tickets", "Voltar", "back"),
         this.button(guildId, `admin:ticket:delete-request:${panel.id}`, "Excluir", "trash", ButtonStyle.Danger)
       )
     ] };

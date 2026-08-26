@@ -3002,6 +3002,30 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
       return i.reply({ content: "✅ Atendimento liberado para outro assunto.", flags: MessageFlags.Ephemeral });
     }
     if (id.startsWith("ticket:open:")) { const [, , panelId, optionId] = id.split(":"); return this.showTicketSubject(i, panelId!, optionId!); }
+    if (id.startsWith("ticket:member-close:")) {
+      const ticketId = id.split(":")[2]!;
+      const ticket = this.tickets.getTicket(ticketId);
+      if (ticket.ownerId !== i.user.id) throw new Error("Somente o dono do ticket pode fechar.");
+      await this.tickets.close(ticketId, i.user.id);
+      return i.reply({ content: "✅ Ticket fechado. Obrigado pelo contato!", flags: MessageFlags.Ephemeral });
+    }
+    if (id.startsWith("ticket:member-status:")) {
+      const ticketId = id.split(":")[2]!;
+      const ticket = this.tickets.getTicket(ticketId);
+      const panel = this.db.state.ticketPanels[ticket.panelId];
+      const option = panel?.options.find((item) => item.id === ticket.optionId);
+      const statusEmbed = new EmbedBuilder()
+        .setColor(ticket.status === "OPEN" ? 0x22c55e : 0xef4444)
+        .setTitle("Status do seu atendimento")
+        .addFields(
+          { name: "Ticket", value: `\`${ticket.id}\``, inline: true },
+          { name: "Status", value: ticket.status === "OPEN" ? "Aberto" : ticket.status === "CLOSED" ? "Fechado" : "Arquivado", inline: true },
+          { name: "Assunto", value: ticket.subject || option?.name || "Atendimento", inline: true },
+          { name: "Atendente", value: ticket.claimedBy ? `<@${ticket.claimedBy}>` : "Aguardando...", inline: true }
+        )
+        .setTimestamp();
+      return i.reply({ embeds: [statusEmbed], flags: MessageFlags.Ephemeral });
+    }
     const [, action, ticketId] = id.split(":"); if (!ticketId) return; const ticket = this.tickets.getTicket(ticketId); const member = i.member as GuildMember; const guildSettings = this.db.guild(gid); const ticketRoles = [...guildSettings.staffRoleIds, ...guildSettings.permissions.supportRoleIds, ...guildSettings.permissions.ticketRoleIds]; const staff = member.permissions.has(PermissionFlagsBits.ManageChannels) || ticketRoles.some((rid) => member.roles.cache.has(rid)); const owner = ticket.ownerId === i.user.id;
     if (!staff && !owner) throw new Error("Você não tem acesso a este ticket.");
     if (action === "claim") { await this.tickets.claim(ticketId, member); return i.reply({ content: `Ticket assumido por ${i.user}.` }); }

@@ -351,6 +351,27 @@ export class TicketService {
       allowedMentions: { users: [member.id], roles: option.mentionSupport ? roles : [] }
     });
 
+    const memberPanel = new EmbedBuilder()
+      .setColor(0x3155ff)
+      .setTitle("Painel do cliente")
+      .setDescription(`Ticket aberto para **${subject || option.name}**.\nUse os botões abaixo para gerenciar seu atendimento.`)
+      .addFields(
+        { name: "Status", value: "Aberto", inline: true },
+        { name: "Assunto", value: truncate(subject || option.name, 1024), inline: true }
+      )
+      .setFooter({ text: "166 Community • Atendimento" })
+      .setTimestamp();
+    await channel.send({
+      embeds: [memberPanel],
+      components: [
+        new ActionRowBuilder<ButtonBuilder>().addComponents(
+          new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger).setEmoji(this.emojis.component("ticket_close", guild.id)),
+          new ButtonBuilder().setCustomId(`ticket:member-status:${ticket.id}`).setLabel("Ver status").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("information", guild.id))
+        )
+      ],
+      allowedMentions: { users: [] }
+    });
+
     if (needsPurchaseChoice) {
       const gate = await channel.send({
         embeds: [new EmbedBuilder()
@@ -422,7 +443,20 @@ export class TicketService {
     const ticketRoles = [...settings.staffRoleIds, ...settings.permissions.supportRoleIds, ...settings.permissions.ticketRoleIds];
     const allowed = actor.permissions.has(PermissionFlagsBits.ManageChannels) || ticketRoles.some((id) => actor.roles.cache.has(id));
     if (!allowed) throw new Error("Somente a equipe pode assumir tickets.");
-    ticket.claimedBy = actor.id; this.db.audit(actor.id, "TICKET_CLAIM", "ticket", ticket.id); this.db.save(); await this.log(ticket, "Ticket assumido", `Atendimento assumido por <@${actor.id}>.`, 0x3b82f6); return ticket;
+    ticket.claimedBy = actor.id; this.db.audit(actor.id, "TICKET_CLAIM", "ticket", ticket.id); this.db.save();
+
+    const user = await this.client.users.fetch(ticket.ownerId).catch(() => undefined);
+    if (user) {
+      const dmEmbed = new EmbedBuilder()
+        .setColor(0x3b82f6)
+        .setTitle("Sua demanda foi atendida")
+        .setDescription(`<@${actor.id}> assumiu seu atendimento no ticket **${ticket.subject || "Atendimento"}**.\n\nEnvie sua mensagem no canal do ticket.`)
+        .setFooter({ text: "166 Community" })
+        .setTimestamp();
+      await user.send({ embeds: [dmEmbed] }).catch(() => undefined);
+    }
+
+    await this.log(ticket, "Ticket assumido", `Atendimento assumido por <@${actor.id}>.`, 0x3b82f6); return ticket;
   }
 
   async notifyOwner(ticketId: string, actorId: string): Promise<{ dmSent: boolean; count: number }> {
@@ -463,6 +497,18 @@ export class TicketService {
     const option = panel?.options.find((item) => item.id === ticket.optionId);
     const closeText = (option?.closeMessage || "Ticket encerrado. Obrigado por entrar em contato.").replaceAll("{user}", `<@${ticket.ownerId}>`).replaceAll("{staff}", `<@${actorId}>`);
     await channel.send({ embeds: [new EmbedBuilder().setColor(0xef4444).setDescription(`${closeText}\n\nFechado por <@${actorId}>.`).setTimestamp()], components: this.controls(ticket) });
+
+    const user = await this.client.users.fetch(ticket.ownerId).catch(() => undefined);
+    if (user) {
+      const dmEmbed = new EmbedBuilder()
+        .setColor(0xef4444)
+        .setTitle("Seu atendimento foi encerrado")
+        .setDescription(`Seu ticket **${ticket.subject || option?.name || "Atendimento"}** no servidor **${guild.name}** foi fechado por <@${actorId}>.\n\nSe precisar de ajuda novamente, abra um novo ticket.`)
+        .setFooter({ text: "166 Community" })
+        .setTimestamp();
+      await user.send({ embeds: [dmEmbed] }).catch(() => undefined);
+    }
+
     await this.log(ticket, "Ticket fechado", `Fechado por <@${actorId}>.`, 0xef4444);
     return ticket;
   }
