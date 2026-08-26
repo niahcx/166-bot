@@ -331,18 +331,21 @@ export class TicketService {
     const panelColor = Number.isFinite(colorNumber(panel.color)) ? colorNumber(panel.color) : 0x5865F2;
     const embed = new EmbedBuilder()
       .setColor(panelColor)
-      .setTitle(`Atendimento - ${option.openingTitle}`)
-      .setDescription(replace(option.openingDescription))
+      .setTitle(truncate(`Atendimento - ${option.openingTitle}`, 256))
+      .setDescription(truncate(replace(option.openingDescription), 4000) || "Ticket aberto.")
       .addFields(
         { name: "Cliente", value: `<@${member.id}>`, inline: true },
-        { name: "Assunto", value: truncate(subject || option.name, 1024), inline: true },
-        { name: "Status", value: "🟢 Aberto", inline: true },
-        ...panel.fields.slice(0, 22).map((field) => ({ name: replace(field.name), value: truncate(replace(field.value), 1024), inline: field.inline }))
+        { name: "Assunto", value: truncate(subject || option.name, 1024) || "Geral", inline: true },
+        { name: "Status", value: "Aberto", inline: true }
       )
       .setTimestamp();
+    const staffFields = panel.fields.filter((f) => f.name.trim()).slice(0, 22);
+    for (const field of staffFields) {
+      const fname = replace(field.name).trim();
+      const fval = truncate(replace(field.value), 1024) || "-";
+      if (fname) embed.addFields({ name: fname.slice(0, 256), value: fval, inline: field.inline });
+    }
     if (panel.footer) embed.setFooter({ text: truncate(panel.footer, 2048) });
-    if (panel.imageUrl && panel.imageUrl.startsWith("http")) embed.setImage(panel.imageUrl);
-    if (panel.thumbnailUrl && panel.thumbnailUrl.startsWith("http")) embed.setThumbnail(panel.thumbnailUrl);
 
     try {
       await channel.send({
@@ -352,21 +355,25 @@ export class TicketService {
       });
     } catch (err) {
       this.logger.error("Falha ao enviar painel staff no ticket.", { ticketId: ticket.id, error: String(err) });
+      try {
+        await channel.send({ content: `Ticket aberto para <@${member.id}>. Assunto: ${subject || option.name}` });
+      } catch { /* ignore */ }
     }
 
-    const memberPanel = new EmbedBuilder()
-      .setColor(0x5865F2)
-      .setTitle("Suporte 166 Community")
-      .setDescription(`Ticket aberto para **${subject || option.name}**.\nUse os botões abaixo para gerenciar seu atendimento.`)
-      .addFields(
-        { name: "Status", value: "🟢 Aberto", inline: true },
-        { name: "Assunto", value: truncate(subject || option.name, 1024), inline: true }
-      )
-      .setFooter({ text: "166 Community • Atendimento" })
-      .setTimestamp();
     try {
       await channel.send({
-        embeds: [memberPanel],
+        embeds: [
+          new EmbedBuilder()
+            .setColor(0x5865F2)
+            .setTitle("Suporte 166 Community")
+            .setDescription(`Ticket aberto para **${truncate(subject || option.name, 200)}**.\nUse os botões abaixo para gerenciar seu atendimento.`)
+            .addFields(
+              { name: "Status", value: "Aberto", inline: true },
+              { name: "Assunto", value: truncate(subject || option.name, 1024) || "Geral", inline: true }
+            )
+            .setFooter({ text: "166 Community • Atendimento" })
+            .setTimestamp()
+        ],
         components: [
           new ActionRowBuilder<ButtonBuilder>().addComponents(
             new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger),
@@ -383,9 +390,9 @@ export class TicketService {
         const gate = await channel.send({
           embeds: [new EmbedBuilder()
             .setColor(panelColor)
-            .setTitle("Este atendimento é sobre alguma das suas compras?")
-            .setDescription("Selecione uma compra registrada abaixo ou informe que o atendimento é sobre outro assunto.\n\nEnquanto esta etapa não for respondida, o envio de mensagens ficará bloqueado.")
-            .setFooter({ text: "166 Community • Identificação automática do atendimento" })],
+            .setTitle("Este atendimento e sobre alguma das suas compras?")
+            .setDescription("Selecione uma compra registrada abaixo ou informe que o atendimento e sobre outro assunto.\n\nEnquanto esta etapa nao for respondida, o envio de mensagens ficara bloqueado.")
+            .setFooter({ text: "166 Community • Identificacao automatica do atendimento" })],
           components: this.purchaseGateComponents(ticket, purchases)
         });
         ticket.gateMessageId = gate.id;
