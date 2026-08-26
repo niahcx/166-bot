@@ -20,6 +20,7 @@ import type { Logger } from "../core/logger.js";
 import { channelSafe, colorNumber, formatMoney, makeId, nowIso, truncate } from "../core/utils.js";
 import type { ButtonStyleName, Order, TicketOption, TicketPanel, TicketPanelField, TicketRecord } from "../types.js";
 import type { EmojiManager } from "../emojis/manager.js";
+import type { APIMessageComponentEmoji } from "discord-api-types/v10";
 
 const style = (name: ButtonStyleName) => ({ PRIMARY: ButtonStyle.Primary, SECONDARY: ButtonStyle.Secondary, SUCCESS: ButtonStyle.Success, DANGER: ButtonStyle.Danger }[name]);
 const html = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -225,26 +226,35 @@ export class TicketService {
     this.db.save();
   }
 
+  private safeEmoji(semantic: string, gid: string): APIMessageComponentEmoji | undefined {
+    try {
+      const result = this.emojis.component(semantic, gid);
+      if (typeof result === "string") return undefined;
+      if (result && typeof result === "object" && result.id) return result as APIMessageComponentEmoji;
+      return undefined;
+    } catch { return undefined; }
+  }
+
   controls(ticket: TicketRecord): ActionRowBuilder<ButtonBuilder>[] {
     const gid = ticket.guildId;
     if (ticket.status === "OPEN") return [
       new ActionRowBuilder<ButtonBuilder>().addComponents(
-        new ButtonBuilder().setCustomId(`ticket:claim:${ticket.id}`).setLabel("Assumir").setStyle(ButtonStyle.Primary).setEmoji(this.emojis.component("ticket_claim", gid)),
-        new ButtonBuilder().setCustomId(`ticket:add:${ticket.id}`).setLabel("Adicionar membro").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("plus", gid)),
-        new ButtonBuilder().setCustomId(`ticket:remove:${ticket.id}`).setLabel("Remover membro").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("minus", gid)),
-        new ButtonBuilder().setCustomId(`ticket:rename:${ticket.id}`).setLabel("Renomear").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("edit", gid)),
-        new ButtonBuilder().setCustomId(`ticket:close:${ticket.id}`).setLabel("Fechar").setStyle(ButtonStyle.Danger).setEmoji(this.emojis.component("ticket_close", gid))
+        new ButtonBuilder().setCustomId(`ticket:claim:${ticket.id}`).setLabel("Assumir").setStyle(ButtonStyle.Primary),
+        new ButtonBuilder().setCustomId(`ticket:add:${ticket.id}`).setLabel("Adicionar membro").setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`ticket:remove:${ticket.id}`).setLabel("Remover membro").setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`ticket:rename:${ticket.id}`).setLabel("Renomear").setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`ticket:close:${ticket.id}`).setLabel("Fechar").setStyle(ButtonStyle.Danger)
       ),
       new ActionRowBuilder<ButtonBuilder>().addComponents(
-        new ButtonBuilder().setCustomId(`ticket:transcript:${ticket.id}`).setLabel("Gerar transcript").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("transcript", gid)),
-        new ButtonBuilder().setCustomId(`ticket:archive:${ticket.id}`).setLabel("Arquivar").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("ticket_archive", gid)),
-        new ButtonBuilder().setCustomId(`ticket:notify:${ticket.id}`).setLabel("Notificar cliente").setStyle(ButtonStyle.Primary).setEmoji(this.emojis.component("announcement", gid))
+        new ButtonBuilder().setCustomId(`ticket:transcript:${ticket.id}`).setLabel("Transcript").setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`ticket:archive:${ticket.id}`).setLabel("Arquivar").setStyle(ButtonStyle.Secondary),
+        new ButtonBuilder().setCustomId(`ticket:notify:${ticket.id}`).setLabel("Notificar cliente").setStyle(ButtonStyle.Primary)
       )
     ];
     return [new ActionRowBuilder<ButtonBuilder>().addComponents(
-      new ButtonBuilder().setCustomId(`ticket:reopen:${ticket.id}`).setLabel("Reabrir").setStyle(ButtonStyle.Success).setEmoji(this.emojis.component("ticket_reopen", gid)),
-      new ButtonBuilder().setCustomId(`ticket:transcript:${ticket.id}`).setLabel("Gerar transcript").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("transcript", gid)),
-      new ButtonBuilder().setCustomId(`ticket:delete:${ticket.id}`).setLabel("Excluir canal").setStyle(ButtonStyle.Danger).setEmoji(this.emojis.component("trash", gid))
+      new ButtonBuilder().setCustomId(`ticket:reopen:${ticket.id}`).setLabel("Reabrir").setStyle(ButtonStyle.Success),
+      new ButtonBuilder().setCustomId(`ticket:transcript:${ticket.id}`).setLabel("Transcript").setStyle(ButtonStyle.Secondary),
+      new ButtonBuilder().setCustomId(`ticket:delete:${ticket.id}`).setLabel("Excluir canal").setStyle(ButtonStyle.Danger)
     )];
   }
 
@@ -264,15 +274,13 @@ export class TicketService {
         return new StringSelectMenuOptionBuilder()
           .setLabel(truncate(`${order.id} • ${formatMoney(order.totalCents)}`, 100))
           .setDescription(truncate(items || "Compra registrada", 100))
-          .setValue(order.id)
-          .setEmoji(this.emojis.component("invoice", ticket.guildId));
+          .setValue(order.id);
       }));
     const none = new ButtonBuilder()
       .setCustomId(`ticket:purchase-none:${ticket.id}`)
       .setLabel("Não, é sobre outro assunto")
       .setStyle(ButtonStyle.Secondary)
-      .setDisabled(disabled)
-      .setEmoji(this.emojis.component("question", ticket.guildId));
+      .setDisabled(disabled);
     return [
       new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(select),
       new ActionRowBuilder<ButtonBuilder>().addComponents(none)
@@ -330,14 +338,16 @@ export class TicketService {
     this.db.save();
 
     const replace = (value: string) => value.replaceAll("{user}", `<@${member.id}>`).replaceAll("{subject}", subject || option.name);
+    const staffMention = roles.length > 0 ? roles.map((id) => `<@&${id}>`).join(" ") : "";
     const embed = new EmbedBuilder()
       .setColor(colorNumber(panel.color))
-      .setTitle(option.openingTitle)
+      .setTitle(`Atendimento - ${option.openingTitle}`)
       .setDescription(replace(option.openingDescription))
       .addFields(
         { name: "Cliente", value: `<@${member.id}>`, inline: true },
         { name: "Assunto", value: truncate(subject || option.name, 1024), inline: true },
-        ...panel.fields.slice(0, 23).map((field) => ({ name: replace(field.name), value: truncate(replace(field.value), 1024), inline: field.inline }))
+        { name: "Status", value: "🟢 Aberto", inline: true },
+        ...panel.fields.slice(0, 22).map((field) => ({ name: replace(field.name), value: truncate(replace(field.value), 1024), inline: field.inline }))
       )
       .setTimestamp();
     if (panel.footer) embed.setFooter({ text: truncate(panel.footer, 2048) });
@@ -345,18 +355,18 @@ export class TicketService {
     if (panel.thumbnailUrl) embed.setThumbnail(panel.thumbnailUrl);
 
     await channel.send({
-      content: `${option.mentionSupport ? roles.map((id) => `<@&${id}>`).join(" ") : ""} <@${member.id}>`.trim(),
+      content: [staffMention, `<@${member.id}>`].filter(Boolean).join(" "),
       embeds: [embed],
       components: this.controls(ticket),
-      allowedMentions: { users: [member.id], roles: option.mentionSupport ? roles : [] }
+      allowedMentions: { users: [member.id], roles: roles }
     });
 
     const memberPanel = new EmbedBuilder()
-      .setColor(0x3155ff)
-      .setTitle("Painel do cliente")
+      .setColor(0x5865F2)
+      .setTitle("Suporte 166 Community")
       .setDescription(`Ticket aberto para **${subject || option.name}**.\nUse os botões abaixo para gerenciar seu atendimento.`)
       .addFields(
-        { name: "Status", value: "Aberto", inline: true },
+        { name: "Status", value: "🟢 Aberto", inline: true },
         { name: "Assunto", value: truncate(subject || option.name, 1024), inline: true }
       )
       .setFooter({ text: "166 Community • Atendimento" })
@@ -365,8 +375,8 @@ export class TicketService {
       embeds: [memberPanel],
       components: [
         new ActionRowBuilder<ButtonBuilder>().addComponents(
-          new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger).setEmoji(this.emojis.component("ticket_close", guild.id)),
-          new ButtonBuilder().setCustomId(`ticket:member-status:${ticket.id}`).setLabel("Ver status").setStyle(ButtonStyle.Secondary).setEmoji(this.emojis.component("information", guild.id))
+          new ButtonBuilder().setCustomId(`ticket:member-close:${ticket.id}`).setLabel("Fechar ticket").setStyle(ButtonStyle.Danger),
+          new ButtonBuilder().setCustomId(`ticket:member-status:${ticket.id}`).setLabel("Ver status").setStyle(ButtonStyle.Secondary)
         )
       ],
       allowedMentions: { users: [] }
@@ -376,7 +386,7 @@ export class TicketService {
       const gate = await channel.send({
         embeds: [new EmbedBuilder()
           .setColor(colorNumber(panel.color))
-          .setTitle(`${this.emojis.text("invoice", guild.id)} Este atendimento é sobre alguma das suas compras?`)
+          .setTitle("Este atendimento é sobre alguma das suas compras?")
           .setDescription("Selecione uma compra registrada abaixo ou informe que o atendimento é sobre outro assunto.\n\nEnquanto esta etapa não for respondida, o envio de mensagens ficará bloqueado.")
           .setFooter({ text: "166 Community • Identificação automática do atendimento" })],
         components: this.purchaseGateComponents(ticket, purchases)
