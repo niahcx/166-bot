@@ -349,9 +349,10 @@ export class TicketService {
 
     try {
       await channel.send({
-        content: [staffMention, `<@${member.id}>`].filter(Boolean).join(" ") || undefined,
+        content: `<@${member.id}>`,
         embeds: [embed],
-        components: this.controls(ticket)
+        components: this.controls(ticket),
+        allowedMentions: { users: [member.id], roles: [] }
       });
     } catch (err) {
       this.logger.error("Falha ao enviar painel staff no ticket.", { ticketId: ticket.id, error: String(err) });
