@@ -1090,18 +1090,20 @@ ${providerLabel}` : "Ainda não configurada", inline: true },
         .setPlaceholder("Selecione um painel para configurar")
         .addOptions(panels.slice(0, 25).map((panel) => new StringSelectMenuOptionBuilder()
           .setLabel(truncate(panel.name, 100))
-          .setDescription(truncate(`${panel.options.length} opções • ${panel.fields.length} campos • ${panel.mode === "SELECT" ? "menu" : "botões"}`, 100))
+          .setDescription(truncate(`${panel.options.length} opções • ${panel.mode === "SELECT" ? "menu" : "botões"}`, 100))
           .setValue(panel.id)
           .setEmoji(this.emojis.component(panel.emojiSemantic, guildId))))
     ));
     return {
       embeds: [this.base(
         `${this.emojis.text("ticket", guildId)} Central de tickets`,
-        `Configure a mensagem pública, campos informativos, opções de atendimento, cargos, categorias e mensagens de abertura.
-
-Ao abrir um ticket, clientes com compras registradas precisam selecionar uma compra ou informar que o assunto é diferente antes de enviar mensagens.
-
-**Painéis configurados:** ${panels.length}`,
+        `Configure painéis de atendimento com opções, categorias e mensagens de abertura.\n\n**Painéis configurados:** ${panels.length}\n\n` +
+        `**Como usar:**\n` +
+        `1. Clique em **Criar painel** para começar\n` +
+        `2. Adicione opções de atendimento (ex: Suporte, Financeiro)\n` +
+        `3. Configure cargos e categorias em **Categorias e equipe**\n` +
+        `4. Clique em **Publicar** para enviar ao canal desejado\n\n` +
+        `**Dica:** Cada opção pode ter sua própria categoria e cargo de suporte.`,
         guildId
       )],
       components
@@ -1109,34 +1111,21 @@ Ao abrir um ticket, clientes com compras registradas precisam selecionar uma com
   }
 
   ticketPanelDetail(guildId: string, panel: TicketPanel) {
+    const status = panel.channelId ? `Publicado em <#${panel.channelId}>` : "Não publicado";
     const embed = this.base(`${this.emojis.text(panel.emojiSemantic, guildId)} ${panel.title}`, panel.description, guildId)
       .setColor(colorNumber(panel.color))
       .addFields(
-        { name: "Formato", value: panel.mode === "SELECT" ? "Menu de seleção" : "Botões", inline: true },
         { name: "Opções", value: `${panel.options.length}/25`, inline: true },
-        { name: "Campos informativos", value: `${panel.fields.length}/25`, inline: true },
-        { name: "Publicação", value: panel.channelId ? `<#${panel.channelId}>` : "Ainda não publicado", inline: true },
-        { name: "Texto do menu", value: truncate(panel.buttonLabel || "Selecione o atendimento", 1024), inline: true },
-        { name: "Emoji principal", value: `\`${panel.emojiSemantic}\``, inline: true }
+        { name: "Formato", value: panel.mode === "SELECT" ? "Menu" : "Botões", inline: true },
+        { name: "Status", value: status, inline: true }
       );
-    if (panel.imageUrl) embed.setImage(panel.imageUrl);
-    if (panel.thumbnailUrl) embed.setThumbnail(panel.thumbnailUrl);
     return { embeds: [embed], components: [
       new ActionRowBuilder<ButtonBuilder>().addComponents(
-        this.button(guildId, `admin:ticket:basic:${panel.id}`, "Mensagem e visual", "edit", ButtonStyle.Primary),
-        this.button(guildId, `admin:ticket:fields:${panel.id}`, "Campos do painel", "embed", ButtonStyle.Primary),
         this.button(guildId, `admin:ticket:options:${panel.id}`, "Opções de atendimento", "support", ButtonStyle.Primary),
-        this.button(guildId, `admin:ticket:publish:${panel.id}`, "Publicar / atualizar", "announcement", ButtonStyle.Success)
-      ),
-      new ActionRowBuilder<ButtonBuilder>().addComponents(
-        this.button(guildId, `admin:ticket:mode-toggle:${panel.id}`, panel.mode === "SELECT" ? "Usar botões" : "Usar menu", panel.mode === "SELECT" ? "commands" : "listening_music"),
-        this.button(guildId, `admin:ticket:emoji:${panel.id}:0`, "Emoji principal", "emoji"),
-        this.button(guildId, `admin:ticket:image-upload:${panel.id}`, "Enviar banner", "upload"),
-        this.button(guildId, `admin:ticket:thumb-upload:${panel.id}`, "Enviar miniatura", "image")
-      ),
-      new ActionRowBuilder<ButtonBuilder>().addComponents(
-        this.button(guildId, `admin:ticket:delete-request:${panel.id}`, "Excluir painel", "trash", ButtonStyle.Danger),
-        this.button(guildId, "admin:tickets", "Voltar", "back")
+        this.button(guildId, `admin:ticket:publish:${panel.id}`, "Publicar / atualizar", "announcement", ButtonStyle.Success),
+        this.button(guildId, `admin:ticket:basic:${panel.id}`, "Editar visual", "edit", ButtonStyle.Secondary),
+        this.button(guildId, "admin:tickets", "Voltar", "back"),
+        this.button(guildId, `admin:ticket:delete-request:${panel.id}`, "Excluir", "trash", ButtonStyle.Danger)
       )
     ] };
   }

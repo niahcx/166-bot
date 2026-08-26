@@ -1265,11 +1265,9 @@ Limite por membro: **${settings.maxPerUser}**`) ],
     if (id.startsWith("admin:ticket:option:add:")) {
       const panelId = id.split(":")[4]!;
       return i.showModal(modal(`modal:ticket:option-add:${panelId}`, "Adicionar opção", [
-        input("name", "Nome da opção", "Suporte", TextInputStyle.Short, true, 100),
+        input("name", "Nome da opção (ex: Suporte)", "Suporte", TextInputStyle.Short, true, 100),
         input("description", "Descrição no menu", "Falar com nossa equipe", TextInputStyle.Short, true, 100),
-        input("prefix", "Prefixo do canal", "ticket", TextInputStyle.Short, true, 40),
-        input("opening_title", "Título da mensagem inicial", "Atendimento aberto", TextInputStyle.Short, true, 256),
-        input("opening_description", "Mensagem inicial", "Explique com detalhes como podemos ajudar.", TextInputStyle.Paragraph, true, 4000)
+        input("prefix", "Prefixo do canal (ex: suporte)", "suporte", TextInputStyle.Short, true, 40)
       ]));
     }
     if (id.startsWith("admin:ticket:options:")) return i.update(this.ticketOptionsView(gid, this.tickets.getPanel(id.split(":")[3]!)) as never);
@@ -2270,12 +2268,12 @@ Avisos: **${result.warnings.length}**`)], components: [] }); return; }
         description: i.fields.getTextInputValue("description"),
         emojiSemantic: "support",
         channelPrefix: i.fields.getTextInputValue("prefix"),
-        openingTitle: i.fields.getTextInputValue("opening_title"),
-        openingDescription: i.fields.getTextInputValue("opening_description"),
+        openingTitle: i.fields.getTextInputValue("name"),
+        openingDescription: "Como podemos ajudar? Descreva seu problema ou dúvida.",
         active: true,
-        askSubject: true,
+        askSubject: false,
         mentionSupport: true,
-        maxOpenTicketsPerUser: 1
+        maxOpenTicketsPerUser: 3
       }, i.user.id);
       return i.reply({ ...this.ticketOptionDetail(gid, panelId, option.id), flags: MessageFlags.Ephemeral });
     }
@@ -3700,7 +3698,7 @@ Grupos: ${coupon.productGroups.join(", ") || "todos"}`, inline: false },
           .addOptions(options.slice(0, 25).map((option) => {
             const item = new StringSelectMenuOptionBuilder()
               .setLabel(truncate(option.name, 100))
-              .setDescription(truncate(`${option.active ? "Ativa" : "Desativada"} • limite ${option.maxOpenTicketsPerUser} • ${option.description || "Sem descrição"}`, 100))
+              .setDescription(truncate(`${option.active ? "Ativa" : "Desativada"} • ${option.description || "Sem descrição"}`, 100))
               .setValue(option.id);
             if (option.emojiSemantic) item.setEmoji(this.emojis.component(option.emojiSemantic, gid));
             return item;
@@ -3711,13 +3709,21 @@ Grupos: ${coupon.productGroups.join(", ") || "todos"}`, inline: false },
       this.views.button(gid, `admin:ticket:option:add:${panel.id}`, "Adicionar opção", "plus", ButtonStyle.Success, panel.options.length >= 25),
       this.views.button(gid, `admin:ticket:${panel.id}`, "Voltar ao painel", "back")
     ));
+    const tutorial = options.length ? "" :
+      "\n\n**Como criar uma opção:**\n" +
+      "1. Clique em **Adicionar opção**\n" +
+      "2. Preencha o nome (ex: Suporte)\n" +
+      "3. Defina o prefixo do canal (ex: suporte)\n" +
+      "4. Configure a mensagem inicial\n" +
+      "5. Clique em **Ativar** para habilitar\n" +
+      "6. Publique o painel no canal desejado";
     return {
       embeds: [new EmbedBuilder()
         .setColor(0x7c3aed)
         .setTitle(`Opções de atendimento • ${panel.name}`)
         .setDescription(options.length
           ? options.map((option, index) => `${index + 1}. ${option.emojiSemantic ? this.emojis.text(option.emojiSemantic, gid) : ""} **${option.name}** — ${option.active ? "ativa" : "desativada"}`).join("\n").slice(0, 4000)
-          : "Nenhuma opção configurada. Adicione ao menos uma antes de publicar o painel.")],
+          : `Nenhuma opção configurada.${tutorial}`)],
       components
     };
   }
@@ -3726,49 +3732,23 @@ Grupos: ${coupon.productGroups.join(", ") || "todos"}`, inline: false },
     const panel = this.tickets.getPanel(panelId);
     const option = panel.options.find((item) => item.id === optionId);
     if (!option) throw new Error("Opção não encontrada.");
-    const ordered = [...panel.options].sort((a, b) => a.position - b.position);
-    const index = ordered.findIndex((item) => item.id === option.id);
     const emoji = option.emojiSemantic ? this.emojis.text(option.emojiSemantic, gid) : "Sem emoji";
     return {
       embeds: [new EmbedBuilder()
         .setColor(option.active ? 0x7c3aed : 0x64748b)
         .setTitle(`${option.emojiSemantic ? `${emoji} ` : ""}${option.name}`)
-        .setDescription(option.description)
+        .setDescription(option.description || "Sem descrição")
         .addFields(
           { name: "Status", value: option.active ? "Ativa" : "Desativada", inline: true },
-          { name: "Posição", value: `${index + 1}/${ordered.length}`, inline: true },
-          { name: "Emoji", value: option.emojiSemantic ? `${emoji}  \`${truncate(option.emojiSemantic, 80)}\`` : "Sem emoji", inline: true },
-          { name: "Categoria", value: option.categoryId ? `<#${option.categoryId}>` : "Categoria geral", inline: true },
-          { name: "Prefixo do canal", value: `\`${option.channelPrefix}\``, inline: true },
-          { name: "Limite por usuário", value: String(option.maxOpenTicketsPerUser), inline: true },
-          { name: "Pedir motivo", value: option.askSubject ? "Ativado" : "Desativado", inline: true },
-          { name: "Mencionar equipe", value: option.mentionSupport ? "Ativado" : "Desativado", inline: true },
-          { name: "Cargos responsáveis", value: option.supportRoleIds.map((id) => `<@&${id}>`).join(" ") || "Cargos gerais", inline: false },
-          { name: "Mensagem inicial", value: truncate(option.openingDescription, 1024) },
-          { name: "Mensagem ao fechar", value: truncate(option.closeMessage, 1024) }
+          { name: "Categoria", value: option.categoryId ? `<#${option.categoryId}>` : "Geral", inline: true },
+          { name: "Equipe", value: option.supportRoleIds.map((id) => `<@&${id}>`).join(" ") || "Geral", inline: true }
         )],
       components: [
         new ActionRowBuilder<ButtonBuilder>().addComponents(
-          this.views.button(gid, `admin:ticket:option-edit:${panelId}:${optionId}`, "Textos", "edit", ButtonStyle.Primary),
-          this.views.button(gid, `admin:ticket:option-close-message:${panelId}:${optionId}`, "Mensagem ao fechar", "message"),
+          this.views.button(gid, `admin:ticket:option-edit:${panelId}:${optionId}`, "Editar textos", "edit", ButtonStyle.Primary),
           this.views.button(gid, `admin:ticket:option-category:${panelId}:${optionId}`, "Categoria", "folder"),
           this.views.button(gid, `admin:ticket:option-roles:${panelId}:${optionId}`, "Cargos", "role"),
-          this.views.button(gid, `admin:ticket:option-limit:${panelId}:${optionId}`, "Limite", "members")
-        ),
-        new ActionRowBuilder<ButtonBuilder>().addComponents(
-          this.views.button(gid, `admin:ticket:option-emoji:${panelId}:${optionId}:0`, "Biblioteca de emojis", "emoji"),
-          this.views.button(gid, `admin:ticket:option-emoji-manual:${panelId}:${optionId}`, "Emoji manual", "reaction_add"),
-          this.views.button(gid, `admin:ticket:option-emoji-clear:${panelId}:${optionId}`, "Remover emoji", "minus", ButtonStyle.Secondary, !option.emojiSemantic)
-        ),
-        new ActionRowBuilder<ButtonBuilder>().addComponents(
-          this.views.button(gid, `admin:ticket:option-toggle:${panelId}:${optionId}:active`, option.active ? "Desativar opção" : "Ativar opção", option.active ? "off" : "on", option.active ? ButtonStyle.Danger : ButtonStyle.Success),
-          this.views.button(gid, `admin:ticket:option-toggle:${panelId}:${optionId}:subject`, option.askSubject ? "Não pedir motivo" : "Pedir motivo", "question"),
-          this.views.button(gid, `admin:ticket:option-toggle:${panelId}:${optionId}:mention`, option.mentionSupport ? "Não mencionar equipe" : "Mencionar equipe", "announcement")
-        ),
-        new ActionRowBuilder<ButtonBuilder>().addComponents(
-          this.views.button(gid, `admin:ticket:option-move:${panelId}:${optionId}:up`, "Mover para cima", "arrow", ButtonStyle.Secondary, index <= 0),
-          this.views.button(gid, `admin:ticket:option-move:${panelId}:${optionId}:down`, "Mover para baixo", "arrow2", ButtonStyle.Secondary, index < 0 || index >= ordered.length - 1),
-          this.views.button(gid, `admin:ticket:option-delete-request:${panelId}:${optionId}`, "Excluir", "trash", ButtonStyle.Danger),
+          this.views.button(gid, `admin:ticket:option-toggle:${panelId}:${optionId}:active`, option.active ? "Desativar" : "Ativar", option.active ? "off" : "on", option.active ? ButtonStyle.Danger : ButtonStyle.Success),
           this.views.button(gid, `admin:ticket:options:${panelId}`, "Voltar", "back")
         )
       ]
